@@ -7,17 +7,23 @@
 @section('content')
 
 {{--    slider content--}}
+@include('home_sections.slider_content')
 
-   @include('home_sections.slider_content')
 {{--    about vmg--}}
-    @include('home_sections.about_vmg')
+@include('home_sections.about_vmg')
 
-
+{{--leadership section--}}
+@include('home_sections.vmg_leadership')
+{{--event section --}}
+@include('home_sections.event')
 {{--    clients sections--}}
-    @include('home_sections.clients')
-
+@include('home_sections.testimonial')
 {{--    clients sections--}}
-    @include('home_sections.testimonial')
+@include('home_sections.clients')
+
+
+
+
 @endsection
 
 @push('after-scripts')

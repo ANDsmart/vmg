@@ -6,18 +6,17 @@
         <div class="row py-5 my-4">
             <div class="col-md-7 col-lg-4 mb-5 mb-lg-0 pt-3">
                 <h5 class="text-3 mb-3">ABOUT US</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna semper scelerisque.</p>
-                <p class="mb-0">Praesent venenatis turpis vitae purus semper, eget sagittis velit venenatis ptent taciti sociosqu ad litora...</p>
+                <p style="color:#fff3f2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna semper scelerisque.</p>
                 <p class="mb-0"><a href="#" class="btn-flat btn-xs text-color-light p-relative top-5"><strong class="text-2">VIEW MORE</strong><i class="fas fa-angle-right p-relative top-1 pl-2"></i></a></p>
             </div>
             <div class="col-md-5 col-lg-3 mb-5 mb-lg-0 pt-3">
-                <h5 class="text-3 mb-3 pb-1">CONTACT US</h5>
-                <p class="text-8 text-color-light font-weight-bold">(800) 123-4567</p>
-                <p class="mb-2">International: (333) 456-6670</p>
-                <p class="mb-2">Fax: (222) 531-8999</p>
+                <h5 class="text-3 mb-3 pb-1" style="color:#fff3f2">CONTACT US</h5>
+                <p class="text-8 text-color-light font-weight-bold" style="color:#fff3f2">0717 443 616</p>
+                <p class="mb-2" style="color:#fff3f2">International: (333) 456-6670</p>
+                <p class="mb-2" style="color:#fff3f2">Fax: (22) 27 61756</p>
                 <ul class="list list-icons list-icons-lg">
-                    <li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i><p class="m-0">234 Street Name, City Name</p></li>
-                    <li class="mb-1"><i class="far fa-envelope text-color-primary"></i><p class="m-0"><a href="mailto:mail@example.com">mail@example.com</a></p></li>
+                    <li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i><p class="m-0" style="color:#fff3f2">Ali hassan mwinyi road</p></li>
+                    <li class="mb-1"><i class="far fa-envelope text-color-primary"></i><p class="m-0"><a href="mailto:mail@example.com" style="color:#fff3f2">info@vipaji.co.tz</a></p></li>
                 </ul>
                 <ul class="social-icons mt-4">
                     <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
@@ -71,13 +70,13 @@
                     <p>© Copyright 2020. All Rights Reserved.</p>
                 </div>
                 <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
-                    <nav id="sub-menu">
-                        <ul>
-                            <li><i class="fas fa-angle-right"></i><a href="page-faq.html" class="ml-1 text-decoration-none"> FAQ's</a></li>
-                            <li><i class="fas fa-angle-right"></i><a href="sitemap.html" class="ml-1 text-decoration-none"> Sitemap</a></li>
-                            <li><i class="fas fa-angle-right"></i><a href="contact-us.html" class="ml-1 text-decoration-none"> Contact Us</a></li>
-                        </ul>
-                    </nav>
+{{--                    <nav id="sub-menu">--}}
+{{--                        <ul>--}}
+{{--                            <li><i class="fas fa-angle-right"></i><a href="page-faq.html" class="ml-1 text-decoration-none"> FAQ's</a></li>--}}
+{{--                            <li><i class="fas fa-angle-right"></i><a href="sitemap.html" class="ml-1 text-decoration-none"> Sitemap</a></li>--}}
+{{--                            <li><i class="fas fa-angle-right"></i><a href="contact-us.html" class="ml-1 text-decoration-none"> Contact Us</a></li>--}}
+{{--                        </ul>--}}
+{{--                    </nav>--}}
                 </div>
             </div>
         </div>

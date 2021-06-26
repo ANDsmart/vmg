@@ -1,4 +1,5 @@
-<div class="row text-center pt-4">
+
+<div class="row text-center pt-4" style="margin-top: 100px">
     <div class="col">
         <h2 class="word-rotator slide font-weight-bold text-8 mb-2">
             <span>We're not the only ones </span>
@@ -61,5 +62,11 @@
                         <img class="img-fluid" src="img/logos/logo-6.png" alt="">
                     </div></div><div class="owl-item cloned" style="width: 162.857px;"><div>
                         <img class="img-fluid" src="img/logos/logo-4.png" alt="">
-                    </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"></button><button type="button" role="presentation" class="owl-next"></button></div><div class="owl-dots disabled"></div></div>
+                    </div></div></div></div><div class="owl-nav disabled">
+            <button type="button" role="presentation" class="owl-prev"></button>
+            <button type="button" role="presentation" class="owl-next"></button>
+        </div><div class="owl-dots disabled">
+
+        </div>
+    </div>
 </div>

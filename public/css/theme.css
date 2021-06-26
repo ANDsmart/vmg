@@ -50,7 +50,7 @@ li {
 #header .header-body {
 	display: flex;
 	flex-direction: column;
-	background: #FFF;
+	background: #035586;
 	transition: min-height 0.3s ease;
 	width: 100%;
 	border-top: 3px solid #EDEDED;
@@ -1209,7 +1209,7 @@ html:not(.sticky-header-active) #header.header-semi-transparent-light .header-bo
 }
 
 html:not(.sticky-header-active) #header.header-semi-transparent-dark .header-body {
-	background-color: rgba(68, 68, 68, 0.4) !important;
+	background-color:#035586 !important;
 }
 
 html:not(.sticky-header-active) #header.header-transparent-light-bottom-border .header-body {
@@ -1892,7 +1892,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 	}
 
 	#header .header-nav.header-nav-stripe nav > ul > li > a {
-		background: transparent;
+		background: red;
 		padding: 0 .9rem;
 		margin: 1px 0 0;
 		height: 100%;
@@ -1978,7 +1978,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 	}
 
 	#header .header-nav.header-nav-links.header-nav-light-text nav > ul > li > a, #header .header-nav.header-nav-line.header-nav-light-text nav > ul > li > a {
-		color: #FFF;
+		color: #ffffff;
 	}
 
 	#header .header-nav.header-nav-links.header-nav-force-light-text nav > ul > li > a, #header .header-nav.header-nav-line.header-nav-force-light-text nav > ul > li > a {
@@ -5835,8 +5835,8 @@ html.dark .text-muted {
 /* RTL */
 /* #Footer */
 #footer {
-	background: #212529;
-	border-top: 4px solid #212529;
+	background: #035586;
+	border-top: 4px solid #88bad3;
 	font-size: 0.9em;
 	margin-top: 50px;
 	padding: 0;
@@ -6163,7 +6163,7 @@ html.dark .text-muted {
 }
 
 #footer .footer-copyright p {
-	color: #555;
+	color: #ffffff;
 	margin: 0;
 	padding: 0;
 	font-size: 0.9em;

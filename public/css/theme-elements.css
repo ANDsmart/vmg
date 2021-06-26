@@ -8690,7 +8690,7 @@ body.page-transition-active {
 	opacity: 0 !important;
 }
 
-/* 
+/*
 Image 360┬║ Viewer
 Credits: Codyhouse (https://codyhouse.co/gem/360-degrees-product-viewer)
 */
@@ -10540,7 +10540,6 @@ html.side-panel.side-panel-open.side-panel-push.side-panel-right .body {
 
 /* Home Slider - Revolution Slider */
 .slider-container {
-	background: #151719;
 	height: 500px;
 	overflow: hidden;
 	width: 100%;
@@ -14675,9 +14674,9 @@ html.boxed section.video > div:first-child video {
 }
 /* Custom Map */
 section.section-custom-map {
-	background: transparent url(../img/map.png) center 0 no-repeat;
-	padding: 129px 0 0;
-	margin: 20px 0 0;
+	/*background: transparent url(../img/map.png) center 0 no-repeat;*/
+	padding: 0 0 0;
+	/*margin: 20px 0 0;*/
 	border: 0;
 }
 
