@@ -4,7 +4,7 @@ return [
 
     'top' => [
         'sales' => 'Sales',
-        'hr' => 'Hr',
+        'hr' => 'MTU',
         'taxes' => 'Taxes',
         'reports' => 'Reports',
         'banking' => 'Banking',

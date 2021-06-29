@@ -22,7 +22,7 @@
                                         <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="{{url('/')}}"> Home <i class="fas fa-chevron-down"></i></a>
 
                                         </li>
-                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"> Hr <i class="fas fa-chevron-down"></i></a>
+                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"> {{trans('menu.top.hr')}} <i class="fas fa-chevron-down"></i></a>
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="page-custom-header.html">Custom Header</a></li>
                                                 <li><a class="dropdown-item" href="page-careers.html">Careers</a></li>
