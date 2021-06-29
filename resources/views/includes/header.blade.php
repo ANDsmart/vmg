@@ -114,22 +114,9 @@
                             <div class="header-nav-feature header-nav-features-search d-inline-flex">
                                 <div class="header-nav-features header-nav-features-light header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
                                     <div class="header-row pt-3">
-                                        <nav class="header-nav-top">
-                                            <ul class="nav nav-pills">
+                                        @include("includes.lang")
 
-                                                <li class="nav-item dropdown nav-item-left-border d-none d-sm-block nav-item-left-border-remove nav-item-left-border-md-show">
-                                                    <a class="nav-link" href="#" role="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true"
-                                                       aria-expanded="false"> <img src="img/blank.gif" class="flag flag-us" alt="English"> English <i
-                                                                class="fas fa-angle-down"></i> </a>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownLanguage"><a class="dropdown-item" href="#"><img
-                                                                    src="img/blank.gif" class="flag flag-us" alt="English"> English</a> <a class="dropdown-item"
-                                                                                                                                           href="#"><img
-                                                                    src="img/blank.gif" class="flag flag-es" alt="English"> Español</a> <a class="dropdown-item"
-                                                                                                                                           href="#"><img
-                                                                    src="img/blank.gif" class="flag flag-fr" alt="English"> Française</a></div>
-                                                </li>
-                                            </ul>
-                                        </nav>
+
                                     </div>
                                 </div>
                             </div>
@@ -139,6 +126,5 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </header>
