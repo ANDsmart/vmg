@@ -45,6 +45,7 @@
     <!-- Demo CSS -->
     {{ Html::style(url('css/demos/demo-landing.css')) }}
     {{ Html::style(url('css/demos/demo-business-consulting.css')) }}
+    {{ Html::style(url('css/demos/demo-business-consulting-2.css')) }}
 
     <!-- Skin CSS -->
 {{--    {{ Html::style(url('css/skins/skin-business-consulting.css')) }}--}}

@@ -5,6 +5,8 @@ namespace App\Http\Middleware;
 use Closure;
 use Carbon\Carbon;
 
+use Illuminate\Http\Request;
+
 /**
  * Class LocaleMiddleware.
  */
@@ -13,12 +15,20 @@ class LocaleMiddleware
     /**
      * Handle an incoming request.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param \Closure                 $next
-     *
+     * //<<<<<<< HEAD
+     * //     * @param \Illuminate\Http\Request $request
+     * //     * @param \Closure $next
+     * //     *
+     * //     * @return mixed
+     * //
+     * @param Request $request
+     * @param Closure $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
+//    public function handle($request, Closure $next)
+//=======
+
+    public function handle(Request $request, Closure $next)
     {
         /*
          * Locale is enabled and allowed to be changed

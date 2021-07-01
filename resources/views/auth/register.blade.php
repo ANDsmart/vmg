@@ -1,77 +1,96 @@
-@extends('layouts.app')
+@extends('cms.layouts.cms', ['title' => __("label.home"), 'header' => __("label.registration")])
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+    {{ Form::open(['url' => 'register', 'autocomplete' => 'off', 'class' => 'needs-validation', 'novalidate']) }}
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+    <section class="card">
+        <div class="card-body">
+            <div class="row">
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                {{--First col for Registration fields--}}
+                <div class="col-md-6">
 
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                    @include('auth.includes.registration_fields')
+
+
+                    <br/>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <div class="required_asterik">
+                                {{ Form::checkbox('term_check',1, false, ['required']) }}
+                                {{ __('label.user_registration.agree_terms', ['url' => '']) }}
+                            </div>
+                            {!! $errors->first('term_check', '<span class="badge badge-danger">:message</span>')!!}
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="element-form">
+                                <div class="form-group pull-left">
+                                    {{ Form::button(trans('label.register'), ['class' => 'btn btn-primary', 'type'=>'submit', 'style' => 'border-radius: 5px;']) }}
+                                </div>
                             </div>
                         </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
+
+                {{--Second col for introduction words--}}
+                <div class="col-md-6 " style="">
+                    <div class="card" style="margin-top: 10px;margin-left: 10px;">
+                        <div class="card-body" style="background-color: whitesmoke">
+                            <h3 class="dark-grey" style="text-align: center"><b>@lang('label.user_registration.instruction_title')
+                                </b></h3><hr>
+                            <p>
+
+                                @lang('label.user_registration.instruction_intro')
+                            </p>
+
+                            <ul>
+
+                                <li>
+                                    <strong>Content 1</strong>
+                                </li>
+                                <p>
+                                    Contents
+                                </p>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
-    </div>
-</div>
+    </section>
+    <br/>
+
+    {{ Form::close() }}
 @endsection
+
+@push('after-script')
+    <script>
+        function refreshCaptcha(){
+            $.ajax({
+                url: "/refereshcapcha",
+                type: 'get',
+                dataType: 'html',
+                success: function(json) {
+                    $('.refereshrecapcha').html(json);
+                },
+                error: function(data) {
+                    alert('Try Again.');
+                }
+            });
+        }
+
+
+    </script>
+@endpush
+
+

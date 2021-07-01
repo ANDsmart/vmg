@@ -1,6 +1,44 @@
 <header id="header" class="header-transparent header-semi-transparent header-semi-transparent-dark header-effect-shrink"
         data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
     <div class="header-body border-top-0  box-shadow-none">
+        <div class="header-top header-top-default header-top-borders border-bottom-0 bg-color-light" style="height: 62px;">
+            <div class="container h-100">
+                <div class="header-row h-100">
+                    <div class="header-column justify-content-between">
+                        <div class="header-row">
+                            <nav class="header-nav-top w-100">
+                                <ul class="nav nav-pills justify-content-between w-100 h-100">
+                                    <li class="nav-item py-2 d-inline-flex">
+<span class="are-you-looking-for-phone py-2 d-flex align-items-center text-color-light font-weight-semibold text-uppercase text-4 mb-4 mb-md-0 appear-animation animated fadeInLeftShorter appear-animation-visible" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500" style="animation-delay: 500ms;">
+									<span>
+										<img width="18" height="25" src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
+									</span>
+									<a class="text-color-dark text-decoration-none" href="tel:123-456-7890">0717 443 616 </a>
+								</span>
+                                    </li>
+
+                                    <li>
+                                        <div class="header-nav-features header-nav-features-light header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+                                            <div class="header-nav-feature header-nav-features-search d-inline-flex">
+                                                <div class="header-nav-features header-nav-features-light header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+                                                    <div class="header-row pt-3">
+                                                        @include("includes.lang")
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="header-container container">
             <div class="header-row">
                 <div class="header-column">
@@ -110,17 +148,6 @@
                             </div>
                         </div>
 
-                        <div class="header-nav-features header-nav-features-light header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
-                            <div class="header-nav-feature header-nav-features-search d-inline-flex">
-                                <div class="header-nav-features header-nav-features-light header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
-                                    <div class="header-row pt-3">
-                                        @include("includes.lang")
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                 </div>

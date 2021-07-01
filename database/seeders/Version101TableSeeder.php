@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 /**
  * Class AccessTableSeeder.
  */
-class Version100TableSeeder extends Seeder
+class Version101TableSeeder extends Seeder
 {
     use DisableForeignKeys;
 

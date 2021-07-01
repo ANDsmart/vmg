@@ -1,4 +1,4 @@
-<section class=" custom-section-padding-2" style="background-color: #88bad3">
+<section class=" custom-section-padding-2 " style="background-color: #88bad3;margin-top: 20px">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -7,12 +7,6 @@
         </div>
     </div>
     <div class="owl-carousel show-nav-title custom-both-sides-shadow custom-dots-position-2 custom-dots-style-1 custom-xs-arrows-style-2 mb-0 owl-theme owl-loaded owl-drag owl-carousel-init" data-plugin-options="{'items': 6, 'loop': false, 'dots': true, 'nav': false}" style="height: auto;">
-
-
-
-
-
-
 
 
 
