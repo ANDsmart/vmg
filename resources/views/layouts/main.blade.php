@@ -37,10 +37,20 @@
     {{ Html::style(url('css/theme-elements.css')) }}
     {{ Html::style(url('css/theme-blog.css')) }}
     {{ Html::style(url('css/theme-shop.css')) }}
+    {{ Html::style(url('vendor/rs-plugin/css/settings.css')) }}
+    {{ Html::style(url('vendor/rs-plugin/css/layers.css')) }}
+    {{ Html::style(url('vendor/rs-plugin/css/navigation.css')) }}
+
 
     <!-- Demo CSS -->
     {{ Html::style(url('css/demos/demo-landing.css')) }}
+    {{ Html::style(url('css/demos/demo-business-consulting.css')) }}
+    {{ Html::style(url('css/demos/demo-business-consulting-2.css')) }}
 
+    <!-- Skin CSS -->
+{{--    {{ Html::style(url('css/skins/skin-business-consulting.css')) }}--}}
+
+    <link rel="stylesheet" href="">
 
 
     <!-- Skin CSS -->
