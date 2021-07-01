@@ -1,4 +1,5 @@
 <?php
+namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Database\TruncateTable;
@@ -22,6 +23,6 @@ class RolesTableSeeder extends Seeder
 //            'isactive' => '1',
 //            'isadmin' => '1',
 //        ]);
-        
+
     }
 }

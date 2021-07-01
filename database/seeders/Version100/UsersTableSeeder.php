@@ -1,4 +1,5 @@
 <?php
+namespace Database\Seeders\Version100;
 
 use Database\DisableForeignKeys;
 use Database\TruncateTable;
@@ -6,7 +7,7 @@ use Illuminate\Database\Seeder;
 
 class UsersTableSeeder extends Seeder
 {
-    use DisableForeignKeys, TruncateTable;
+//    use DisableForeignKeys, TruncateTable;
 
     /**
      * Auto generated seed file
@@ -16,8 +17,8 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
 
-        $this->disableForeignKeys("users");
-        $this->delete('users');
+//        $this->disableForeignKeys("users");
+//        $this->delete('users');
         \DB::table('users')->where('id', 1)->delete();
         $userRepo = new \App\Repositories\Access\UserRepository();
         $user = $userRepo->query()->updateOrCreate([
@@ -25,12 +26,11 @@ class UsersTableSeeder extends Seeder
             'firstname' => 'Administrator',
             'lastname' => 'Administrator',
             'middlename' => 'Administrator',
-            'email' => 'admin@psms.co.tz',
+            'email' => 'admin@vmg.co.tz',
             'phone' => '+255700000000',
-            'password' => bcrypt('psms123?'),
+            'password' => bcrypt('vmg123?'),
             'confirmed' => '1',
         ]);
-        $this->enableForeignKeys("users");
 //
 //        $this->disableForeignKeys('staffs');
 //        $staff = new \App\Repositories\Staff\StaffRepository();
@@ -59,7 +59,7 @@ class UsersTableSeeder extends Seeder
 //                    'role_id' => '1'
 //                )
 //        ));
-        $this->enableForeignKeys("role_user");
+//        $this->enableForeignKeys("role_user");
 
     }
 }

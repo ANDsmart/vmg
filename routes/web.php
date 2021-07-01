@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome')
+        ->with('services',(new \App\Repositories\System\CodeValueRepository())->getServiceForDirectory());
 });
 
 Auth::routes();

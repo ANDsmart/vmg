@@ -45,7 +45,7 @@
                     <div class="header-row">
                         <div class="header-logo">
                             <a href="{{url('/')}}">
-                                <img alt="Porto"  height="100" src="img/vmg1.jpeg">
+                                <img alt="Porto"  height="70" src="img/vmg(2).png">
                             </a>
                         </div>
                     </div>
@@ -57,72 +57,24 @@
                             <div class="header-nav-main header-nav-main-mobile-dark header-nav-main-square header-nav-main-font-md header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
-                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="{{url('/')}}"> Home <i class="fas fa-chevron-down"></i></a>
+                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="{{url('/')}}"> {{trans('label.home')}} <i class="fas fa-chevron-down"></i></a>
 
                                         </li>
-                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"> {{trans('menu.top.hr')}} <i class="fas fa-chevron-down"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="page-custom-header.html">Custom Header</a></li>
-                                                <li><a class="dropdown-item" href="page-careers.html">Careers</a></li>
-                                                <li><a class="dropdown-item" href="page-faq.html">FAQ</a></li>
-                                                <li><a class="dropdown-item" href="page-login.html">Login / Register</a></li>
-                                                <li><a class="dropdown-item" href="page-user-profile.html">User Profile</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"> Recruitment <i class="fas fa-chevron-down"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="page-custom-header.html">Custom Header</a></li>
-                                                <li><a class="dropdown-item" href="page-careers.html">Careers</a></li>
-                                                <li><a class="dropdown-item" href="page-faq.html">FAQ</a></li>
-                                                <li><a class="dropdown-item" href="page-login.html">Login / Register</a></li>
-                                                <li><a class="dropdown-item" href="page-user-profile.html">User Profile</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"> Law <i class="fas fa-chevron-down"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="page-custom-header.html">Custom Header</a></li>
-                                                <li><a class="dropdown-item" href="page-careers.html">Careers</a></li>
-                                                <li><a class="dropdown-item" href="page-faq.html">FAQ</a></li>
-                                                <li><a class="dropdown-item" href="page-login.html">Login / Register</a></li>
-                                                <li><a class="dropdown-item" href="page-user-profile.html">User Profile</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"> Finance <i class="fas fa-chevron-down"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="page-custom-header.html">Custom Header</a></li>
-                                                <li><a class="dropdown-item" href="page-careers.html">Careers</a></li>
-                                                <li><a class="dropdown-item" href="page-faq.html">FAQ</a></li>
-                                                <li><a class="dropdown-item" href="page-login.html">Login / Register</a></li>
-                                                <li><a class="dropdown-item" href="page-user-profile.html">User Profile</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"> Training <i class="fas fa-chevron-down"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="page-custom-header.html">Custom Header</a></li>
-                                                <li><a class="dropdown-item" href="page-careers.html">Careers</a></li>
-                                                <li><a class="dropdown-item" href="page-faq.html">FAQ</a></li>
-                                                <li><a class="dropdown-item" href="page-login.html">Login / Register</a></li>
-                                                <li><a class="dropdown-item" href="page-user-profile.html">User Profile</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"> Compliance <i class="fas fa-chevron-down"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="page-custom-header.html">Custom Header</a></li>
-                                                <li><a class="dropdown-item" href="page-careers.html">Careers</a></li>
-                                                <li><a class="dropdown-item" href="page-faq.html">FAQ</a></li>
-                                                <li><a class="dropdown-item" href="page-login.html">Login / Register</a></li>
-                                                <li><a class="dropdown-item" href="page-user-profile.html">User Profile</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"> Marketing <i class="fas fa-chevron-down"></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="page-custom-header.html">Custom Header</a></li>
-                                                <li><a class="dropdown-item" href="page-careers.html">Careers</a></li>
-                                                <li><a class="dropdown-item" href="page-faq.html">FAQ</a></li>
-                                                <li><a class="dropdown-item" href="page-login.html">Login / Register</a></li>
-                                                <li><a class="dropdown-item" href="page-user-profile.html">User Profile</a></li>
-                                            </ul>
-                                        </li>
+
+                                        @foreach($services as $code_value)
+                                            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">  {{ __('label.services.directory.'. $code_value->id) }} <i class="fas fa-chevron-down"></i></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="page-custom-header.html">Custom Header</a></li>
+                                                    <li><a class="dropdown-item" href="page-careers.html">Careers</a></li>
+                                                    <li><a class="dropdown-item" href="page-faq.html">FAQ</a></li>
+                                                    <li><a class="dropdown-item" href="page-login.html">Login / Register</a></li>
+                                                    <li><a class="dropdown-item" href="page-user-profile.html">User Profile</a></li>
+                                                </ul>
+                                            </li>
+
+                                        @endforeach
+
+
 
 
                                     </ul>
