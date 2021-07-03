@@ -1,8 +1,8 @@
 <header class="header">
     <div class="logo-container">
-{{--        <a href="{{route('cms.dashboard.index')}}" class="logo">--}}
-{{--            <img src="{{asset('cms/img/download.jpeg')}}" width="75" height="35" alt="Porto Admin">--}}
-{{--        </a>--}}
+        <a href="{{route('cms.dashboard.index')}}" class="logo">
+            <img height="60" src="{{url('img/vmg.png')}}" alt="Porto Admin">
+        </a>
         <div class="d-md-none toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
             <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
         </div>

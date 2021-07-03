@@ -43,6 +43,7 @@ Route::get('/{locale}', function ($locale) {
 
 //\Composer\Autoload\includeFile(__DIR__.'/Cms');
 require __DIR__.'/Cms/dashboard.php';
+require __DIR__.'/Cms/service.php';
 require __DIR__.'/Cms/blog.php';
 require __DIR__.'/Cms/category.php';
 require __DIR__.'/Cms/faq.php';

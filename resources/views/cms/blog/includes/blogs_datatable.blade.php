@@ -5,7 +5,7 @@
     </div>
 
     <div class="col-md-4">
-        <a href="{{route('cms.blog.create')}}" type="button" class="mb-1 mt-1 mr-1 btn btn-xs btn-primary pull-right">New Post</a>
+        <a href="{{route('cms.service.create')}}" type="button" class="mb-1 mt-1 mr-1 btn btn-xs btn-primary pull-right">Create service</a>
     </div>
 </div>
 <div class="row">
@@ -16,7 +16,6 @@
                 <th>@lang('label.sn')</th>
                 <th>{{ __('label.title') }}</th>
                 <th>{{ __('label.category') }}</th>
-                <th>{{ __('label.blog.publish_on') }}</th>
                 <th>{{ __('label.status') }}</th>
             </tr>
             </thead>
@@ -31,19 +30,18 @@
             processing: true,
             serverSide: true,
             ajax:{
-                url : '{{ route('cms.blog.get_all_for_dt') }}',
+                url : '{{ route('cms.service.get.admin_data') }}',
                 type : 'get'
             },
             columns: [
                 { data: 'DT_Row_Index', name: 'DT_Row_Index', orderable: false, searchable: false},
                 { data: 'title', name: 'title', orderable: false, searchable: true },
-                { data: 'category', name: 'category', orderable: false, searchable: false },
-                { data: 'publish_on', name: 'publish_on', orderable: false, searchable: false },
+                { data: 'service_type_cv_id', name: 'service_type_cv_id', orderable: false, searchable: false },
                 { data: 'status', name: 'status', orderable: false, searchable: false },
             ],
             "fnRowCallback": function(nRow, aData, iDisplayIndex, iDisplayIndexFull) {
                 $(nRow).click(function() {
-                    document.location.href = url + "/cms/blog/show/" + aData['uuid'] ;
+                    document.location.href = url + "/cms/service/show/" + aData['uuid'] ;
                 }).hover(function() {
                     $(this).css('cursor','pointer');
                 }, function() {

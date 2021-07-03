@@ -1,5 +1,4 @@
 <?php
-
 if (!function_exists('get_uri')) {
     /**
      * Determine the requested url path name
@@ -132,6 +131,10 @@ if (! function_exists('code_value')) {
         return app('code_value');
     }
 }
+
+
+
+
 
 if (! function_exists('alert')) {
     /**

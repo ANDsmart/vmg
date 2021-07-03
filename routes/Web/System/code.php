@@ -7,9 +7,12 @@ Route::group([
 ], function() {
 
 
-    Route::resource('code', 'CodeController', ['except' => ['show']]);
+//    Route::resource('code', [\App\Http\Controllers\System\CodeController::class], ['except' => ['show']]);
 
     Route::group([ 'prefix' => 'code',  'as' => 'code.'], function() {
+
+        Route::get('/', [\App\Http\Controllers\System\CodeController::class,'index'])->name('index');
+
 
         Route::get('/values/{code}', 'CodeController@getCodeValues')->name('values');
 

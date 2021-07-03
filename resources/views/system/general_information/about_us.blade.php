@@ -274,62 +274,6 @@
 
 @push('after-scripts')
     <script>
-        function mySubscription(e){
-            var email  = $('#email').val();
-            if ( email.length == 0) {
-                $('#email_erros').empty();
-                if (email.length == 0)
-                {
-                    $('#email_erros').append(`<p id="client_errors" style="color: red">Email required</p>`);
-                }
 
-                return false;
-            }
-
-            if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email))
-            {
-                return true;
-            }else {
-                $('#email_erros').empty();
-
-                $('#email_erros').append(`<p id="client_errors" style="color: red">Invalid Email</p>`);
-                return false;
-            }
-
-            ValidateEmail(email);
-            var data = {
-                'email' : email,
-            };
-            var url = '{{route('general_information.newsletter_subscription')}}';
-            $.ajax({
-                type: 'post',
-                url: url,
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                data: data,
-                cache: false,
-
-                success: function (response) {
-                    if (response) {
-                        $('#email_erros').empty();
-                        document.getElementById("success_alert").append('');
-                        document.getElementById("news-subcribeform").reset();
-                        document.getElementById("success_alert").append('Successfully!! Thank you for subscribed!');
-                        document.getElementById("success_alert").style.display ="block";
-                    }
-                },
-            }).done(
-
-            );
-        }
-
-        function ValidateEmail(mail)
-        {
-
-
-        }
-
-        //va
     </script>
 @endpush

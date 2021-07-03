@@ -84,6 +84,14 @@
                     </li>
 
                     <li>
+                        <a class="nav-link" href="{!! route('cms.service.index') !!}">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                            <span>{!! __('label.service') !!}  <br/>
+                                </span>
+                        </a>
+                    </li>
+
+                    <li>
                         <a class="nav-link" href="{!! route('cms.user_manual.module_groups') !!}">
                             <i class="fas fa-align-center" aria-hidden="true"></i>
                             <span>{!! __('label.user_manual') !!}  <br/>

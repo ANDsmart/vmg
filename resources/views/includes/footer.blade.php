@@ -6,8 +6,8 @@
         <div class="row py-5 my-4">
             <div class="col-md-7 col-lg-4 mb-5 mb-lg-0 pt-3">
                 <h5 class="text-3 mb-3">ABOUT US</h5>
-                <p style="color:#fff3f2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna semper scelerisque.</p>
-                <p class="mb-0"><a href="#" class="btn-flat btn-xs text-color-light p-relative top-5"><strong class="text-2">VIEW MORE</strong><i class="fas fa-angle-right p-relative top-1 pl-2"></i></a></p>
+                <p style="color:#fff3f2">Vipaji Inc corporate Limited has been established as a management and human resource consultancy in Tanzania. It is a consultative advisory organization on employment, management, and labour related matters. The company traditional business model is based on the accomplishment of management and human resources services. Based on the decision of the company to diversify our services; we have now established this company in Dar es Salaam.</p>
+                <p class="mb-0"><a href="{{route('general_information.about_us')}}" class="btn-flat btn-xs text-color-light p-relative top-5"><strong class="text-2">VIEW MORE</strong><i class="fas fa-angle-right p-relative top-1 pl-2"></i></a></p>
             </div>
             <div class="col-md-5 col-lg-3 mb-5 mb-lg-0 pt-3">
                 <h5 class="text-3 mb-3 pb-1" style="color:#fff3f2">CONTACT US</h5>
@@ -26,7 +26,7 @@
             </div>
             <div class="col-lg-5 pt-3">
                 <h5 class="text-3 mb-3 pb-1">SEND US A MESSAGE</h5>
-                <form class="contact-form" action="https://preview.oklerthemes.com/porto/8.0.0/php/contact-form.php" method="POST" novalidate="novalidate">
+                <form class="contact-form" action="#" method="POST" novalidate="novalidate">
                     <input type="hidden" value="Contact Form" name="subject" id="subject">
                     <div class="contact-form-success alert alert-success d-none">
                         Message has been sent to us.
