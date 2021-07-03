@@ -3,25 +3,10 @@
         <div class="row">
             <div class="col-md-6 col-lg-6">
                 <h2 class="font-weight-bold text-color-dark">- About Us</h2>
-                <p class="pl-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat ex finibus urna tincidunt, auctor ullamcorper risus luctus. Nunc et feugiat arcu, in placerat risus. Phasellus condimentum sapien vitae.</p>
+                <p class="pl-4">Vipaji Inc corporate Limited has been established as a management and human resource consultancy in Tanzania. It is a consultative advisory organization on employment, management, and labour related matters. The company traditional business model is based on the accomplishment of management and human resources services. Based on the decision of the company to diversify our services; we have now established this company in Dar es Salaam.
+                </p>
                 <div class="pl-4">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list list-icons list-icons-style-3 list-tertiary">
-                                <li><i class="fas fa-chevron-right"></i> Certified Professionals</li>
-                                <li><i class="fas fa-chevron-right"></i> Former Chief Executives</li>
-                                <li><i class="fas fa-chevron-right"></i> Real Estate Professionals</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="list list-icons list-icons-style-3 list-tertiary">
-                                <li><i class="fas fa-chevron-right"></i> Nobel Laureate Economists</li>
-                                <li><i class="fas fa-chevron-right"></i> Former Political Leaders</li>
-                                <li><i class="fas fa-chevron-right"></i> Chartered Financial Analysts</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a class="btn btn-outline custom-border-width btn-primary mt-3 mb-2 custom-border-radius font-weight-semibold text-uppercase" href="demo-business-consulting-about-us.html">Read More</a>
+                    <a class="btn btn-outline custom-border-width btn-primary mt-3 mb-2 custom-border-radius font-weight-semibold text-uppercase" href="{{route('general_information.about_us')}}">Read More</a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6">

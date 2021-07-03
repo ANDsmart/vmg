@@ -50,7 +50,7 @@ li {
 #header .header-body {
 	display: flex;
 	flex-direction: column;
-	background: #035586;
+	background: #ffffff;
 	transition: min-height 0.3s ease;
 	width: 100%;
 	border-top: 3px solid #EDEDED;
@@ -203,7 +203,7 @@ li {
 }
 
 #header .header-top.header-top-default {
-	background: #f7f7f7;
+	background: #035586;
 }
 
 #header .header-top.header-top-borders {
@@ -1209,7 +1209,7 @@ html:not(.sticky-header-active) #header.header-semi-transparent-light .header-bo
 }
 
 html:not(.sticky-header-active) #header.header-semi-transparent-dark .header-body {
-	background-color:#035586 !important;
+	background-color:#ffffff !important;
 }
 
 html:not(.sticky-header-active) #header.header-transparent-light-bottom-border .header-body {
@@ -1978,7 +1978,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 	}
 
 	#header .header-nav.header-nav-links.header-nav-light-text nav > ul > li > a, #header .header-nav.header-nav-line.header-nav-light-text nav > ul > li > a {
-		color: #ffffff;
+		color: #035586;
 	}
 
 	#header .header-nav.header-nav-links.header-nav-force-light-text nav > ul > li > a, #header .header-nav.header-nav-line.header-nav-force-light-text nav > ul > li > a {

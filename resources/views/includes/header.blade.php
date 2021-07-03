@@ -1,7 +1,7 @@
 <header id="header" class="header-transparent header-semi-transparent header-semi-transparent-dark header-effect-shrink"
         data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
     <div class="header-body border-top-0  box-shadow-none">
-        <div class="header-top header-top-default header-top-borders border-bottom-0 bg-color-light" style="height: 62px;">
+        <div class="header-top header-top-default header-top-borders border-bottom-0" style="height: 62px;">
             <div class="container h-100">
                 <div class="header-row h-100">
                     <div class="header-column justify-content-between">
@@ -11,9 +11,9 @@
                                     <li class="nav-item py-2 d-inline-flex">
 <span class="are-you-looking-for-phone py-2 d-flex align-items-center text-color-light font-weight-semibold text-uppercase text-4 mb-4 mb-md-0 appear-animation animated fadeInLeftShorter appear-animation-visible" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500" style="animation-delay: 500ms;">
 									<span>
-										<img width="18" height="25" src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
+										<img width="18" height="25" src="{{url('img/demos/business-consulting-2/icons/phone.svg')}}" alt="Phone" >
 									</span>
-									<a class="text-color-dark text-decoration-none" href="tel:123-456-7890">0717 443 616 </a>
+									<a class="text-color-light text-decoration-none" href="tel:123-456-7890" style="color:#ffffff">0717 443 616 </a>
 								</span>
                                     </li>
 
@@ -45,7 +45,7 @@
                     <div class="header-row">
                         <div class="header-logo">
                             <a href="{{url('/')}}">
-                                <img alt="Porto"  height="70" src="img/vmg(2).png">
+                                <img alt="Porto"  height="90" src="{{url('img/vmg.png')}}">
                             </a>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
 
                                         </li>
 
-                                        @foreach($services as $code_value)
+                                        @foreach((new \App\Repositories\System\CodeValueRepository())->getServiceForDirectory() as $code_value)
                                             <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">  {{ __('label.services.directory.'. $code_value->id) }} <i class="fas fa-chevron-down"></i></a>
                                                 <ul class="dropdown-menu">
                                                     <li><a class="dropdown-item" href="page-custom-header.html">Custom Header</a></li>

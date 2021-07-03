@@ -51,3 +51,4 @@ require __DIR__.'/Cms/user_manual.php';
 require __DIR__.'/Cms/testimonial.php';
 require __DIR__.'/Admin/ManageUser/user_manage.php';
 require __DIR__.'/Admin/admin.php';
+require __DIR__.'/Public/general_information.php';
