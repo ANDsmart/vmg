@@ -63,7 +63,7 @@
                                             <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">  {{ __('label.services.directory.'. $code_value->id) }} <i class="fas fa-chevron-down"></i></a>
                                                 <ul class="dropdown-menu">
                                                     @foreach((new \App\Repositories\Resource\ServiceRepository())->getServiceByServiceDirectory($code_value->id) as $service)
-                                                    <li><a class="dropdown-item" href="page-custom-header.html">{{$service->title}}</a></li>
+                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',$service->id)}}">{{$service->title}}</a></li>
                                                         @endforeach
                                                 </ul>
                                             </li>

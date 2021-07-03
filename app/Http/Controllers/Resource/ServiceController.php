@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Resource;
 
 
 use App\Http\Controllers\Controller;
+use App\Models\Resource\Service;
 use App\Repositories\Resource\ServiceRepository;
 use App\Repositories\System\CodeValueRepository;
 use Illuminate\Http\Request;
@@ -46,6 +47,13 @@ class ServiceController extends Controller
         return redirect()->route('cms.service.index');
     }
 
+
+    public function display($service)
+    {
+        $service = Service::find($service);
+        return view('system.service.service')
+            ->with('service',$service);
+    }
 
     /**
      *list all blog
