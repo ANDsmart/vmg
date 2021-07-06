@@ -41,7 +41,7 @@
             ],
             "fnRowCallback": function(nRow, aData, iDisplayIndex, iDisplayIndexFull) {
                 $(nRow).click(function() {
-                    document.location.href = url + "/cms/service/show/" + aData['uuid'] ;
+                    document.location.href = url + "/cms/service/profile/" + aData['uuid'] ;
                 }).hover(function() {
                     $(this).css('cursor','pointer');
                 }, function() {

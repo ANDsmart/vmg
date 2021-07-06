@@ -9,7 +9,7 @@ Route::group([
         Route::get('/index', [\App\Http\Controllers\Resource\ServiceController::class,'index'])->name('index');
         Route::get('/create', [\App\Http\Controllers\Resource\ServiceController::class,'create'])->name('create');
         Route::post('/store', [\App\Http\Controllers\Resource\ServiceController::class,'store'])->name('store');
-        Route::post('/update/{service}', [\App\Http\Controllers\Resource\ServiceController::class,'store'])->name('update');
+        Route::put('/update/{service}', [\App\Http\Controllers\Resource\ServiceController::class,'update'])->name('update');
         Route::get('/profile/{service}',  [\App\Http\Controllers\Resource\ServiceController::class,'profile'])->name('profile');
         Route::get('/edit/{service}',  [\App\Http\Controllers\Resource\ServiceController::class,'edit'])->name('edit');
         Route::get('/delete/{service}',  [\App\Http\Controllers\Resource\ServiceController::class,'destroy'])->name('delete');

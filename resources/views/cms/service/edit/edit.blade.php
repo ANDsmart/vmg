@@ -1,6 +1,5 @@
-@extends('cms.layouts.cms', ['title' => __("label.blog.create"), 'header' => __("label.blog.create")])
+@extends('cms.layouts.cms', ['title' => __("label.service.create"), 'header' => __("label.service.create")])
 
-@include('includes.datetimepicker')
 @push('after-styles')
     <style>
         [data-toggle="collapse"] .fa:before {
@@ -16,7 +15,7 @@
 @section("content")
     <div class="card">
         <div class="card-body">
-            {!! Form::open(['route' => ['cms.blog.update',$blog->uuid],'method'=>'put', 'autocomplete' => 'off',  'id' =>'store_blog', 'class' => 'form-horizontal needs-validation', 'novalidate','enctype'=>"multipart/form-data"]) !!}
+            {!! Form::open(['route' => ['cms.service.update',$service->uuid],'method'=>'put', 'autocomplete' => 'off',  'id' =>'store_service', 'class' => 'form-horizontal needs-validation', 'novalidate','enctype'=>"multipart/form-data"]) !!}
             {!! Form::hidden('action_type', 2, []) !!}
 
             <div class="row">
@@ -24,18 +23,17 @@
 
                 </div>
                 <div class="col-md-6">
-{{--                    <button type="button" class="mb-1 mt-1 mr-1 btn btn-primary btn-xs pull-right"><i class="fas fa-paper-plane"></i> {{trans('label.blog.publish')}}</button>--}}
+{{--                    <button type="button" class="mb-1 mt-1 mr-1 btn btn-primary btn-xs pull-right"><i class="fas fa-paper-plane"></i> {{trans('label.service.publish')}}</button>--}}
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    @include('cms.blog.edit.includes.post_info')
-                    @include('cms.blog.edit.includes.post_setting')
+                    @include('cms.service.edit.includes.post_info')
 
                 </div>
 
                 <div class="col-md-6">
-                    @include('cms.includes.edit_images')
+{{--                    @include('cms.includes.edit_images')--}}
 
                 </div>
             </div>
@@ -43,7 +41,7 @@
             <hr>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    {!! link_to_route('cms.blog.index',trans('buttons.general.cancel'),[],['id'=> 'cancel', 'class' => 'btn btn-primary btn-xs cancel_button', ]) !!}
+                    {!! link_to_route('cms.service.index',trans('buttons.general.cancel'),[],['id'=> 'cancel', 'class' => 'btn btn-primary btn-xs cancel_button', ]) !!}
                     {!! Form::button(trans('label.save'), ['class' => 'btn btn-primary btn-xs','id' => 'save_btn', 'type'=>'submit']) !!}
                 </div>
 
@@ -121,13 +119,13 @@
 
 
 
-            //save blog before publish
+            //save service before publish
             {{--$(document).on('click','#save_btn',function (e) {--}}
             {{--    e.preventDefault();--}}
             {{--    var title = $('#title').val();--}}
             {{--    // var description = $('#editor').val();--}}
             {{--    var description = theEditor.getData();--}}
-            {{--    var category  = $('#blog_category').val();--}}
+            {{--    var category  = $('#service_category').val();--}}
             {{--    var publish_date  = $('#publish_date').val();--}}
             {{--    var publish_time  = $('#publish_time').val();--}}
             {{--    var data = {--}}
@@ -139,8 +137,8 @@
 
             {{--    };--}}
             {{--    console.log(data)--}}
-            {{--    var formData = new FormData(document.getElementById( 'store_blog'));--}}
-            {{--    var url = '{{route('cms.blog.store')}}';--}}
+            {{--    var formData = new FormData(document.getElementById( 'store_service'));--}}
+            {{--    var url = '{{route('cms.service.store')}}';--}}
             {{--    $.ajax({--}}
             {{--        type: 'post',--}}
             {{--        url: url,--}}

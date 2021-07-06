@@ -55,6 +55,30 @@ class ServiceController extends Controller
             ->with('service',$service);
     }
 
+    public function profile(Service $service)
+    {
+        return view('cms.service.show.show')
+            ->with('service',$service);
+    }
+
+    public function edit(Service $service)
+    {
+        $service_types = (new CodeValueRepository())->getServiceForDirectory()->pluck('name','id');
+
+        return view('cms.service.edit.edit')
+            ->with('service_types',$service_types)
+            ->with('service',$service);
+    }
+
+    //update note
+    public function update(Request $request,Service $service)
+    {
+        $input = $request->all();
+        $blog = $this->service_repo->update($input,$service);
+        return redirect()->route('cms.service.index')->withFlashSuccess(trans('alert.general.updated'));
+
+    }
+
     /**
      *list all blog
      */

@@ -35,15 +35,30 @@ class ServiceRepository extends BaseRepository
     public function store(array $input)
     {
         return DB::transaction(function() use($input){
-            $blog_category = $this->query()->firstOrCreate([
+            $service = $this->query()->firstOrCreate([
                 'title' => $input['title'],
                 'service_type_cv_id' => $input['service_type_cv_id'],
                 'content' => $input['content'],
                 'user_id' => Auth::id(),
             ]);
-            return $blog_category;
+            return $service;
         });
     }
+
+    /*Insert/create PaylollCompliance*/
+    public function update(array $input,$service)
+    {
+        return DB::transaction(function() use($input,$service){
+            $service = $service->update([
+                'title' => $input['title'],
+                'service_type_cv_id' => $input['service_type_cv_id'],
+                'content' => $input['content'],
+                'user_id' => Auth::id(),
+            ]);
+            return $service;
+        });
+    }
+
 
 
 
