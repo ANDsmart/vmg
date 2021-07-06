@@ -4,7 +4,6 @@ namespace App\Repositories\Cms;
 
 use App\Models\Cms\Client;
 use App\Models\System\Region;
-use App\Notifications\Cms\SendTestimonialLinkNotification;
 use App\Repositories\BaseRepository;
 use App\Repositories\System\DocumentResourceRepository;
 use Illuminate\Database\Eloquent\Model;
@@ -29,21 +28,21 @@ class ClientRepository extends BaseRepository
             $client = $this->query()->create([
                 'name' => $input['name'],
                 'tin' => $input['tin'],
-                'phone' => isset($input['phone']) ? phone_make($input['phone'], 'TZ') : $input['phone'],
-                'telephone' => isset($input['telephone']) ? phone_make($input['telephone'], 'TZ') : $input['telephone'],
+                'phone' => ($input['phone']) ,
+                'telephone' => ($input['telephone']),
                 'email' => $input['email'],
                 'web' => $input['web'],
                 'box_no' => $input['box_no'],
                 'address' => $input['address'],
                 'region_id'=> $input['region'],
                 'contact_person' => $input['contact_person'],
-                'contact_person_phone' => isset($input['contact_person_phone']) ? phone_make($input['contact_person_phone'], 'TZ') : $input['contact_person_phone'],
+                'contact_person_phone' => ($input['contact_person_phone']),
                 'iscompany' => isset($input['iscompany'])? $input['iscompany']:0,
                 'note' => $input['note'],
 //                'external_id' => $input['external_id'],
             ]);
             /*Save document(s) attached*/
-            $this->saveDocuments($client->id,$input);
+//            $this->saveDocuments($client->id,$input);
 
             /*Reconcile*/
 
@@ -59,15 +58,15 @@ class ClientRepository extends BaseRepository
             $client->update([
                 'name' => $input['name'],
                 'tin' => $input['tin'],
-                'phone' => isset($input['phone']) ? phone_make($input['phone'], 'TZ') : $input['phone'],
-                'telephone' => isset($input['telephone']) ? phone_make($input['telephone'], 'TZ') : $input['telephone'],
+                'phone' => ($input['phone']) ,
+                'telephone' =>  $input['telephone'],
                 'email' => $input['email'],
                 'web' => $input['web'],
                 'box_no' => $input['box_no'],
                 'address' => $input['address'],
                 'region_id' => $input['region'],
                 'contact_person' => $input['contact_person'],
-                'contact_person_phone' => isset($input['contact_person_phone']) ? phone_make($input['contact_person_phone'], 'TZ') : $input['contact_person_phone'],
+                'contact_person_phone' =>  $input['contact_person_phone'],
                 'iscompany' => isset($input['iscompany'])? $input['iscompany']:0,
                 'note' => $input['note'],
 //                'external_id' => $input['external_id'],

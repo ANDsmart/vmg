@@ -18,7 +18,6 @@
     {{ Form::hidden('today', getTodayDate(), []) }}
     <section class="card">
         <div class="card-body">
-            <p>{{ getLanguageBlock('lang.auth.mandatory-field') }}
             </p>
             <div class="row">
                 <div class="col-md-6">
@@ -131,7 +130,7 @@
                                     <div
                                             class="form-group">
                                         {{ Form::label('region', __('label.region'), ['class' =>'']) }}
-                                        {{ Form::select('region',code_value()->getRegionForSelect(),$client->region_id,['class'=>'form-control select2', 'id' => 'region','placeholder' => '', 'autocomplete' => 'off']) }}
+                                        {{ Form::select('region',(new \App\Repositories\System\CodeValueRepository())->getRegionForSelect(),$client->region_id,['class'=>'form-control select2', 'id' => 'region','placeholder' => '', 'autocomplete' => 'off']) }}
                                         {!!  $errors->first('region', '<span class="badge badge-danger">:message</span>') !!}
                                     </div>
 
@@ -206,7 +205,6 @@
                                         @endif
                                         {{ Form::file('client_logo',[]) }}
                                         <br>
-                                        {!! max_file_size_helper() !!}
                                         {!! $errors->first('client_logo', '<span class="badge badge-danger">:message</span>') !!}
                                     </div>
                                 </div>

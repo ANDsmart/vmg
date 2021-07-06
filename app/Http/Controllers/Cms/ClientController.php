@@ -51,7 +51,7 @@ class ClientController extends Controller
      * @param ClientRequest $request
      * @return
      */
-    public function store(ClientRequest $request)
+    public function store(Request $request)
     {
             $input = $request->all();
             $client = $this->client_repo->store($input);
@@ -59,17 +59,7 @@ class ClientController extends Controller
     }
 
 
-    /**
-     *Quick add client from sales pages
-     * @param AddClientModalRequest $request
-     * @return
-     */
-    public function quickStoreFromSales(AddClientModalRequest $request)
-    {
-        $input = $request->all();
-        $client = $this->client_repo->quickStoreFromSales($input);
-        return redirect()->back()->withFlashSuccess(__('alert.general.created'));
-    }
+
 
 
     /**
@@ -93,7 +83,7 @@ class ClientController extends Controller
      * @param Client $client
      * @return
      */
-    public function update(ClientRequest $request, Client $client)
+    public function update(Request $request, Client $client)
     {
         $input = $request->all();
         $client = $this->client_repo->update($client, $input);
