@@ -7,6 +7,7 @@ use App\Models\Auth\User;
 use App\Models\Cms\Blog;
 use App\Models\Cms\Client;
 use App\Models\Cms\ModuleFunctionalPart;
+use App\Models\Resource\Service;
 use App\Models\System\Document;
 use App\Repositories\BaseRepository;
 
@@ -65,6 +66,9 @@ class DocumentRepository extends BaseRepository
                 break;
             case 3:
                 $resource = ModuleFunctionalPart::query()->find($resource_id);
+                break;
+                case 4:
+                $resource = Service::query()->find($resource_id);
                 break;
 
 

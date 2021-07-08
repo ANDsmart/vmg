@@ -6,6 +6,7 @@ namespace App\Repositories\Resource;
 
 use App\Models\Resource\Service;
 use App\Repositories\BaseRepository;
+use App\Repositories\System\DocumentResourceRepository;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
@@ -41,6 +42,9 @@ class ServiceRepository extends BaseRepository
                 'content' => $input['content'],
                 'user_id' => Auth::id(),
             ]);
+
+            //serve image
+            $this->saveDocuments($service->id,$input);
             return $service;
         });
     }
@@ -55,8 +59,23 @@ class ServiceRepository extends BaseRepository
                 'content' => $input['content'],
                 'user_id' => Auth::id(),
             ]);
+
+            //serve image
+            $this->saveDocuments($service->id,$input);
             return $service;
         });
+    }
+
+
+
+    /*Save document(s) attached on the form*/
+    public function saveDocuments($service_id, array $input)
+    {
+        $document_resource_repo = new DocumentResourceRepository();
+        if((request()->file('service_image'))){
+            $document_resource_repo->saveDocument($service_id,4,'service_image', $input);
+        }
+
     }
 
 

@@ -16,6 +16,25 @@
 
     </div>
 </div>
+
+<div class="row form-group ">
+    <div class="col-sm-12">
+        <div class="row">
+
+            <div class="col-xs-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    {{ Form::label('service_image', __('label.logo'), ['class' =>'']) }}<br>
+                    {{ Form::file('service_image',[]) }}
+                    <br>
+                    {!!  $errors->first('service_image', '<span class="badge badge-danger">:message</span>') !!}
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
 <div class="row mt-2" >
     <div class="col-lg-12">
         {!! Form::label('content', __("label.content"), ['class' => 'required_asterik']) !!}
@@ -24,5 +43,4 @@
         {!! $errors->first('content', '<span class="badge badge-danger">:message</span>') !!}
 
     </div>
-
 </div>

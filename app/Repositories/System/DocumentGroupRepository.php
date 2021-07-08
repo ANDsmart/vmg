@@ -37,7 +37,7 @@ class DocumentGroupRepository extends BaseRepository
         foreach ($doc_groups as $doc_group){
             $top_path = $doc_group->top_path;
             if($top_path){
-                $path = base_doc_dir() . $top_path;
+                $path = public_path() . '/storage' . $top_path;
                 $this->makeDirectory($path);
             }
         }

@@ -1,4 +1,5 @@
 <?php
+namespace Database\Seeders\Version100;
 
 use Illuminate\Database\Seeder;
 use Database\TruncateTable;
@@ -6,7 +7,7 @@ use Database\DisableForeignKeys;
 
 class DocumentsTableSeeder extends Seeder
 {
-    use DisableForeignKeys, TruncateTable;
+//    use DisableForeignKeys, TruncateTable;
     /**
      * Auto generated seed file
      *
@@ -16,8 +17,8 @@ class DocumentsTableSeeder extends Seeder
     {
 
 
-        $this->disableForeignKeys("documents");
-        $this->delete('documents');
+//        $this->disableForeignKeys("documents");
+//        $this->delete('documents');
 
         \DB::table('documents')->insert(array (
             0 => array (
@@ -50,12 +51,21 @@ class DocumentsTableSeeder extends Seeder
                     'isrenewable' => 1,
                     'isactive' => 1,
                 ),
-
+            3 => array (
+                'id' => 4,
+                'name' => 'Service attachment',
+                'document_group_id' => 4,
+                'description' => 'This is services documents',
+                'isrecurring' => 1,
+                'ismandatory' => 1,
+                'isrenewable' => 1,
+                'isactive' => 1,
+            ),
 
 
         ));
 
-        $this->enableForeignKeys("documents");
+//        $this->enableForeignKeys("documents");
 
     }
 }

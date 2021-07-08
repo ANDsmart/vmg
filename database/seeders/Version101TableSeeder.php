@@ -2,12 +2,38 @@
 namespace Database\Seeders;
 
 
+use CountriesTableSeeder;
+use CurrenciesTableSeeder;
 use Database\Seeders\Version100\CodesTableSeeder;
 use Database\Seeders\Version100\CodeValuesTableSeeder;
+use Database\Seeders\Version100\DocumentGroupsTableSeeder;
+use Database\Seeders\Version100\DocumentsTableSeeder;
 use Database\Seeders\Version100\UsersTableSeeder;
+use DesignationsTableSeeder;
+use DistrictsTableSeeder;
+
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 use Database\DisableForeignKeys;
 use Illuminate\Support\Facades\DB;
+use ModuleGroupTableSeeder;
+use ModulesTableSeeder;
+use PermissionGroupTableSeeder;
+use PermissionRoleTableSeeder;
+use PermissionsTableSeeder;
+use RegionsTableSeeder;
+use ReportGroupReportTableSeeder;
+use ReportGroupTableSeeder;
+use ReportsTableSeeder;
+use ReportTypesTableSeeder;
+use SysdefGroupTableSeeder;
+use SysdefsTableSeeder;
+use UnitGroupsTableSeeder;
+use UnitsTableSeeder;
+use WfDefinitionsTableSeeder;
+use WfGroupCategoriesTableSeeder;
+use WfModuleGroupsTableSeeder;
+use WfModulesTableSeeder;
 
 /**
  * Class AccessTableSeeder.
@@ -23,6 +49,10 @@ class Version101TableSeeder extends Seeder
      */
     public function run()
     {
+        Model::unguard();
+
+        //disable foreign key check for this connection before running seeders
+
         DB::beginTransaction();
 
 
@@ -32,15 +62,11 @@ class Version101TableSeeder extends Seeder
 //        $this->call(PermissionRoleTableSeeder::class);
         $this->call(CodesTableSeeder::class);
         $this->call(CodeValuesTableSeeder::class);
-//        $this->call(DocumentGroupsTableSeeder::class);
-//        $this->call(DocumentsTableSeeder::class);
+        $this->call(DocumentGroupsTableSeeder::class);
+        $this->call(DocumentsTableSeeder::class);
 //        $this->call(DesignationsTableSeeder::class);
 //        $this->call(UnitGroupsTableSeeder::class);
 //        $this->call(UnitsTableSeeder::class);
-//        $this->call(WfGroupCategoriesTableSeeder::class);
-//        $this->call(WfModuleGroupsTableSeeder::class);
-//        $this->call(WfModulesTableSeeder::class);
-//        $this->call(WfDefinitionsTableSeeder::class);
 //        $this->call(SysdefGroupTableSeeder::class);
 //        $this->call(SysdefsTableSeeder::class);
 //        $this->call(CurrenciesTableSeeder::class);

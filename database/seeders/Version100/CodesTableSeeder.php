@@ -1,13 +1,15 @@
 <?php
 namespace Database\Seeders\Version100;
 
+use Database\DisableForeignKey;
+use Database\TruncateTables;
 use Illuminate\Database\Seeder;
-use Database\TruncateTable;
-use Database\DisableForeignKeys;
+
+use Illuminate\Support\Facades\DB;
 
 class CodesTableSeeder extends Seeder
 {
-//    use DisableForeignKeys, TruncateTable;
+//    use DisableForeignKey, TruncateTables;
 
     /**
      * Auto generated seed file
@@ -21,7 +23,8 @@ class CodesTableSeeder extends Seeder
 //        $this->disableForeignKeys("codes");
 //        $this->delete('codes');
 
-        \DB::table('codes')->insert(array (
+        DB::table('codes')->truncate();
+        DB::table('codes')->insert(array (
 
             0 => array (
                 'id' => 1,

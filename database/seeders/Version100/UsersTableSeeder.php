@@ -4,6 +4,7 @@ namespace Database\Seeders\Version100;
 use Database\DisableForeignKeys;
 use Database\TruncateTable;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class UsersTableSeeder extends Seeder
 {
@@ -17,9 +18,10 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
 
+//        DB::table('users')->delete();
 //        $this->disableForeignKeys("users");
 //        $this->delete('users');
-        \DB::table('users')->where('id', 1)->delete();
+        DB::table('users')->where('id', 1)->delete();
         $userRepo = new \App\Repositories\Access\UserRepository();
         $user = $userRepo->query()->updateOrCreate([
             'username' => 'admin',

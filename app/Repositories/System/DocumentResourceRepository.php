@@ -9,6 +9,7 @@ use App\Services\Storage\Traits\AttachmentHandler;
 use App\Services\Storage\Traits\FileHandler;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class DocumentResourceRepository extends BaseRepository
@@ -121,7 +122,7 @@ class DocumentResourceRepository extends BaseRepository
                 'mime' => $file->getMimeType(),
                 'ext' => $file->getClientOriginalExtension(),
                 'updated_at' => Carbon::now(),
-                     'user_id' => access()->id(),
+                     'user_id' => Auth::id(),
             ]]);
         }
         /*Return inserted document resource*/
@@ -159,7 +160,7 @@ class DocumentResourceRepository extends BaseRepository
         $document_resource = $this->findDocumentResource($doc_pivot_id);
         $document = $this->getDocumentTypeFromPivotId($doc_pivot_id);
         $document_group = $document->documentGroup;
-        $path = base_doc_dir() . $document_group->top_path  . DIRECTORY_SEPARATOR .  $document_resource->document_id . DIRECTORY_SEPARATOR . $document_resource->resource_id . DIRECTORY_SEPARATOR ;
+        $path = public_path() . '/storage' . $document_group->top_path  . DIRECTORY_SEPARATOR .  $document_resource->document_id . DIRECTORY_SEPARATOR . $document_resource->resource_id . DIRECTORY_SEPARATOR ;
         $filename = $document_resource->id . '.' . $document_resource->ext;
         $this->makeDirectory($path);
         $this->saveDocumentBasic($document_file_input_key,$filename, $path );
