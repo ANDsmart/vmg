@@ -2,8 +2,8 @@
 namespace Database\Seeders\Version100;
 
 use Cassandra\Schema;
-use Database\DisableForeignKey;
-use Database\TruncateTables;
+use Database\Traits\DisableForeignKeys;
+use Database\Traits\TruncateTable;
 use Illuminate\Database\Seeder;
 
 use App\Models\System\CodeValue;
@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 
 class CodeValuesTableSeeder extends Seeder
 {
-//    use DisableForeignKey, TruncateTables;
+    use DisableForeignKeys, TruncateTable;
 
     /**
      * Auto generated seed file
@@ -22,8 +22,8 @@ class CodeValuesTableSeeder extends Seeder
     {
 
 
-//        DB::table('code_values')->delete();
-//        $this->disableForeignKeys("code_values");
+        DB::table('code_values')->delete();
+        $this->disableForeignKeys("code_values");
 
         CodeValue::query()->delete();
         $cv = CodeValue::updateOrCreate(
@@ -200,7 +200,7 @@ class CodeValuesTableSeeder extends Seeder
             ]
         );
 
-//        $this->enableForeignKeys("code_values");
+        $this->enableForeignKeys("code_values");
 
 
     }
