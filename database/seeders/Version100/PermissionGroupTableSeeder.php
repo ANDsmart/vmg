@@ -1,8 +1,9 @@
 <?php
+namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Database\TruncateTable;
-use Database\DisableForeignKeys;
+use Database\Traits\DisableForeignKeys;
+use Database\Traits\TruncateTable;
 
 class PermissionGroupTableSeeder extends Seeder
 {

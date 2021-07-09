@@ -1,13 +1,14 @@
 <?php
 namespace Database\Seeders;
 
+use Database\Traits\DisableForeignKeys;
+use Database\Traits\TruncateTable;
 use Illuminate\Database\Seeder;
-use Database\TruncateTable;
-use Database\DisableForeignKeys;
+
 
 class RolesTableSeeder extends Seeder
 {
-    use DisableForeignKeys, TruncateTable;
+    use DisableForeignKeys,TruncateTable;
     /**
      * Auto generated seed file
      *

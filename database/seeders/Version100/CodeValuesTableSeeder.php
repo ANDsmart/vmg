@@ -22,7 +22,6 @@ class CodeValuesTableSeeder extends Seeder
     {
 
 
-        DB::table('code_values')->delete();
         $this->disableForeignKeys("code_values");
 
         CodeValue::query()->delete();

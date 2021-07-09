@@ -19,8 +19,8 @@ class UsersTableSeeder extends Seeder
     {
 
 //        DB::table('users')->delete();
-//        $this->disableForeignKeys("users");
-//        $this->delete('users');
+        $this->disableForeignKeys("users");
+        $this->delete('users');
         DB::table('users')->where('id', 1)->delete();
         $userRepo = new \App\Repositories\Access\UserRepository();
         $user = $userRepo->query()->updateOrCreate([
@@ -61,7 +61,7 @@ class UsersTableSeeder extends Seeder
 //                    'role_id' => '1'
 //                )
 //        ));
-//        $this->enableForeignKeys("role_user");
+        $this->enableForeignKeys("role_user");
 
     }
 }

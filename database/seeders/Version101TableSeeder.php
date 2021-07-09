@@ -16,24 +16,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 use Database\DisableForeignKeys;
 use Illuminate\Support\Facades\DB;
-use ModuleGroupTableSeeder;
-use ModulesTableSeeder;
-use PermissionGroupTableSeeder;
-use PermissionRoleTableSeeder;
-use PermissionsTableSeeder;
-use RegionsTableSeeder;
-use ReportGroupReportTableSeeder;
-use ReportGroupTableSeeder;
-use ReportsTableSeeder;
-use ReportTypesTableSeeder;
-use SysdefGroupTableSeeder;
-use SysdefsTableSeeder;
-use UnitGroupsTableSeeder;
-use UnitsTableSeeder;
-use WfDefinitionsTableSeeder;
-use WfGroupCategoriesTableSeeder;
-use WfModuleGroupsTableSeeder;
-use WfModulesTableSeeder;
+
 
 /**
  * Class AccessTableSeeder.
@@ -56,8 +39,8 @@ class Version101TableSeeder extends Seeder
         DB::beginTransaction();
 
 
-//        $this->call(RolesTableSeeder::class);
-//        $this->call(PermissionGroupTableSeeder::class);
+        $this->call(RolesTableSeeder::class);
+        $this->call(PermissionGroupTableSeeder::class);
 //        $this->call(PermissionsTableSeeder::class);
 //        $this->call(PermissionRoleTableSeeder::class);
         $this->call(CodesTableSeeder::class);
