@@ -45,6 +45,12 @@ class DocumentGroupsTableSeeder extends Seeder
                     'name' => 'Service document',
                     'top_path' => '/storage/cms/services',
                 ),
+            4 =>
+                array (
+                    'id' => 5,
+                    'name' => 'Training document',
+                    'top_path' => '/storage/cms/trainings',
+                ),
         ));
         $this->enableForeignKeys("document_groups");
 

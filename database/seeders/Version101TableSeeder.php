@@ -8,6 +8,7 @@ use Database\Seeders\Version100\CodesTableSeeder;
 use Database\Seeders\Version100\CodeValuesTableSeeder;
 use Database\Seeders\Version100\DocumentGroupsTableSeeder;
 use Database\Seeders\Version100\DocumentsTableSeeder;
+use Database\Seeders\Version100\TrainingCategoriesTableSeeder;
 use Database\Seeders\Version100\UsersTableSeeder;
 use DesignationsTableSeeder;
 use DistrictsTableSeeder;
@@ -62,6 +63,7 @@ class Version101TableSeeder extends Seeder
 //        $this->call(ReportGroupReportTableSeeder::class);
 //        $this->call(ModuleGroupTableSeeder::class);
 //        $this->call(ModulesTableSeeder::class);
+        $this->call(TrainingCategoriesTableSeeder::class);
         $this->call(UsersTableSeeder::class);
 
         DB::commit();

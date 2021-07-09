@@ -16,6 +16,7 @@
 				@foreach(\App\Models\Resource\Service::all() as $service)
                 <div class="owl-item" style="width: 230.167px;">
                     <div>
+
                         <a href="{{route('general_information.service.display',$service->id)}}" class="text-decoration-none">
 								<span class="thumb-info custom-thumb-info-style-1 thumb-info-hide-wrapper-bg">
 									<span class="thumb-info-wrapper m-0">

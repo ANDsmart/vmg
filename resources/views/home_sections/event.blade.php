@@ -9,6 +9,8 @@
         <div class="row mb-3 pb-5">
             <div class="col">
                 <div class="row">
+
+                    @foreach($trainings as $training)
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <article>
                             <div class="card border-0 border-radius-0 box-shadow-1 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" style="animation-delay: 500ms;">
@@ -16,50 +18,17 @@
                                     <a href="demo-business-consulting-2-blog-post.html">
                                         <img class="card-img-top border-radius-0" src="img/demos/business-consulting-2/blog/blog-1.png" alt="Card Image">
                                     </a>
-                                    <p class="text-uppercase text-1 mb-3 pt-1 text-color-default"><time pubdate="" datetime="2020-01-10">10 Jan 2020</time> <span class="opacity-3 d-inline-block px-2">|</span> 3 Comments <span class="opacity-3 d-inline-block px-2">|</span> John Doe</p>
                                     <div class="card-body p-0">
-                                        <h4 class="card-title mb-3 text-5 font-weight-bold"><a class="text-color-secondary" href="demo-business-consulting-2-blog-post.html">An Interview with John Doe</a></h4>
-                                        <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem ipsum erat orci, ac auctor lacus tincidunt ut...</p>
+                                        <h4 class="card-title mb-3 text-5 font-weight-bold"><a class="text-color-secondary" href="{{route('general_information.training.display',$training->uuid)}}">{{$training->title}}</a></h4>
+                                        <p class="card-text mb-3">{!! truncateString($training->contents,100) !!}</p>
                                         <a href="demo-business-consulting-2-blog-post.html" class="font-weight-bolder text-uppercase text-decoration-none d-block mt-3">Read More +</a>
                                     </div>
                                 </div>
                             </div>
                         </article>
                     </div>
-                    <div class="col-lg-4">
-                        <article>
-                            <div class="card border-0 border-radius-0 box-shadow-1 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700" style="animation-delay: 700ms;">
-                                <div class="card-body p-4 z-index-1">
-                                    <a href="demo-business-consulting-2-blog-post.html">
-                                        <img class="card-img-top border-radius-0" src="img/demos/business-consulting-2/blog/blog-2.png" alt="Card Image">
-                                    </a>
-                                    <p class="text-uppercase text-1 mb-3 pt-1 text-color-default"><time pubdate="" datetime="2020-01-10">10 Jan 2020</time> <span class="opacity-3 d-inline-block px-2">|</span> 3 Comments <span class="opacity-3 d-inline-block px-2">|</span> John Doe</p>
-                                    <div class="card-body p-0">
-                                        <h4 class="card-title mb-3 text-5 font-weight-bold"><a class="text-color-secondary" href="demo-business-consulting-2-blog-post.html">How to Grow your Business</a></h4>
-                                        <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem ipsum erat orci, ac auctor lacus tincidunt ut...</p>
-                                        <a href="demo-business-consulting-2-blog-post.html" class="font-weight-bolder text-uppercase text-decoration-none d-block mt-3">Read More +</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-4">
-                        <article>
-                            <div class="card border-0 border-radius-0 box-shadow-1 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700" style="animation-delay: 700ms;">
-                                <div class="card-body p-4 z-index-1">
-                                    <a href="demo-business-consulting-2-blog-post.html">
-                                        <img class="card-img-top border-radius-0" src="img/demos/business-consulting-2/blog/blog-2.png" alt="Card Image">
-                                    </a>
-                                    <p class="text-uppercase text-1 mb-3 pt-1 text-color-default"><time pubdate="" datetime="2020-01-10">10 Jan 2020</time> <span class="opacity-3 d-inline-block px-2">|</span> 3 Comments <span class="opacity-3 d-inline-block px-2">|</span> John Doe</p>
-                                    <div class="card-body p-0">
-                                        <h4 class="card-title mb-3 text-5 font-weight-bold"><a class="text-color-secondary" href="demo-business-consulting-2-blog-post.html">How to Grow your Business</a></h4>
-                                        <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem ipsum erat orci, ac auctor lacus tincidunt ut...</p>
-                                        <a href="demo-business-consulting-2-blog-post.html" class="font-weight-bolder text-uppercase text-decoration-none d-block mt-3">Read More +</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>

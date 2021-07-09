@@ -178,6 +178,20 @@ if(! function_exists('truncateString')) {
     }
 }
 
+if (! function_exists('str_limit')) {
+    /**
+     * Limit the number of characters in a string.
+     *
+     * @param  string  $value
+     * @param  int  $limit
+     * @param  string  $end
+     * @return string
+     */
+    function str_limit($value, $limit = 100, $end = '...')
+    {
+        return Str::limit($value, $limit, $end);
+    }
+}
 /*
  * Generate random string with n number of characters, 3 is default, for reference [code_values]
  */

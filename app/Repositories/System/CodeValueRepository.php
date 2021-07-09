@@ -2,6 +2,7 @@
 
 namespace App\Repositories\System;
 
+use App\Models\Resource\TrainingCategory;
 use App\Models\System\CodeValue;
 use App\Repositories\BaseRepository;
 use App\Repositories\System\CountryRepository;
@@ -284,6 +285,13 @@ class CodeValueRepository extends BaseRepository
     public function getServiceForDirectory()
     {
         return $this->queryServicesForDirectory()->select(['id', 'name', 'reference'])->orderBy("id", "asc")->get();
+    }
+
+
+    public function getTrainingCategories()
+    {
+        return TrainingCategory::select(['id', 'name'])->orderBy("id", "asc")->get();
+
     }
 
     /**

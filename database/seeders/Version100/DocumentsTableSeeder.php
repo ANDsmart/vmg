@@ -61,6 +61,26 @@ class DocumentsTableSeeder extends Seeder
                 'isrenewable' => 1,
                 'isactive' => 1,
             ),
+            4 => array (
+                'id' => 5,
+                'name' => 'Training image',
+                'document_group_id' => 5,
+                'description' => 'This is training image',
+                'isrecurring' => 1,
+                'ismandatory' => 1,
+                'isrenewable' => 1,
+                'isactive' => 1,
+            ),
+            5 => array (
+                'id' => 6,
+                'name' => 'Training documents',
+                'document_group_id' => 5,
+                'description' => 'This is training documents',
+                'isrecurring' => 1,
+                'ismandatory' => 1,
+                'isrenewable' => 1,
+                'isactive' => 1,
+            ),
 
 
         ));
