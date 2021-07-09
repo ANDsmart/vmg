@@ -10,7 +10,6 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-12 pb-sm-4 pb-lg-0 pr-lg-5 mb-sm-5 mb-lg-0">
                     <h2 class="text-color-dark font-weight-normal text-6 mb-2"> <strong class="font-weight-extra-bold">{{$service->title}}</strong></h2>
-                    {!! $service->content !!}
                 </div>
 
             </div>
@@ -51,7 +50,7 @@
 
                             <img src="{{url($service->getImageAttribute())}}" style="max-width: 350px;" class="img-fluid float-right ml-4 mb-4" alt="">
 
-                            <p>{!! $service->contents !!}</p>
+                            <p>{!! $service->content !!}</p>
 
                             <div class="pt-2 pb-1">
                                 <!-- AddThis Button BEGIN -->
