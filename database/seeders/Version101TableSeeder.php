@@ -40,8 +40,8 @@ class Version101TableSeeder extends Seeder
         DB::beginTransaction();
 
 
-        $this->call(RolesTableSeeder::class);
-        $this->call(PermissionGroupTableSeeder::class);
+//        $this->call(RolesTableSeeder::class);
+//        $this->call(PermissionGroupTableSeeder::class);
 //        $this->call(PermissionsTableSeeder::class);
 //        $this->call(PermissionRoleTableSeeder::class);
         $this->call(CodesTableSeeder::class);
