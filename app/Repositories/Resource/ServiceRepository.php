@@ -53,7 +53,7 @@ class ServiceRepository extends BaseRepository
     public function update(array $input,$service)
     {
         return DB::transaction(function() use($input,$service){
-            $service = $service->update([
+          $service->update([
                 'title' => $input['title'],
                 'service_type_cv_id' => $input['service_type_cv_id'],
                 'content' => $input['content'],

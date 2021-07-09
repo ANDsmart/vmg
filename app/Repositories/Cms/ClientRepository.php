@@ -42,7 +42,7 @@ class ClientRepository extends BaseRepository
 //                'external_id' => $input['external_id'],
             ]);
             /*Save document(s) attached*/
-//            $this->saveDocuments($client->id,$input);
+            $this->saveDocuments($client->id,$input);
 
             /*Reconcile*/
 

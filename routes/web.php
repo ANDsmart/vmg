@@ -13,11 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome')
-        ->with('clients',\App\Models\Cms\Client::all())
-        ->with('services',(new \App\Repositories\System\CodeValueRepository())->getServiceForDirectory());
-});
+Route::get('/', [App\Http\Controllers\WelcomeController::class, 'welcome'])->name('home');
+
 
 Auth::routes();
 

@@ -19,7 +19,7 @@
                         <a href="{{route('general_information.service.display',$service->id)}}" class="text-decoration-none">
 								<span class="thumb-info custom-thumb-info-style-1 thumb-info-hide-wrapper-bg">
 									<span class="thumb-info-wrapper m-0">
-										<img src="img/demos/business-consulting/cases/case-4.jpg" class="img-fluid" alt="">
+										<img src="{{url($service->getImageAttribute())}}" class="img-fluid" alt="" style="max-height: 200px">
 									</span>
 									<span class="thumb-info-caption  p-4 pt-5 pb-5" style="background-color: #88bad3">
 										<span class="custom-thumb-info-title">

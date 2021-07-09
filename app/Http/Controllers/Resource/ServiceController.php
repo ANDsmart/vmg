@@ -57,8 +57,10 @@ class ServiceController extends Controller
 
     public function profile(Service $service)
     {
+        $image = $service->getImageAttribute();
         return view('cms.service.show.show')
-            ->with('service',$service);
+            ->with('service',$service)
+            ->with('image',$image);
     }
 
     public function edit(Service $service)

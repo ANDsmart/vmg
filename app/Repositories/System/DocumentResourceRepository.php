@@ -40,7 +40,8 @@ class DocumentResourceRepository extends BaseRepository
         $document = $this->getDocumentTypeFromPivotId($doc_pivot_id);
         $top_path = $document->documentGroup->top_path;
         $filename = $document_resource->id . '.' . $document_resource->ext;
-        $full_url = base_doc_path() . $top_path  .  DIRECTORY_SEPARATOR . $document_resource->document_id . DIRECTORY_SEPARATOR .  $document_resource->resource_id  . DIRECTORY_SEPARATOR . $filename;
+        //TODO:: should be used the helper function
+        $full_url = '/storage' . $top_path  .  DIRECTORY_SEPARATOR . $document_resource->document_id . DIRECTORY_SEPARATOR .  $document_resource->resource_id  . DIRECTORY_SEPARATOR . $filename;
         return $full_url;
     }
 
