@@ -2,12 +2,12 @@
 namespace Database\Seeders\Version100;
 
 use Illuminate\Database\Seeder;
-use Database\TruncateTable;
-use Database\DisableForeignKeys;
+use Database\Traits\TruncateTable;
+use Database\Traits\DisableForeignKeys;
 
 class DocumentsTableSeeder extends Seeder
 {
-//    use DisableForeignKeys, TruncateTable;
+    use DisableForeignKeys, TruncateTable;
     /**
      * Auto generated seed file
      *
@@ -17,8 +17,8 @@ class DocumentsTableSeeder extends Seeder
     {
 
 
-//        $this->disableForeignKeys("documents");
-//        $this->delete('documents');
+        $this->disableForeignKeys("documents");
+        $this->delete('documents');
 
         \DB::table('documents')->insert(array (
             0 => array (
@@ -65,7 +65,7 @@ class DocumentsTableSeeder extends Seeder
 
         ));
 
-//        $this->enableForeignKeys("documents");
+        $this->enableForeignKeys("documents");
 
     }
 }

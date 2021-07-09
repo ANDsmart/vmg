@@ -1,9 +1,7 @@
 <?php
-
-namespace Database;
+namespace Database\Traits;
 
 use Illuminate\Support\Facades\DB;
-
 /**
  * Class TruncateTable.
  */
@@ -12,7 +10,7 @@ trait TruncateTable
     /**
      * @param $table
      *
-     * @return bool
+     * @return bool|void
      */
     protected function truncate($table)
     {
@@ -39,6 +37,17 @@ trait TruncateTable
         return DB::statement('DELETE FROM '.$table);
     }
 
+
+    /**
+     * @param $table
+     * @return mixed
+     * Delete with condition
+     */
+    protected function deleteWithCondition($table,$ccondition)
+    {
+        return DB::statement('DELETE FROM '.$table . ' ' . $ccondition);
+    }
+
     /**
      * @param array $tables
      */
@@ -48,16 +57,4 @@ trait TruncateTable
             $this->truncate($table);
         }
     }
-
-
-    /*Reset id sequence for next id*/
-    protected  function alterIdSequence($table)
-    {
-        $last_data = DB::table($table)->orderBy('id', 'desc')->first();
-        $max_id = ($last_data) ? $last_data->id : 0;
-        $next_id = $max_id + 1;
-        $sequence = $table . '_id_seq';
-        DB::statement('ALTER SEQUENCE ' .  $sequence . ' RESTART WITH '. $next_id);
-    }
-
 }
