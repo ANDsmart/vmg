@@ -24,12 +24,12 @@
                     <article class="blog-post">
                         <div class="col">
                             <div class="post-infos mb-4">
-											<span class="info posted-by">
-												Posted by:
-												<span class="post-author font-weight-semibold text-color-dark">
-													John Doe
-												</span>
-											</span>
+{{--											<span class="info posted-by">--}}
+{{--												Posted by:--}}
+{{--												<span class="post-author font-weight-semibold text-color-dark">--}}
+{{--													John Doe--}}
+{{--												</span>--}}
+{{--											</span>--}}
                                 {{--                                <span class="info comments ml-4">--}}
                                 {{--												Comments:--}}
                                 {{--												<span class="comments-number text-color-primary font-weight-semibold">--}}
