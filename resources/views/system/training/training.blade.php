@@ -75,8 +75,8 @@
                                         <img src="img/team/team-22.jpg" alt="">
                                     </a>
                                 </div>
-                                <p><strong class="name mb-3">John Doe</strong></p>
-                                <p class="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat.</p>
+{{--                                <p><strong class="name mb-3">John Doe</strong></p>--}}
+
                             </div>
 
                         </div>

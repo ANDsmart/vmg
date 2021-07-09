@@ -43,14 +43,14 @@ Route::get('/{locale}', function ($locale) {
 Route::group(['middleware' => 'dashboard'], function () {
     Route::group(['middleware' => 'csrf'], function () {
     });
-    includeRouteFiles(__DIR__.'/Cms/');
 
-//    includeRouteFiles(__DIR__.'/DataAccess/');
-//    includeRouteFiles(__DIR__.'/TokenFree/');
-    includeRouteFiles(__DIR__.'/Web/');
 
 
 });
+includeRouteFiles(__DIR__.'/Cms/');
 
+//    includeRouteFiles(__DIR__.'/DataAccess/');
+//    includeRouteFiles(__DIR__.'/TokenFree/');
+includeRouteFiles(__DIR__.'/Web/');
 includeRouteFiles(__DIR__.'/Public/');
 
