@@ -16,12 +16,12 @@
                             <div class="card border-0 border-radius-0 box-shadow-1 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" style="animation-delay: 500ms;">
                                 <div class="card-body p-4 z-index-1">
                                     <a href="demo-business-consulting-2-blog-post.html">
-                                        <img class="card-img-top border-radius-0" src="img/demos/business-consulting-2/blog/blog-1.png" alt="Card Image">
+                                        <img class="card-img-top border-radius-0" src="{{url($training->getImageAttribute())}}" alt="Card Image">
                                     </a>
                                     <div class="card-body p-0">
                                         <h4 class="card-title mb-3 text-5 font-weight-bold"><a class="text-color-secondary" href="{{route('general_information.training.display',$training->uuid)}}">{{$training->title}}</a></h4>
                                         <p class="card-text mb-3">{!! truncateString($training->contents,100) !!}</p>
-                                        <a href="demo-business-consulting-2-blog-post.html" class="font-weight-bolder text-uppercase text-decoration-none d-block mt-3">Read More +</a>
+                                        <a href="{{route('general_information.training.display',$training->uuid)}}" class="font-weight-bolder text-uppercase text-decoration-none d-block mt-3">Read More +</a>
                                     </div>
                                 </div>
                             </div>
