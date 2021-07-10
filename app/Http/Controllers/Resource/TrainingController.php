@@ -80,6 +80,13 @@ class TrainingController extends Controller
 
     }
 
+    public function trainings()
+    {
+        $trainings = Training::all();
+        return view('system.training.all_trainings')
+            ->with('trainings',$trainings);
+    }
+
     /**
      *list all blog
      */

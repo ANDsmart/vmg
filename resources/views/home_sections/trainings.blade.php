@@ -74,7 +74,7 @@
         </div>
         <div class="row pb-4">
             <div class="col-lg-12 text-center">
-                <a class="btn btn-outline btn-quaternary custom-button text-uppercase font-weight-bold">view more</a>
+                <a class="btn btn-outline btn-quaternary custom-button text-uppercase font-weight-bold" href="{{route('general_information.training.trainings')}}">view more</a>
             </div>
         </div>
     </div>

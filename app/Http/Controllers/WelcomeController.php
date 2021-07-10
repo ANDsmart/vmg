@@ -24,7 +24,7 @@ class WelcomeController extends Controller
     public function welcome()
     {
 
-        $services = Service::limit(3)->get();
+        $services = Service::limit(4)->get();
         return view('welcome')
             ->with('clients',\App\Models\Cms\Client::all())
             ->with('trainings',Training::all())
