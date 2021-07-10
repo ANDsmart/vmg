@@ -43,7 +43,7 @@
 
 
 
-<section class="section">
+<section class="">
     <div class="container">
         <div class="row pt-3">
             <div class="col">

@@ -83,14 +83,14 @@
                     </div>
                 </div>
             </div>
-{{--            <div class="col-xl-3 box-two bg-color-tertiary appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="600">--}}
-{{--                <h5 class="m-0">--}}
-{{--                    <a href="demo-medical-doctors.html" title="">--}}
+            <div class="col-xl-3 box-two bg-color-primary appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="600">
+                <h5 class="m-0">
+                    <a href="demo-medical-doctors.html" title="">
 {{--                        Doctors Timetable--}}
-{{--                        <i class="icon-arrow-right-circle icons"></i>--}}
-{{--                    </a>--}}
-{{--                </h5>--}}
-{{--            </div>--}}
+                        <i class="icon-arrow-right-circle icons"></i>
+                    </a>
+                </h5>
+            </div>
             <div class="col-xl-3 box-three bg-color-primary appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="1200">
                 <div class="expanded-info p-4 bg-color-primary">
                     <div class="info custom-info">

@@ -17,10 +17,11 @@
 
 
 {{--event section --}}
-@include('home_sections.trainings')
 {{--    clients sections--}}
 {{--leadership section--}}
 @include('home_sections.services')
+
+@include('home_sections.trainings')
 
 
 @include('home_sections.testimonial')
