@@ -16,7 +16,7 @@
                             <div class="card border-0 border-radius-0 box-shadow-1 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" style="animation-delay: 500ms;">
                                 <div class="card-body p-4 z-index-1">
                                     <a href="demo-business-consulting-2-blog-post.html">
-                                        <img class="card-img-top border-radius-0" src="{{url($training->getImageAttribute())}}" alt="Card Image">
+                                        <img class="card-img-top border-radius-0" src="{{url($training->getImageAttribute())}}" alt="Card Image" style="height: 200px">
                                     </a>
                                     <div class="card-body p-0">
                                         <h4 class="card-title mb-3 text-5 font-weight-bold"><a class="text-color-secondary" href="{{route('general_information.training.display',$training->uuid)}}">{{$training->title}}</a></h4>
