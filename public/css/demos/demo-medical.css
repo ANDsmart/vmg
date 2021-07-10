@@ -383,21 +383,9 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-#footer {
-  background: #34383d;
-  border: none;
-}
-#footer p, #footer a, #footer strong {
-  color: #95989c;
-}
-#footer a strong {
-  display: block;
-  font-size: 30px;
-  line-height: 1;
-}
-#footer a label {
-  color: #fff !important;
-}
+
+
+
 #footer .custom-info span:nth-child(1) {
   color: #95989c;
 }

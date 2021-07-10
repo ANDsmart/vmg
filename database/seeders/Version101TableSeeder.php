@@ -8,6 +8,8 @@ use Database\Seeders\Version100\CodesTableSeeder;
 use Database\Seeders\Version100\CodeValuesTableSeeder;
 use Database\Seeders\Version100\DocumentGroupsTableSeeder;
 use Database\Seeders\Version100\DocumentsTableSeeder;
+use Database\Seeders\Version100\SysdefGroupTableSeeder;
+use Database\Seeders\Version100\SysdefsTableSeeder;
 use Database\Seeders\Version100\TrainingCategoriesTableSeeder;
 use Database\Seeders\Version100\UsersTableSeeder;
 use DesignationsTableSeeder;
@@ -15,8 +17,8 @@ use DistrictsTableSeeder;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
-use Database\DisableForeignKeys;
 use Illuminate\Support\Facades\DB;
+
 
 
 /**
@@ -51,8 +53,8 @@ class Version101TableSeeder extends Seeder
 //        $this->call(DesignationsTableSeeder::class);
 //        $this->call(UnitGroupsTableSeeder::class);
 //        $this->call(UnitsTableSeeder::class);
-//        $this->call(SysdefGroupTableSeeder::class);
-//        $this->call(SysdefsTableSeeder::class);
+        $this->call(SysdefGroupTableSeeder::class);
+        $this->call(SysdefsTableSeeder::class);
 //        $this->call(CurrenciesTableSeeder::class);
 //        $this->call(CountriesTableSeeder::class);
 //        $this->call(RegionsTableSeeder::class);

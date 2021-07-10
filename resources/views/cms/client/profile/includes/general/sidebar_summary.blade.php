@@ -2,7 +2,7 @@
 <div class="thumb-info mb-3 text-center">
     {{--                            <a class="img-thumbnail lightbox" href="{{ url((new \App\Repositories\System\DocumentResourceRepository())->getDocFullPathUrl(1))}}" data-plugin-options="{ &quot;type&quot;:&quot;image&quot; }">--}}
     @if($client_logo)
-    <img style="height: 220px"  class="img-fluid profile-img" src="{!! $client_logo !!} ">
+    <img style="height: 220px"  class="img-fluid profile-img" src="{!! url($client->client_logo) !!} ">
     @else
         <img class="img-fluid profile-img" src="{!! url('cms/img/client.png') !!}">
 

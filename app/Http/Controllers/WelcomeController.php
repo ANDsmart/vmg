@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Resource\Service;
 use App\Models\Resource\Training;
 use App\Repositories\System\DocumentResourceRepository;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class WelcomeController extends Controller
 {
@@ -22,9 +24,10 @@ class WelcomeController extends Controller
     public function welcome()
     {
 
+        $services = Service::limit(3)->get();
         return view('welcome')
             ->with('clients',\App\Models\Cms\Client::all())
             ->with('trainings',Training::all())
-            ->with('services',(new \App\Repositories\System\CodeValueRepository())->getServiceForDirectory());
+            ->with('services',$services);
     }
 }

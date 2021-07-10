@@ -13,14 +13,14 @@
 @include('home_sections.about_vmg')
 
 {{--  consult--}}
-@include('home_sections.consult')
+{{--@include('home_sections.consult')--}}
 
 
 {{--event section --}}
-@include('home_sections.event')
+@include('home_sections.trainings')
 {{--    clients sections--}}
 {{--leadership section--}}
-@include('home_sections.vmg_leadership')
+@include('home_sections.services')
 
 
 @include('home_sections.testimonial')

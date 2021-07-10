@@ -81,6 +81,13 @@ class ServiceController extends Controller
 
     }
 
+
+    public function services()
+    {
+        $service_types = (new CodeValueRepository())->getServiceForDirectory()->pluck('name','id');
+        $services = $this->service_repo->queryActive();
+
+    }
     /**
      *list all blog
      */

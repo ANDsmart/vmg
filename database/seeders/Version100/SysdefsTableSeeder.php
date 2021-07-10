@@ -1,8 +1,10 @@
 <?php
+namespace Database\Seeders\Version100;
 
+use Database\Traits\DisableForeignKeys;
+use Database\Traits\TruncateTable;
 use Illuminate\Database\Seeder;
-use Database\TruncateTable;
-use Database\DisableForeignKeys;
+
 use App\Models\System\Sysdef;
 
 class SysdefsTableSeeder extends Seeder
@@ -24,7 +26,7 @@ class SysdefsTableSeeder extends Seeder
             [
                 'name' => 'telephone',
                 'display_name' => 'Telephone',
-                'value' => '0755907799',
+                'value' => '0717 443 616',
                 'data_type' => 'string',
                 'isactive' => 1,
                 'reference' => 'MAXEPU',
@@ -37,7 +39,7 @@ class SysdefsTableSeeder extends Seeder
             [
                 'name' => 'mobile_phone',
                 'display_name' => 'Mobile Phone',
-                'value' => '+255 786 987 248 / +255 713 366 303 / +255 787 275 482',
+                'value' => '+255 717 443 616 ',
                 'data_type' => 'string',
                 'isactive' => 1,
                 'reference' => 'SYSMOB',
@@ -50,7 +52,7 @@ class SysdefsTableSeeder extends Seeder
             [
                 'name' => 'po_box',
                 'display_name' => 'P.O Box',
-                'value' => '32258 ',
+                'value' => '32080 ',
                 'data_type' => 'integer',
                 'isactive' => 1,
                 'reference' => 'SYSPOB',
@@ -63,8 +65,7 @@ class SysdefsTableSeeder extends Seeder
             [
                 'name' => 'location',
                 'display_name' => 'Location',
-                'value' => 'ADA ESTATE, MADAI CRESCENT RD
-DAR ES SALAAM',
+                'value' => ' Chabruma Street, Ali Hassan Mwinyi Road, JANGID Plaza, 3rd Floor, Room no. 303',
                 'data_type' => 'string',
                 'isactive' => 1,
                 'reference' => 'SYSLOC',
@@ -77,7 +78,7 @@ DAR ES SALAAM',
             [
                 'name' => 'email',
                 'display_name' => 'Email',
-                'value' => 'info@nextbyte.co.tz',
+                'value' => ' info@vipaji.co.tz',
                 'data_type' => 'string',
                 'isactive' => 1,
                 'reference' => 'SYSEMA',
@@ -91,7 +92,7 @@ DAR ES SALAAM',
             [
                 'name' => 'support_email',
                 'display_name' => 'Support Email',
-                'value' => 'info@nextbyte.co.tz',
+                'value' => ' info@vipaji.co.tz',
                 'data_type' => 'string',
                 'isactive' => 1,
                 'reference' => 'SYSSEM',
@@ -119,7 +120,7 @@ DAR ES SALAAM',
             [
                 'name' => 'organisation_name',
                 'display_name' => 'Organisation Name',
-                'value' => 'NEXTBYTE ICT SOLUTIONS',
+                'value' => 'VIPAWA MANAGEMENT GROUP',
                 'data_type' => 'string',
                 'isactive' => 1,
                 'reference' => 'SYDORGN',
@@ -131,9 +132,9 @@ DAR ES SALAAM',
         $sysdef = Sysdef::firstOrCreate(
             ['reference' => 'SYDABT'],
             [
-                'name' => 'about_psms',
-                'display_name' => 'About PSMS',
-                'value' => 'PSMS is Petrol Station Management System, which serve as a centralized system for facilitating efficient multiple stations business process management.',
+                'name' => 'about_vmg',
+                'display_name' => 'About VMG',
+                'value' => 'VIPAWA MANAGEMENT has been established as a management and human resource consultancy in Tanzania. It is a consultative advisory organization on employment, management, and labour related matters. The company traditional business model is based on the accomplishment of management and human resources services. Based on the decision of the company to diversify our services; we have now established this company in Dar es Salaam',
                 'data_type' => 'text',
                 'isactive' => 1,
                 'reference' => 'SYDABT',
@@ -147,7 +148,7 @@ DAR ES SALAAM',
             [
                 'name' => 'system_name',
                 'display_name' => 'System Name',
-                'value' => 'PSMS',
+                'value' => 'VMG',
                 'data_type' => 'string',
                 'isactive' => 1,
                 'reference' => 'SYSNAME',
@@ -156,71 +157,9 @@ DAR ES SALAAM',
         );
 
 
-        $sysdef = Sysdef::firstOrCreate(
-            ['reference' => 'SYSPS'],
-            [
-                'name' => 'pagination_summary',
-                'display_name' => 'Pagination Summary',
-                'value' => 5,
-                'data_type' => 'integer',
-                'isactive' => 1,
-                'reference' => 'SYSPS',
-                'sysdef_group_id' => 2,
-            ]
-        );
-
-        $sysdef = Sysdef::firstOrCreate(
-            ['reference' => 'SYSPL'],
-            [
-                'name' => 'pagination_low',
-                'display_name' => 'Pagination Low',
-                'value' => 10,
-                'data_type' => 'integer',
-                'isactive' => 1,
-                'reference' => 'SYSPL',
-                'sysdef_group_id' => 2,
-            ]
-        );
 
 
-        $sysdef = Sysdef::firstOrCreate(
-            ['reference' => 'SYSPH'],
-            [
-                'name' => 'pagination_high',
-                'display_name' => 'Pagination High',
-                'value' => 20,
-                'data_type' => 'integer',
-                'isactive' => 1,
-                'reference' => 'SYSPH',
-                'sysdef_group_id' => 2,
-            ]
-        );
 
-        $sysdef = Sysdef::firstOrCreate(
-            ['reference' => 'SYSHSU'],
-            [
-                'name' => 'homepage_summary',
-                'display_name' => 'Homepage Summary',
-                'value' => '',
-                'data_type' => 'text',
-                'isactive' => 1,
-                'reference' => 'SYSHSU',
-                'sysdef_group_id' => 1,
-            ]
-        );
-
-        $sysdef = Sysdef::firstOrCreate(
-            ['reference' => 'SYSPI'],
-            [
-                'name' => 'pagination_max',
-                'display_name' => 'Pagination Max',
-                'value' => 50,
-                'data_type' => 'integer',
-                'isactive' => 1,
-                'reference' => 'SYSPI',
-                'sysdef_group_id' => 2,
-            ]
-        );
 
 
 

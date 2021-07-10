@@ -1,8 +1,10 @@
 <?php
+namespace Database\Seeders\Version100;
 
+use Database\Traits\DisableForeignKeys;
+use Database\Traits\TruncateTable;
 use Illuminate\Database\Seeder;
-use Database\TruncateTable;
-use Database\DisableForeignKeys;
+
 use App\Models\Sysdef\Sysdef;
 
 class SysdefGroupTableSeeder extends Seeder

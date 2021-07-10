@@ -5,12 +5,12 @@
         </div>
         <div class="row py-5 my-4">
             <div class="col-md-7 col-lg-4 mb-5 mb-lg-0 pt-3">
-                <h5 class="text-3 mb-3">ABOUT US</h5>
-                <p style="color:#fff3f2">Vipaji Inc corporate Limited has been established as a management and human resource consultancy in Tanzania. It is a consultative advisory organization on employment, management, and labour related matters. The company traditional business model is based on the accomplishment of management and human resources services. Based on the decision of the company to diversify our services; we have now established this company in Dar es Salaam.</p>
+                <h5 class="text-3 mb-3">{{trans('label.about_us')}}</h5>
+                <p style="color:#fff3f2">VIPAWA MANAGEMENT has been established as a management and human resource consultancy in Tanzania. It is a consultative advisory organization on employment, management, and labour related matters. The company traditional business model is based on the accomplishment of management and human resources services. Based on the decision of the company to diversify our services; we have now established this company in Dar es Salaam.</p>
                 <p class="mb-0"><a href="{{route('general_information.about_us')}}" class="btn-flat btn-xs text-color-light p-relative top-5"><strong class="text-2">VIEW MORE</strong><i class="fas fa-angle-right p-relative top-1 pl-2"></i></a></p>
             </div>
             <div class="col-md-5 col-lg-3 mb-5 mb-lg-0 pt-3">
-                <h5 class="text-3 mb-3 pb-1" style="color:#fff3f2">CONTACT US</h5>
+                <h5 class="text-3 mb-3 pb-1" style="color:#fff3f2">{{trans('label.contact_info')}}</h5>
                 <p class="text-8 text-color-light font-weight-bold" style="color:#fff3f2">0717 443 616</p>
                 <p class="mb-2" style="color:#fff3f2">International: (333) 456-6670</p>
                 <p class="mb-2" style="color:#fff3f2">Fax: (22) 27 61756</p>
