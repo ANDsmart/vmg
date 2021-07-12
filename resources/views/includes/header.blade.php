@@ -39,10 +39,10 @@
                                         </li>
 
                                         @foreach((new \App\Repositories\System\CodeValueRepository())->getServiceForDirectory() as $code_value)
-                                            <li class="dropdown ropdown dropdown-full-color dropdown-primary"><a class="dropdown-item dropdown-toggle" href="#">  {{ __('label.services.directory.'. $code_value->id) }} <i class="fas fa-chevron-down"></i></a>
+                                            <li class="dropdown ropdown dropdown-full-color dropdown-primary"><a class="dropdown-item dropdown-toggle" href="#" style="font-size: 14px">  {{ __('label.services.directory.'. $code_value->id) }} <i class="fas fa-chevron-down"></i></a>
                                                 <ul class="dropdown-menu">
                                                     @foreach((new \App\Repositories\Resource\ServiceRepository())->getServiceByServiceDirectory($code_value->id) as $service)
-                                                        <li><a class="dropdown-item" href="{{route('general_information.service.display',$service->id)}}" style="font-size: 15px">{{$service->title}}</a></li>
+                                                        <li><a class="dropdown-item" href="{{route('general_information.service.display',$service->id)}}" >{{$service->title}}</a></li>
                                                     @endforeach
                                                 </ul>
                                             </li>
