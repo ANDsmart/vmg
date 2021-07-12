@@ -34,7 +34,7 @@
                             <div class="header-nav-main header-nav-main-square header-nav-main-effect-1 header-nav-main-sub-effect-1">
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
-                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="{{url('/')}}"> {{trans('label.home')}} <i class="fas fa-chevron-down"></i></a>
+                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="{{url('/')}}" style="font-size: 15px"> {{trans('label.home')}} <i class="fas fa-chevron-down"></i></a>
 
                                         </li>
 
@@ -42,7 +42,7 @@
                                             <li class="dropdown ropdown dropdown-full-color dropdown-primary"><a class="dropdown-item dropdown-toggle" href="#">  {{ __('label.services.directory.'. $code_value->id) }} <i class="fas fa-chevron-down"></i></a>
                                                 <ul class="dropdown-menu">
                                                     @foreach((new \App\Repositories\Resource\ServiceRepository())->getServiceByServiceDirectory($code_value->id) as $service)
-                                                        <li><a class="dropdown-item" href="{{route('general_information.service.display',$service->id)}}">{{$service->title}}</a></li>
+                                                        <li><a class="dropdown-item" href="{{route('general_information.service.display',$service->id)}}" style="font-size: 15px">{{$service->title}}</a></li>
                                                     @endforeach
                                                 </ul>
                                             </li>
