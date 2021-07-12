@@ -386,17 +386,6 @@
 
 
 
-#footer .custom-info span:nth-child(1) {
-  color: #95989c;
-}
-#footer .footer-copyright {
-  background: #34383d;
-  border-top: 1px solid #53585e;
-}
-#footer .footer-copyright p {
-  color: #95989c;
-}
-
 .social-icons li {
   border-radius: 0;
   box-shadow: none;
