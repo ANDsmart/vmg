@@ -21,7 +21,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
     <!-- Web Fonts  -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7COpen+Sans:400,700,800" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;500&family=Roboto:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
+{{--    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7COpen+Sans:400,700,800" rel="stylesheet" type="text/css">--}}
 
     <!-- Vendor CSS -->
     {{ Html::style(url('vendor/bootstrap/css/bootstrap.min.css')) }}
