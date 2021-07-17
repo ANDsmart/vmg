@@ -64,7 +64,7 @@
 
     <style>
 
-        body p h4 h5 {
+        body p h4 h5 a {
 
             font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
         }
