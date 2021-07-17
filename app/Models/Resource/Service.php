@@ -19,4 +19,6 @@ class Service extends BaseModel
     public function documents(){
         return $this->morphToMany(Document::class, 'resource', 'document_resource')->withPivot('id','name', 'description', 'ext', 'size', 'mime','isactive');
     }
+
+
 }

@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div>
-                        @include('cms.blog.includes.blogs_datatable')
+                        @include('cms.service.includes.services_datatable')
                     </div>
                 </div>
 

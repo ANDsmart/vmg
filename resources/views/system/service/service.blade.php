@@ -5,18 +5,25 @@
 @endpush
 
 @section('content')
-    <section class="section section-height-3 bg-color-grey-scale-1 m-0 border-0">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-12 pb-sm-4 pb-lg-0 pr-lg-5 mb-sm-5 mb-lg-0">
-                    <h2 class="text-color-dark font-weight-normal text-6 mb-2"> <strong class="font-weight-extra-bold">{{$service->title}}</strong></h2>
-                </div>
 
-            </div>
-        </div>
-    </section>
 
     <div class="container">
+        <div class="row pt-4">
+            <div class="col">
+                <div class="overflow-hidden mb-3">
+                    <h2 class="font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="maskUp">
+                        {{$service->title}}
+                    </h2>
+                    <span class="info like ml-4">
+												Post Date:
+												<span class="like-number font-weight-semibold custom-color-dark">
+													{{short_date_format($service->created_at)}}
+												</span>
+											</span>
+                </div>
+            </div>
+        </div>
+
         <div class="row pt-1 pb-4 mb-3">
             <div class="col">
 
@@ -36,21 +43,47 @@
                                 {{--													15--}}
                                 {{--												</span>--}}
                                 {{--											</span>--}}
-                                <span class="info like ml-4">
-												Post Date:
-												<span class="like-number font-weight-semibold custom-color-dark">
-													{{short_date_format($service->created_at)}}
-												</span>
-											</span>
+
                             </div>
 
                             <hr class="solid">
 
-                            <p class="lead mb-4">{{$service->title}}</p>
+{{--                            <p class="lead mb-4">{{$service->title}}</p>--}}
 
                             <img src="{{url($service->getImageAttribute())}}" style="max-width: 350px;" class="img-fluid float-right ml-4 mb-4" alt="">
 
                             <p>{!! $service->content !!}</p>
+
+                            @if($service->service_type_cv_id == 8)
+                            <div class="row">
+                                <div class="col">
+                                    <div class="overflow-hidden mb-3">
+                                        <h2 class="font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="maskUp">
+                                            We Are Here To Help You
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <div class="overflow-hidden">
+                                        <p class="lead mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla non <span class="alternative-font">metus.</span> pulvinar. Sociis natoque penatibus et magnis dis parturient montes.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
+                                    <a href="https://vipajijobs.com/" class="btn btn-modern btn-dark mt-1" target="_blank">Visit vipawa jobs!</a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col py-3">
+                                    <hr class="solid mt-5 mb-2">
+                                </div>
+                            </div>
+                            @endif
 
                             <div class="pt-2 pb-1">
                                 <!-- AddThis Button BEGIN -->

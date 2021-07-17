@@ -30,7 +30,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    @include('cms.service.create.includes.post_info')
+                    @include('cms.training.create.includes.training_info')
 
                 </div>
 

@@ -13,7 +13,7 @@
         <table class="table table-hover table-responsive-md" id="blog-table">
             <thead>
             <tr>
-                <th>@lang('label.sn')</th>
+{{--                <th>@lang('label.sn')</th>--}}
                 <th>{{ __('label.title') }}</th>
                 <th>{{ __('label.category') }}</th>
                 <th>{{ __('label.status') }}</th>
@@ -34,7 +34,7 @@
                 type : 'get'
             },
             columns: [
-                { data: 'DT_Row_Index', name: 'DT_Row_Index', orderable: false, searchable: false},
+                // { data: 'DT_Row_Index', name: 'DT_Row_Index', orderable: false, searchable: false},
                 { data: 'title', name: 'title', orderable: false, searchable: true },
                 { data: 'category', name: 'category', orderable: false, searchable: false },
                 { data: 'status', name: 'status', orderable: false, searchable: false },
