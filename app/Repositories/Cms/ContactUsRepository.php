@@ -49,7 +49,7 @@ class ContactUsRepository extends BaseRepository
             'name'=>$request->get('name'),
             'user_email'=>$request->get('email'),
             'subject'=>$request->get('subject'),
-            'email'=>'francistito07@gmail.com',
+            'email'=>'info@vipaji.co.tz',
             'message'=>$request->get('message'),
 
         ]);

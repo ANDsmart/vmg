@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-6 col-lg-6">
                 <h2 class="font-weight-bold text-color-dark">- {{trans('label.about_us')}}</h2>
-                <p class="pl-4">{{trans('label.about_vipawa')}}
+                <p class="pl-4" >{{trans('label.about_vipawa')}}
                 </p>
                 <div class="pl-4">
                     <a class="btn btn-outline custom-border-width btn-primary mt-3 mb-2 custom-border-radius font-weight-semibold text-uppercase" href="{{route('general_information.about_us')}}">{{trans('label.read_more')}}</a>

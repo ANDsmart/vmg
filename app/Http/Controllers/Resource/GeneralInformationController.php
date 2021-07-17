@@ -40,7 +40,7 @@ class GeneralInformationController extends Controller
     }
 
     //send  contact us
-    public function sendMessageToSupportEmail(SendContactUsRequest $request)
+    public function sendMessageToSupportEmail(Request $request)
     {
         $contact_us = (new ContactUsRepository())->sendContactUsNotification($request);
         return redirect()->back()->withFlashSuccess(trans('label.system.general_information.success'));

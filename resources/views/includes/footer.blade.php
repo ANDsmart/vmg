@@ -1,3 +1,4 @@
+
 <footer id="footer" class="mt-0">
     <div class="container">
         <div class="footer-ribbon">
@@ -12,12 +13,9 @@
             <div class="col-md-5 col-lg-3 mb-5 mb-lg-0 pt-3">
                 <h5 class="text-3 mb-3 pb-1" style="color:#fff3f2">{{trans('label.contact_info')}}</h5>
                 <p class="text-8 text-color-light font-weight-bold" style="color:#fff3f2">0717 443 616</p>
-                <p class="mb-2" style="color:#fff3f2">International: (333) 456-6670</p>
                 <p class="mb-2" style="color:#fff3f2">Fax: (22) 27 61756</p>
-                <ul class="list list-icons list-icons-lg">
-                    <li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i><p class="m-0" style="color:#fff3f2">Ali hassan mwinyi road</p></li>
-                    <li class="mb-1"><i class="far fa-envelope text-color-primary"></i><p class="m-0"><a href="mailto:mail@example.com" style="color:#fff3f2">info@vipaji.co.tz</a></p></li>
-                </ul>
+                <p class="mb-2" style="color:#fff3f2">Address: Ali hassan mwinyi road</p>
+                <p class="mb-2" style="color:#fff3f2">Email: info@vipaji.co.tzv</p>
                 <ul class="social-icons mt-4">
                     <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                     <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
@@ -26,7 +24,7 @@
             </div>
             <div class="col-lg-5 pt-3">
                 <h5 class="text-3 mb-3 pb-1">SEND US A MESSAGE</h5>
-                <form class="contact-form" action="#" method="POST" novalidate="novalidate">
+                <form class="contact-form" action="{{route('general_information.contact_us.send')}}" method="POST" novalidate="novalidate">
                     <input type="hidden" value="Contact Form" name="subject" id="subject">
                     <div class="contact-form-success alert alert-success d-none">
                         Message has been sent to us.
@@ -51,7 +49,7 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col">
-                            <input type="submit" value="SUBMIT" class="btn btn-xl btn-outline btn-primary text-1 font-weight-bold text-uppercase" data-loading-text="Loading...">
+                            <input type="submit" value="SUBMIT" class="btn btn-xl btn-outline btn-success text-1 font-weight-bold text-uppercase" data-loading-text="Loading...">
                         </div>
                     </div>
                 </form>
@@ -63,20 +61,20 @@
             <div class="row py-4">
                 <div class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
                     <a href="index-2.html" class="logo pr-0 pr-lg-3">
-                        <img alt="Porto Website Template" src="img/vmg.png" class="opacity-5" height="33">
+                        <img alt="Porto Website Template" src="{{url('img/vmg.png')}}" class="opacity-5" height="33">
                     </a>
                 </div>
                 <div class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
                     <p>© Copyright 2020. All Rights Reserved.</p>
                 </div>
                 <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
-{{--                    <nav id="sub-menu">--}}
-{{--                        <ul>--}}
-{{--                            <li><i class="fas fa-angle-right"></i><a href="page-faq.html" class="ml-1 text-decoration-none"> FAQ's</a></li>--}}
-{{--                            <li><i class="fas fa-angle-right"></i><a href="sitemap.html" class="ml-1 text-decoration-none"> Sitemap</a></li>--}}
-{{--                            <li><i class="fas fa-angle-right"></i><a href="contact-us.html" class="ml-1 text-decoration-none"> Contact Us</a></li>--}}
-{{--                        </ul>--}}
-{{--                    </nav>--}}
+                    <nav id="sub-menu">
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i><a href="page-faq.html" class="ml-1 text-decoration-none"> FAQ's</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="sitemap.html" class="ml-1 text-decoration-none"> Sitemap</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="contact-us.html" class="ml-1 text-decoration-none"> Contact Us</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
