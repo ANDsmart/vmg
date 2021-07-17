@@ -5,24 +5,32 @@
 @endpush
 
 @section('content')
-
-
-    <div class="container">
-        <div class="row pt-4">
-            <div class="col">
-                <div class="overflow-hidden mb-3">
-                    <h2 class="font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="maskUp">
-                        {{$service->title}}
-                    </h2>
-                    <span class="info like ml-4">
-												Post Date:
-												<span class="like-number font-weight-semibold custom-color-dark">
-													{{short_date_format($service->created_at)}}
-												</span>
-											</span>
+    <section class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7" style="background-image:url( {{url($service->getImageAttribute())}});">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-12 align-self-center p-static order-2 text-center">
+                    <h1 class="text-10"><strong> {{$service->title}}</strong></h1>
                 </div>
             </div>
         </div>
+    </section>
+
+    <div class="container">
+{{--        <div class="row pt-4">--}}
+{{--            <div class="col">--}}
+{{--                <div class="overflow-hidden mb-3">--}}
+{{--                    <h2 class="font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="maskUp">--}}
+{{--                        {{$service->title}}--}}
+{{--                    </h2>--}}
+{{--                    <span class="info like ml-4">--}}
+{{--												Post Date:--}}
+{{--												<span class="like-number font-weight-semibold custom-color-dark">--}}
+{{--													{{short_date_format($service->created_at)}}--}}
+{{--												</span>--}}
+{{--											</span>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
         <div class="row pt-1 pb-4 mb-3">
             <div class="col">
@@ -46,7 +54,7 @@
 
                             </div>
 
-                            <hr class="solid">
+{{--                            <hr class="solid">--}}
 
 {{--                            <p class="lead mb-4">{{$service->title}}</p>--}}
 
@@ -59,7 +67,7 @@
                                 <div class="col">
                                     <div class="overflow-hidden mb-3">
                                         <h2 class="font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="maskUp">
-                                            We Are Here To Help You
+                                            Online Recruitment and Employment Solution
                                         </h2>
                                     </div>
                                 </div>
@@ -69,12 +77,13 @@
                                 <div class="col-lg-10">
                                     <div class="overflow-hidden">
                                         <p class="lead mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla non <span class="alternative-font">metus.</span> pulvinar. Sociis natoque penatibus et magnis dis parturient montes.
+                                            My job My Passion
                                         </p>
                                     </div>
+                                    <a href="https://vipajijobs.com/" class="btn btn-modern btn-dark mt-1" target="_blank">Visit vipawa jobs!</a>
+
                                 </div>
                                 <div class="col-lg-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
-                                    <a href="https://vipajijobs.com/" class="btn btn-modern btn-dark mt-1" target="_blank">Visit vipawa jobs!</a>
                                 </div>
                             </div>
 
