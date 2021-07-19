@@ -6,19 +6,16 @@
 
 @section('content')
 
-
-
-    <section class="section section-height-3 bg-color-grey-scale-1 m-0 border-0">
+    <section class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7" style="background-image:url( {{url($training->getImageAttribute())}});">
         <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-12 pb-sm-4 pb-lg-0 pr-lg-5 mb-sm-5 mb-lg-0">
-                    <h2 class="text-color-dark font-weight-normal text-6 mb-2"> <strong class="font-weight-extra-bold">{{$training->title}}</strong></h2>
-                    {!! $training->content !!}
+            <div class="row mt-5">
+                <div class="col-md-12 align-self-center p-static order-2 text-center">
+                    <h1 class="text-10"><strong> {{$training->title}}</strong></h1>
                 </div>
-
             </div>
         </div>
     </section>
+
 
     <div class="container">
         <div class="row pt-1 pb-4 mb-3">
@@ -28,12 +25,6 @@
                     <article class="blog-post">
                         <div class="col">
                             <div class="post-infos mb-4">
-											<span class="info posted-by">
-												Posted by:
-												<span class="post-author font-weight-semibold text-color-dark">
-													John Doe
-												</span>
-											</span>
 {{--                                <span class="info comments ml-4">--}}
 {{--												Comments:--}}
 {{--												<span class="comments-number text-color-primary font-weight-semibold">--}}
@@ -50,10 +41,7 @@
 
                             <hr class="solid">
 
-                            <p class="lead mb-4">{{$training->title}}</p>
-
                             <img src="{{url($training->getImageAttribute())}}" style="max-width: 350px;" class="img-fluid float-right ml-4 mb-4" alt="">
-
                             <p>{!! $training->contents !!}</p>
 
                             <div class="pt-2 pb-1">

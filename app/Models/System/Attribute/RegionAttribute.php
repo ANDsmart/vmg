@@ -6,7 +6,7 @@
  * Time: 10:43 AM
  */
 
-namespace App\Models\System\Traits\Attribute;
+namespace App\Models\System\Attribute;
 
 
 trait RegionAttribute

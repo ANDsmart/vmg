@@ -6,7 +6,7 @@
  * Time: 10:43 AM
  */
 
-namespace App\Models\System\Traits\Relationship;
+namespace App\Models\System\Relationship;
 
 use App\Models\System\District;
 use App\Models\System\Zone;
