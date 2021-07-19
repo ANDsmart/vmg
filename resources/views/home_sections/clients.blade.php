@@ -24,7 +24,7 @@
                 @foreach($clients as $client)
                 <div class="owl-item cloned" style="width: 162.857px;">
                     <div>
-                        <img class="img-fluid" src="{{url($client->client_logo)}}" alt="" style="height: 100px">
+                        <img class="img-fluid" src="{{url($client->client_logo)}}" alt="" style="height: 80px;width: 100px">
                     </div>
                 </div>
                 @endforeach
