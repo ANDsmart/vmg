@@ -85,8 +85,10 @@ class ServiceController extends Controller
     public function services()
     {
         $service_types = (new CodeValueRepository())->getServiceForDirectory()->pluck('name','id');
-        $services = $this->service_repo->queryActive();
-
+        $services = $this->service_repo->queryActive()->get();
+        return view('system.service.all_services')
+            ->with('service_types',$service_types)
+            ->with('services',$services);
     }
     /**
      *list all blog
