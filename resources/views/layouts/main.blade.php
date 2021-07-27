@@ -64,9 +64,9 @@
 
     <style>
 
-        body p h4 h5 a {
+        body  h4, h5,a, p, span, button, input, textarea {
 
-            font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+            /*font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;*/
         }
 
     </style>

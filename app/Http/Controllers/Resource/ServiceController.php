@@ -82,10 +82,27 @@ class ServiceController extends Controller
     }
 
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * list of all services
+     */
     public function services()
     {
-        $service_types = (new CodeValueRepository())->getServiceForDirectory()->pluck('name','id');
+        $service_types = (new CodeValueRepository())->getServiceForDirectory();
         $services = $this->service_repo->queryActive()->get();
+        return view('system.service.all_services')
+            ->with('service_types',$service_types)
+            ->with('services',$services);
+    }
+
+    /**
+     * @param $service_type
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function getServiceByServiceType($service_type)
+    {
+        $service_types = (new CodeValueRepository())->getServiceForDirectory();
+        $services = $this->service_repo->queryActive()->where('service_type_cv_id',$service_type)->get();
         return view('system.service.all_services')
             ->with('service_types',$service_types)
             ->with('services',$services);
