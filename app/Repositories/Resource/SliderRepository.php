@@ -30,7 +30,7 @@ class SliderRepository extends BaseRepository
         return DB::transaction(function() use($input){
             $slider = $this->query()->firstOrCreate([
                 'title' => $input['title'],
-                'description' => $input['content'],
+                'description' => $input['description'],
                 'isactive' => $input['isactive'],
             ]);
 
