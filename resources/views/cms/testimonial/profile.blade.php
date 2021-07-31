@@ -22,9 +22,8 @@
                             <div class="col-md-12">
                                 <div class="pull-right">
                                         <a href="{{ route('cms.testimonial.edit',$client_testimonial->uuid) }}" class="btn btn-xs btn-primary"><i class="fas fa-edit"></i> {{ __('label.crud.edit') }}</a>
-                                    {{ $client_testimonial->change_status_button }}
+                                        <a href="{{ route('cms.testimonial.delete',$client_testimonial->uuid) }}" class="btn btn-xs btn-danger"><i class="fas fa-edit"></i> {{ __('label.crud.delete') }}</a>
 
-                                    {!! HTML::decode(link_to_route('cms.testimonial.delete', trans('label.crud.delete'), [$client_testimonial->uuid], ['data-method' => 'delete', 'data-trans-button-cancel' => trans('buttons.general.cancel'), 'data-trans-button-confirm' => trans('buttons.general.confirm'), 'data-trans-title' => trans('label.warning'), 'data-trans-text' => trans('alert.general.alert.delete'), 'class' => 'btn btn-danger btn-xs'])) !!}
                                     <a href="{{ route('cms.testimonial.index') }}" class="btn btn-xs btn-info"><i class="fas fa-closed-captioning"></i> {{ __('label.close') }}</a>
                                 </div>
                             </div>
@@ -38,7 +37,7 @@
                                     <tbody>
                                     <tr>
                                         <th width="130px">{{ __('label.cms.client.client') }}</th>
-                                        <td>{{ $client_testimonial->client->name }}</td>
+                                        <td>{{ $client_testimonial->name }}</td>
                                     </tr>
                                     <tr>
                                         <th width="130px">{{ __('label.designation') }}</th>

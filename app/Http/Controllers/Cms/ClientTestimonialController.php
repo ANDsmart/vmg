@@ -166,10 +166,6 @@ class ClientTestimonialController extends Controller
         $result_list = $this->client_testimonial_repo->getAllForDt()->orderBy('id','desc');
         return DataTables::of($result_list)
             ->addIndexColumn()
-            ->addColumn('client', function ($result_list)
-            {
-                return ($result_list->client->name) ;
-            })
             ->addColumn('designation', function ($result_list)
             {
                 return $result_list->designation->name ;

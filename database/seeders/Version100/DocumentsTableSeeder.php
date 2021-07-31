@@ -81,7 +81,16 @@ class DocumentsTableSeeder extends Seeder
                 'isrenewable' => 1,
                 'isactive' => 1,
             ),
-
+            6 => array (
+                'id' => 7,
+                'name' => 'Slider Images',
+                'document_group_id' => 6,
+                'description' => 'This is slider images',
+                'isrecurring' => 1,
+                'ismandatory' => 1,
+                'isrenewable' => 1,
+                'isactive' => 1,
+            ),
 
         ));
 

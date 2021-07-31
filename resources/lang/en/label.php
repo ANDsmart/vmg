@@ -256,6 +256,8 @@ return [
     'is_schedule' => 'Is Schedule',
     'notscheduled' => 'Not Schedule',
     'is_schedule_help' =>'is this blog scheduled?',
+    'slider_image' =>'Slider Image',
+    'slider' =>'Sliders',
     'blog' => [
         'blog' =>'Blog',
         'publish' => 'Publish',

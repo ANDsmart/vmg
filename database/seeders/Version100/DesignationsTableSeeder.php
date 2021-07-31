@@ -1,8 +1,11 @@
 <?php
 
+namespace Database\Seeders\Version100;
+
+
 use Illuminate\Database\Seeder;
-use Database\TruncateTable;
-use Database\DisableForeignKeys;
+use Database\Traits\DisableForeignKeys;
+use Database\Traits\TruncateTable;
 
 class DesignationsTableSeeder extends Seeder
 {

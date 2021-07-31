@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cms\Testimonial;
 use App\Models\Resource\Service;
+use App\Models\Resource\Slider;
 use App\Models\Resource\Training;
 use App\Repositories\System\DocumentResourceRepository;
 use Illuminate\Http\Request;
@@ -25,9 +27,13 @@ class WelcomeController extends Controller
     {
 
         $services = Service::limit(4)->get();
+        $sliders = Slider::where('isactive',1)->get();
+        $testimonials = Testimonial::where('isactive',1)->get();
         return view('welcome')
             ->with('clients',\App\Models\Cms\Client::all())
             ->with('trainings',Training::all())
+            ->with('sliders',$sliders)
+            ->with('testimonials',$testimonials)
             ->with('services',$services);
     }
 }

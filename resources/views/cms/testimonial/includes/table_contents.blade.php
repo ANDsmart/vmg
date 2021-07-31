@@ -16,7 +16,6 @@
                     <table class="table table-hover table-responsive-md" id="client_testimonial-table">
                         <thead>
                         <tr>
-                            <th>@lang('label.sn')</th>
                             <th>{{ __('label.cms.client.client') }}</th>
                             <th>{{ __('label.designation') }}</th>
                             <th>{{ __('label.company') }}</th>
@@ -40,8 +39,7 @@
                 type : 'get'
             },
             columns: [
-                { data: 'DT_Row_Index', name: 'DT_Row_Index', orderable: false, searchable: false},
-                { data: 'client', name: 'client', orderable: false, searchable: true },
+                { data: 'name', name: 'name', orderable: false, searchable: true },
                 { data: 'designation', name: 'designation', orderable: false, searchable: false },
                 { data: 'company_name', name: 'company_name', orderable: false, searchable: false },
             ],

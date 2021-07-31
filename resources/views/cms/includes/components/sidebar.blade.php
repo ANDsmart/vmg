@@ -82,6 +82,13 @@
                                 </span>
                         </a>
                     </li>
+                    <li>
+                        <a class="nav-link" href="{!! route('cms.slider.index') !!}">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                            <span>{!! __('label.slider') !!}  <br/>
+                                </span>
+                        </a>
+                    </li>
 
                     <li>
                         <a class="nav-link" href="{!! route('cms.service.index') !!}">

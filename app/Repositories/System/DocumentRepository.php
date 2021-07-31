@@ -8,6 +8,7 @@ use App\Models\Cms\Blog;
 use App\Models\Cms\Client;
 use App\Models\Cms\ModuleFunctionalPart;
 use App\Models\Resource\Service;
+use App\Models\Resource\Slider;
 use App\Models\Resource\Training;
 use App\Models\System\Document;
 use App\Repositories\BaseRepository;
@@ -77,6 +78,10 @@ class DocumentRepository extends BaseRepository
                 case 6:
                     //
                 $resource = Training::query()->find($resource_id);
+                break;
+                case 7:
+                    //
+                $resource = Slider::query()->find($resource_id);
                 break;
 
 

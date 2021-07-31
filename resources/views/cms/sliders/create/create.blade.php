@@ -42,7 +42,7 @@
             <hr>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    {!! link_to_route('cms.service.index',trans('buttons.general.cancel'),[],['id'=> 'cancel', 'class' => 'btn btn-primary btn-xs cancel_button', ]) !!}
+                    {!! link_to_route('cms.slider.index',trans('buttons.general.cancel'),[],['id'=> 'cancel', 'class' => 'btn btn-primary btn-xs cancel_button', ]) !!}
                     {!! Form::button(trans('label.save'), ['class' => 'btn btn-primary btn-xs','id' => 'save_btn', 'type'=>'submit']) !!}
                 </div>
 

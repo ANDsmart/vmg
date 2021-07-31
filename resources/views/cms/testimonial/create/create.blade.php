@@ -1,7 +1,6 @@
 @extends('cms.layouts.cms', ['title' => __('label.cms.testimonial.create') , 'header' => __('label.cms.testimonial.create')])
 
 @include('includes.validate_assets')
-@include('includes.datetimepicker')
 
 
 @push('after-styles')
@@ -16,7 +15,6 @@
     {{ Form::hidden('today', getTodayDate(), []) }}
     <section class="card">
         <div class="card-body">
-            <p>{{ getLanguageBlock('lang.auth.mandatory-field') }}</p>
             <div class="row">
                 <div class="col-md-3">
                     <div class="row form-group ">
@@ -24,9 +22,9 @@
                             <div class="row">
                                 <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="form-group">
-                                        {{ Form::label('client_id', __('label.cms.client.client'), ['class' =>'required_asterik']) }}
-                                        {{ Form::select('client_id',[],null,['class'=>'form-control select2 client_select', 'required', 'id' => 'client_id','placeholder' => '', 'autocomplete' => 'off']) }}
-                                        {!!  $errors->first('client_id', '<span class="badge badge-danger">:message</span>')  !!}
+                                        {{ Form::label('name', __('label.cms.client.client'), ['class' =>'required_asterik']) }}
+                                        {{ Form::text('name',null,['class'=>'form-control select2 client_select', 'required', 'id' => 'client_id','placeholder' => '', 'autocomplete' => 'off']) }}
+                                        {!!  $errors->first('name', '<span class="badge badge-danger">:message</span>')  !!}
                                     </div>
                                 </div>
                             </div>

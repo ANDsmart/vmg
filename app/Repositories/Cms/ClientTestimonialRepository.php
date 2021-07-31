@@ -27,7 +27,7 @@ class ClientTestimonialRepository extends BaseRepository
     {
         return DB::transaction(function() use($input){
             $client_testimonial = $this->query()->create([
-                'client_id' => $input['client_id'],
+                'name' => $input['name'],
                 'designation_id' => $input['designation_id'],
                 'company_name' => $input['company_name'],
                 'content' =>$input['content'] ,
@@ -43,7 +43,7 @@ class ClientTestimonialRepository extends BaseRepository
         return DB::transaction(function() use($client_testimonial,$input){
 
             $client_testimonial->update([
-                'client_id' => $input['client_id'],
+                'name' => $input['name'],
                 'designation_id' => $input['designation_id'],
                 'company_name' => $input['company_name'],
                 'content' =>$input['content'] ,
@@ -89,7 +89,7 @@ class ClientTestimonialRepository extends BaseRepository
     /*Get all for Datatable ClientDiscount*/
     public function getAllForDt()
     {
-        $query = $this->getQueryAllClientTestimonials();
+        $query = $this->query();
         return $query;
     }
 
