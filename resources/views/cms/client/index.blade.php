@@ -24,7 +24,6 @@
                     <table class="table table-hover table-responsive-md" id="client-table">
                         <thead>
                         <tr>
-                            <th>@lang('label.sn')</th>
                             <th>{{ __('label.name') }}</th>
                             <th>{{ __('label.tin') }}</th>
                             <th>{{ __('label.phone') }}</th>
@@ -52,7 +51,6 @@
                 type : 'get'
             },
             columns: [
-                { data: 'DT_Row_Index', name: 'DT_Row_Index', orderable: false, searchable: false},
                 { data: 'name', name: 'name', orderable: false, searchable: true },
                 { data: 'tin', name: 'tin', orderable: false, searchable: false },
                 { data: 'phone', name: 'phone', orderable: false, searchable: false },

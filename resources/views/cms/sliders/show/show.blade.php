@@ -27,7 +27,7 @@
 
 
                                     <a href="{{ route('cms.slider.delete',$slider->uuid) }}" class="btn btn-xs btn-info"><i class="fas fa-closed-captioning"></i>{{trans('label.crud.delete')}}</a>
-                                    <a href="{{ route('cms.client.index') }}" class="btn btn-xs btn-info"><i class="fas fa-closed-captioning"></i> {{ __('label.close') }}</a>
+                                    <a href="{{ route('cms.slider.index') }}" class="btn btn-xs btn-info"><i class="fas fa-closed-captioning"></i> {{ __('label.close') }}</a>
 
                                 </div>
 

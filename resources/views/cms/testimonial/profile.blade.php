@@ -24,7 +24,7 @@
                                         <a href="{{ route('cms.testimonial.edit',$client_testimonial->uuid) }}" class="btn btn-xs btn-primary"><i class="fas fa-edit"></i> {{ __('label.crud.edit') }}</a>
                                         <a href="{{ route('cms.testimonial.delete',$client_testimonial->uuid) }}" class="btn btn-xs btn-danger"><i class="fas fa-edit"></i> {{ __('label.crud.delete') }}</a>
 
-                                    <a href="{{ route('cms.testimonial.index') }}" class="btn btn-xs btn-info"><i class="fas fa-closed-captioning"></i> {{ __('label.close') }}</a>
+{{--                                    <a href="{{ route('cms.testimonial.index') }}" class="btn btn-xs btn-info"><i class="fas fa-closed-captioning"></i> {{ __('label.close') }}</a>--}}
                                 </div>
                             </div>
                         </div>
