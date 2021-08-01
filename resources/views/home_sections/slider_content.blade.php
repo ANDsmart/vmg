@@ -48,9 +48,9 @@
 {{--                        <img src="img/demos/medical/icons/medical-icon-heart.png" alt class="img-fluid pt-1" />--}}
                     </div>
                     <div class="feature-box-info">
-                        <i class="icon-arrow-right-circle icons"></i>
+{{--                        <i class="icon-arrow-right-circle icons"></i>--}}
 
-                        <h4 class="m-0 p-0">TALK TO </h4>
+                        <h4 class="m-0 p-0"> </h4>
 
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                 <h5 class="m-0">
                     <a href="demo-medical-doctors.html" title="">
 {{--                        Doctors Timetable--}}
-                        <i class="icon-arrow-right-circle icons"></i>
+{{--                        <i class="icon-arrow-right-circle icons"></i>--}}
                     </a>
                 </h5>
             </div>

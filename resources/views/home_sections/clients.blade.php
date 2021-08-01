@@ -22,7 +22,7 @@
             <div class="owl-stage" style="transform: translate3d(-1791px, 0px, 0px); transition: all 0.25s ease 0s; width: 3583px;">
 
                 @foreach($clients as $client)
-                <div class="owl-item cloned" style="width: 162.857px;">
+                <div class="owl-item active" style="width: 162.857px;">
                     <div>
                         <img class="img-fluid" src="{{url($client->client_logo)}}" alt="" style="height: 80px;width: 100px">
                     </div>
@@ -39,3 +39,33 @@
         </div>
     </div>
 </div>
+
+
+<section class="call-to-action call-to-action-strong-grey call-to-action-in-footer">
+    <div class="container">
+        <div class="row text-center pb-4 mt-4">
+            <div class="owl-carousel owl-theme carousel-center-active-item mb-0 owl-loaded owl-drag owl-carousel-init"
+                 data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 5}, '992': {'items': 7}, '1200': {'items': 7}}, 'autoplay': true, 'autoplayTimeout': 3000, 'dots': false}"
+                 style="height: auto;">
+
+                <div class="owl-stage-outer">
+                    <div class="owl-stage" style="transform: translate3d(-2117px, 0px, 0px); transition: all 0.25s ease 0s; width: 3583px;">
+                        @foreach($clients as $client)
+
+                        <div class="owl-item  active" style="width: 162.857px;">
+                            <div>
+                                <img class="img-fluid" src="{{url($client->client_logo)}}" alt="">
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="owl-nav disabled">
+                    <button type="button" role="presentation" class="owl-prev"></button>
+                    <button type="button" role="presentation" class="owl-next"></button>
+                </div>
+                <div class="owl-dots disabled"></div>
+            </div>
+        </div>
+    </div>
+</section>
