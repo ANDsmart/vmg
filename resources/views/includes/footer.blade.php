@@ -15,7 +15,7 @@
                 <p class="text-8 text-color-light font-weight-bold" style="color:#fff3f2">0717 443 616</p>
                 <p class="mb-2" style="color:#fff3f2">Fax: (22) 27 61756</p>
                 <p class="mb-2" style="color:#fff3f2">Address: Ali hassan mwinyi road</p>
-                <p class="mb-2" style="color:#fff3f2">Email: info@vipaji.co.tzv</p>
+                <p class="mb-2" style="color:#fff3f2">Email: info@vipaji.co.tz</p>
                 <ul class="social-icons mt-4">
                     <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                     <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
@@ -25,6 +25,8 @@
             <div class="col-lg-5 pt-3">
                 <h5 class="text-3 mb-3 pb-1">SEND US A MESSAGE</h5>
                 <form class="contact-form" action="{{route('general_information.contact_us.send')}}" method="POST" novalidate="novalidate">
+                    @csrf
+
                     <input type="hidden" value="Contact Form" name="subject" id="subject">
                     <div class="contact-form-success alert alert-success d-none">
                         Message has been sent to us.

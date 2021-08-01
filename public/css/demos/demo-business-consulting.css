@@ -2,9 +2,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
 }
 
-a, p, span, button, input, textarea {
-  font-family: "Sintony", sans-serif;
-}
+/*a, p, span, button, input, textarea {*/
+/*  font-family: "Sintony", sans-serif;*/
+/*}*/
 
 h2 {
   margin: 0 0 15px 0;

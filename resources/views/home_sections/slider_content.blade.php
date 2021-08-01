@@ -48,8 +48,9 @@
 {{--                        <img src="img/demos/medical/icons/medical-icon-heart.png" alt class="img-fluid pt-1" />--}}
                     </div>
                     <div class="feature-box-info">
-                        <h4 class="m-0 p-0">TALK TO PROFESSIONAL</h4>
                         <i class="icon-arrow-right-circle icons"></i>
+
+                        <h4 class="m-0 p-0">TALK TO </h4>
 
                     </div>
                 </div>

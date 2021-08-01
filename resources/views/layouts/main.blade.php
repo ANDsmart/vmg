@@ -66,7 +66,9 @@
 
         body  h4, h5,a, p, span, button, input, textarea {
 
-            /*font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;*/
+            font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
         }
 
     </style>

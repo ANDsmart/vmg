@@ -63,7 +63,6 @@
 
             ClassicEditor
                 .create( document.querySelector( '#editor' ), {
-                    toolbar: [ 'bold', 'italic', 'link', 'bulletedList', 'numberedList' ],
                 })
                 .then( editor => {
                     theEditor = editor;
