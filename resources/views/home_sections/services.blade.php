@@ -13,7 +13,7 @@
         <div class="owl-stage-outer">
             <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2072px;">
 
-				@foreach(\App\Models\Resource\Service::all() as $service)
+				@foreach($services as $service)
                 <div class="owl-item" style="width: 230.167px;margin-left: 20px">
                     <div>
 

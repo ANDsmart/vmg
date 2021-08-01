@@ -26,7 +26,7 @@ class WelcomeController extends Controller
     public function welcome()
     {
 
-        $services = Service::limit(4)->get();
+        $services = Service::where('service_type_cv_id',6)->get();
         $sliders = Slider::where('isactive',1)->get();
         $testimonials = Testimonial::where('isactive',1)->get();
         return view('welcome')
