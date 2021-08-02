@@ -12229,7 +12229,7 @@ html.boxed .slider-container {
 
 /* Style 3 */
 .testimonial.testimonial-style-3 blockquote {
-	background: #f2f2f2 !important;
+	/*background: #0c0407 !important;*/
 	border-radius: 4px;
 	padding: 12px 30px;
 }
