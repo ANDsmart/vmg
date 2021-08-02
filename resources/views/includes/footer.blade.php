@@ -25,7 +25,7 @@
 
             <div class="col-lg-6 mb-5 mb-lg-0">
                 <h2 class="font-weight-bold">- Contact Us</h2>
-                <p class="custom-opacity-font text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat ex finibus urna tincidunt, auctor ullamcorper.</p>
+                <p class="custom-opacity-font text-light">VIPAWA MANAGEMENT has been established as a management and human resource consultancy in Tanzania. It is a consultative advisory organization on employment.</p>
                 <div class="row">
                     <div class="col-md-6 custom-sm-margin-top">
                         <h4 class="mb-1">Call Us</h4>
