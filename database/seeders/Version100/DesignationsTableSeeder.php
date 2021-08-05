@@ -36,7 +36,7 @@ class DesignationsTableSeeder extends Seeder
             1 => array (
                 'id' => 2,
                 'name' => 'Human Resources Officer',
-                'short_name' => 'O',
+                'short_name' => 'HR',
                 'isactive' => 1,
                 'created_at' => '2019-04-18 08:21:51',
                 'updated_at' => NULL,
@@ -45,7 +45,7 @@ class DesignationsTableSeeder extends Seeder
             2 => array (
                 'id' => 3,
                 'name' => 'Chief Executive Officer',
-                'short_name' => 'O',
+                'short_name' => 'CEO',
                 'isactive' => 1,
                 'created_at' => '2019-04-18 08:21:51',
                 'updated_at' => NULL,

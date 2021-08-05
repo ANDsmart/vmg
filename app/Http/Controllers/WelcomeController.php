@@ -28,7 +28,7 @@ class WelcomeController extends Controller
 
         $services = Service::where('isactive',1)->orderBy('service_type_cv_id')->get();
         $sliders = Slider::where('isactive',1)->get();
-        $testimonials = Testimonial::where('isactive',1)->paginate(6);
+        $testimonials = Testimonial::where('isactive',0)->paginate(6);
         return view('welcome')
             ->with('clients',\App\Models\Cms\Client::all())
             ->with('trainings',Training::all())
