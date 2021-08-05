@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h3 class="mt-4 mb-0 pb-0 text-light text-uppercase">Clients Reviews</h3>
+                <h3 class="mt-4 mb-0 pb-0 text-light text-uppercase">What our Clients Say</h3>
                 <div class="divider divider-light divider-small divider-small-center mb-4 mt-0">
                     <hr class="mt-2">
                 </div>
