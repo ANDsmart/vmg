@@ -20,19 +20,25 @@ class UsersTableSeeder extends Seeder
 
 //        DB::table('users')->delete();
         $this->disableForeignKeys("users");
-        $this->delete('users');
-        DB::table('users')->where('id', 1)->delete();
+//        $this->delete('users');
+       DB::table('users')->where('id', 3)->update(['id' => 1]);
+
+
         $userRepo = new \App\Repositories\Access\UserRepository();
-        $user = $userRepo->query()->updateOrCreate([
-            'username' => 'admin',
-            'firstname' => 'Administrator',
-            'lastname' => 'Administrator',
-            'middlename' => 'Administrator',
-            'email' => 'admin@vmg.co.tz',
-            'phone' => '+255700000000',
-            'password' => bcrypt('vmg123?'),
-            'confirmed' => '1',
-        ]);
+        $exists = $userRepo->query()->count();
+
+        if($exists == 0) {
+            $user = $userRepo->query()->firstOrCreate([
+                'username' => 'admin',
+                'firstname' => 'Administrator',
+                'lastname' => 'Administrator',
+                'middlename' => 'Administrator',
+                'email' => 'admin@vmg.co.tz',
+                'phone' => '+255700000000',
+                'password' => bcrypt('vmg123?'),
+                'confirmed' => '1',
+            ]);
+        }
 //
 //        $this->disableForeignKeys('staffs');
 //        $staff = new \App\Repositories\Staff\StaffRepository();
