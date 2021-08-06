@@ -21,7 +21,7 @@ class UsersTableSeeder extends Seeder
 //        DB::table('users')->delete();
         $this->disableForeignKeys("users");
 //        $this->delete('users');
-       DB::table('users')->where('id', 3)->update(['id' => 1]);
+//       DB::table('users')->where('id', 3)->update(['id' => 1]);
 
 
         $userRepo = new \App\Repositories\Access\UserRepository();
