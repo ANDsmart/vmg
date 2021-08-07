@@ -7,7 +7,7 @@
     </div>
     <div class="col-12">
         <div class="call-to-action-btn">
-            <a class="btn btn-outline btn-quaternary custom-button text-uppercase font-weight-bold" href="https://vipajijobs.com/">Find more</a>
+            <a class="btn btn-outline btn-quaternary custom-button text-uppercase font-weight-bold" href="https://vipajijobs.com/" target="_blank">Find more</a>
         </div>
     </div>
 </section>
