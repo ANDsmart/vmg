@@ -49,6 +49,14 @@
                                             <td>{!! isset($slider->created_at)? short_date_format($slider->created_at) : 'None' !!}</td>
                                         </tr>
                                         <tr>
+                                            <td><b>{!! 'Color' !!} :</b></td>
+                                            <td>{!! ($slider->color) !!}</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>{!! 'Position' !!} :</b></td>
+                                            <td>{!! ($slider->position) !!}</td>
+                                        </tr>
+                                        <tr>
                                             <td><b>{!! trans('label.status') !!} :</b></td>
                                             <td>{!! ($slider->status == 1)? trans('label.published') : trans('label.draft') !!}</td>
                                         </tr>

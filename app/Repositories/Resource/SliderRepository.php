@@ -31,6 +31,8 @@ class SliderRepository extends BaseRepository
             $slider = $this->query()->firstOrCreate([
                 'title' => $input['title'],
                 'description' => $input['description'],
+                'color' => $input['color'],
+                'position' => $input['position'],
                 'isactive' => $input['isactive'],
             ]);
 
@@ -47,6 +49,8 @@ class SliderRepository extends BaseRepository
           $slider->update([
               'title' => $input['title'],
               'description' => $input['description'],
+              'color' => $input['color'],
+              'position' => $input['position'],
               'isactive' => $input['isactive'],
             ]);
             //slider image

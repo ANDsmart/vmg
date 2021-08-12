@@ -1,10 +1,25 @@
 <div class="row">
-    <div class="col-12">
+    <div class="col-6">
         {!! Form::label('title', __("label.title"), ['class' => 'required_asterik']) !!}
 
         {!! Form::text('title',$slider->title , ['placeholder' => __('label.title')  ,'id'=>'video_link', 'class' => 'form-control','required']) !!}
         {!! $errors->first('title', '<span class="badge badge-danger">:message</span>') !!}
+    </div>
 
+    <div class="col-md-3">
+        {!! Form::label('color','Color', ['class' => 'required_asterik']) !!}
+
+        {!! Form::text('color',$slider->color , ['placeholder' => __('Color')  ,'id'=>'video_link', 'class' => 'form-control','required']) !!}
+        {!! $errors->first('color', '<span class="badge badge-danger">:message</span>') !!}
+    </div>
+
+    <div class="col-md-3">
+        {!! Form::label('position', 'Position', ['class' => 'required_asterik']) !!}
+
+        {!! Form::text('position',$slider->position , ['placeholder' => 'Position'  ,'id'=>'video_link', 'class' => 'form-control','required']) !!}
+        <span class="badge ">eg left or right</span>
+
+        {!! $errors->first('position', '<span class="badge badge-danger">:message</span>') !!}
     </div>
 </div>
 

@@ -11,30 +11,27 @@
                      data-bgrepeat="no-repeat"
                      class="rev-slidebg">
 
+
                 <div class="tp-caption main-label"
-                     data-x="left" data-hoffset="25"
-                     data-y="center" data-voffset="-5"
+                     data-x="{{$slider->position}}" data-hoffset="100"
+                     data-y="center" data-voffset="-45"
                      data-start="1500"
                      data-whitespace="nowrap"
                      data-transform_in="y:[100%];s:500;"
                      data-transform_out="opacity:0;s:500;"
-                     style="z-index: 5; font-size: 1.5em; text-transform: uppercase;"
-                     data-mask_in="x:0px;y:0px;">{!! $slider->description !!}</div>
+                     style="z-index: 5;color: {{$slider->color}}"
+                     data-mask_in="x:0px;y:0px;">{{$slider->title}}</div>
 
-                <div class="tp-caption main-label"
-                     data-x="left" data-hoffset="25"
-                     data-y="center" data-voffset="-55"
-                     data-start="500"
-                     style="z-index: 5; text-transform: uppercase; font-size: 52px;"
-                     data-transform_in="y:[-300%];opacity:0;s:500;">{{$slider->title}}</div>
+                <div class="tp-caption bottom-label"
+                     data-x="{{$slider->position}}" data-hoffset="100"
+                     data-y="center" data-voffset="5"
+                     data-start="2000"
+                     style="z-index: 5;color: {{$slider->color}}"
+                     data-transform_in="y:[100%];opacity:0;s:500;">{!! $slider->description !!}
+                </div>
 
-{{--                <div class="tp-caption bottom-label"--}}
-{{--                     data-x="left" data-hoffset="25"--}}
-{{--                     data-y="center" data-voffset="40"--}}
-{{--                     data-start="2000"--}}
-{{--                     style="z-index: 5; border-bottom: 1px solid #fff; padding-bottom: 3px;"--}}
-{{--                     data-transform_in="y:[100%];opacity:0;s:500;" style="font-size: 1.2em;">We are located in Tanzania</div>--}}
             </li>
+
             @endforeach
         </ul>
     </div>
