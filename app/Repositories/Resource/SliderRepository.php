@@ -33,6 +33,9 @@ class SliderRepository extends BaseRepository
                 'description' => $input['description'],
                 'color' => $input['color'],
                 'position' => $input['position'],
+                'size' => $input['size'],
+                'description_color' => $input['description_color'],
+                'description_size' => $input['description_size'],
                 'isactive' => $input['isactive'],
             ]);
 
@@ -51,6 +54,9 @@ class SliderRepository extends BaseRepository
               'description' => $input['description'],
               'color' => $input['color'],
               'position' => $input['position'],
+              'size' => $input['size'],
+              'description_color' => $input['description_color'],
+              'description_size' => $input['description_size'],
               'isactive' => $input['isactive'],
             ]);
             //slider image

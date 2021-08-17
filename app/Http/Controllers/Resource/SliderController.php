@@ -35,10 +35,7 @@ class SliderController extends Controller
     public function create()
     {
 
-        $training_types = (new CodeValueRepository())->getTrainingCategories()->pluck('name','id');
-
-        return view('cms.training.create.create')
-            ->with('training_types',$training_types);
+        return view('cms.sliders.create.create');
     }
 
 

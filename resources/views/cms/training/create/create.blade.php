@@ -13,11 +13,11 @@
         }
 
     </style>
- @endpush
+@endpush
 @section("content")
     <div class="card">
         <div class="card-body">
-            {!! Form::open(['route' => ['cms.slider.store'],'method'=>'post', 'autocomplete' => 'off',  'id' =>'store_blog', 'class' => 'form-horizontal needs-validation', 'novalidate','enctype'=>"multipart/form-data"]) !!}
+            {!! Form::open(['route' => ['cms.training.store'],'method'=>'post', 'autocomplete' => 'off',  'id' =>'store_blog', 'class' => 'form-horizontal needs-validation', 'novalidate','enctype'=>"multipart/form-data"]) !!}
             {!! Form::hidden('action_type', 1, []) !!}
 
             <div class="row">
@@ -25,17 +25,17 @@
 
                 </div>
                 <div class="col-md-6">
-{{--                    <button type="button" class="mb-1 mt-1 mr-1 btn btn-primary btn-xs pull-right"><i class="fas fa-paper-plane"></i> {{trans('label.blog.publish')}}</button>--}}
+                    {{--                    <button type="button" class="mb-1 mt-1 mr-1 btn btn-primary btn-xs pull-right"><i class="fas fa-paper-plane"></i> {{trans('label.blog.publish')}}</button>--}}
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    @include('cms.sliders.create.includes.slider_info')
+                    @include('cms.training.create.includes.training_info')
 
                 </div>
 
                 <div class="col-md-6">
-{{--                    @include('cms.includes.attach_images')--}}
+                    {{--                    @include('cms.includes.attach_images')--}}
                 </div>
             </div>
 
@@ -132,7 +132,7 @@
 
             }
 
-    })
+        })
     </script>
 
 @endpush

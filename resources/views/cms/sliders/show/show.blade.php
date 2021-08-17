@@ -57,6 +57,10 @@
                                             <td>{!! ($slider->position) !!}</td>
                                         </tr>
                                         <tr>
+                                                <td><b>{!! 'Size' !!} :</b></td>
+                                            <td>{!! ($slider->size) !!} px</td>
+                                        </tr>
+                                        <tr>
                                             <td><b>{!! trans('label.status') !!} :</b></td>
                                             <td>{!! ($slider->status == 1)? trans('label.published') : trans('label.draft') !!}</td>
                                         </tr>
@@ -70,6 +74,14 @@
                                         <tr>
                                             <th width="170px"> {{trans('label.description')}} : </th>
                                             <td id="description">{!! $slider->description !!}</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="170px"> {{'Description Color'}} : </th>
+                                            <td id="description">{!! $slider->description_color !!}</td>
+                                        </tr>
+                                        <tr>
+                                            <th width="170px"> {{'Description size'}} : </th>
+                                            <td id="description">{!! $slider->description_size !!}px</td>
                                         </tr>
                                         <tr>
                                             <th width="170px"> {{trans('label.slider_image')}} : </th>

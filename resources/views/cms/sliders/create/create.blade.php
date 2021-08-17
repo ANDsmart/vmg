@@ -13,7 +13,7 @@
         }
 
     </style>
- @endpush
+@endpush
 @section("content")
     <div class="card">
         <div class="card-body">
@@ -21,21 +21,9 @@
             {!! Form::hidden('action_type', 1, []) !!}
 
             <div class="row">
-                <div class="col-md-6">
-
-                </div>
-                <div class="col-md-6">
-{{--                    <button type="button" class="mb-1 mt-1 mr-1 btn btn-primary btn-xs pull-right"><i class="fas fa-paper-plane"></i> {{trans('label.blog.publish')}}</button>--}}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-8">
                     @include('cms.sliders.create.includes.slider_info')
 
-                </div>
-
-                <div class="col-md-6">
-{{--                    @include('cms.includes.attach_images')--}}
                 </div>
             </div>
 
@@ -132,7 +120,7 @@
 
             }
 
-    })
+        })
     </script>
 
 @endpush

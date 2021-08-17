@@ -1,10 +1,18 @@
 <div class="row">
-    <div class="col-6">
+    <div class="col-4">
         {!! Form::label('title', __("label.title"), ['class' => 'required_asterik']) !!}
 
         {!! Form::text('title',null , ['placeholder' => __('label.title')  ,'id'=>'video_link', 'class' => 'form-control','required']) !!}
         {!! $errors->first('title', '<span class="badge badge-danger">:message</span>') !!}
 
+    </div>
+    <div class="col-md-2">
+        {!! Form::label('size','Size', ['class' => 'required_asterik']) !!}
+
+        {!! Form::text('size',null , ['placeholder' => __('Size')  ,'id'=>'video_link', 'class' => 'form-control number','number']) !!}
+        <span class="badge ">eg in pixes</span>
+
+        {!! $errors->first('size', '<span class="badge badge-danger">:message</span>') !!}
     </div>
     <div class="col-md-3">
         {!! Form::label('color','Color', ['class' => 'required_asterik']) !!}
@@ -62,12 +70,27 @@
     </div>
 </div>
 <div class="row mt-2" >
-    <div class="col-lg-12">
+    <div class="col-lg-6">
         {!! Form::label('description', __("label.content"), ['class' => 'required_asterik']) !!}
 
         {!! Form::textarea('description', null, ['class' => 'form-control', 'rows' => '10', 'autocomplete' => 'off', 'id' => 'editor', 'aria-describedby' => 'contentHelp', 'required']) !!}
         {!! $errors->first('description', '<span class="badge badge-danger">:message</span>') !!}
     </div>
+    <div class="col-md-2">
+        {!! Form::label('description_size','Size', ['class' => 'required_asterik']) !!}
+
+        {!! Form::text('description_size',null , ['placeholder' => __('Size')  ,'id'=>'video_link', 'class' => 'form-control number','number']) !!}
+        <span class="badge ">eg in pixes</span>
+
+        {!! $errors->first('size', '<span class="badge badge-danger">:message</span>') !!}
+    </div>
+    <div class="col-md-3">
+        {!! Form::label('description_color','Color', ['class' => 'required_asterik']) !!}
+
+        {!! Form::text('description_color',null , ['placeholder' => __('Color')  ,'id'=>'video_link', 'class' => 'form-control','required']) !!}
+        {!! $errors->first('color', '<span class="badge badge-danger">:message</span>') !!}
+    </div>
+
 </div>
 
 

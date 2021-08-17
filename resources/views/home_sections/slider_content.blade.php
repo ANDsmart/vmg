@@ -19,14 +19,14 @@
                      data-whitespace="nowrap"
                      data-transform_in="y:[100%];s:500;"
                      data-transform_out="opacity:0;s:500;"
-                     style="z-index: 5;color: {{$slider->color}}"
+                     style="z-index: 5;color: {{$slider->color}};font-size: {{$slider->size}}px"
                      data-mask_in="x:0px;y:0px;">{{$slider->title}}</div>
 
                 <div class="tp-caption bottom-label"
                      data-x="{{$slider->position}}" data-hoffset="100"
                      data-y="center" data-voffset="5"
                      data-start="2000"
-                     style="z-index: 5;color: {{$slider->color}}"
+                     style="z-index: 5;color: {{$slider->description_color}} ; font-size: {{$slider->description_size}}px"
                      data-transform_in="y:[100%];opacity:0;s:500;">{!! $slider->description !!}
                 </div>
 
