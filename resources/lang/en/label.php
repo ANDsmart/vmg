@@ -258,6 +258,9 @@ return [
     'is_schedule_help' =>'is this blog scheduled?',
     'slider_image' =>'Slider Image',
     'slider' =>'Sliders',
+    'industries' =>'Industries',
+    'functions' =>'Functions',
+    'knowledge' =>'Knowledge',
     'blog' => [
         'blog' =>'Blog',
         'publish' => 'Publish',
