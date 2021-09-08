@@ -337,11 +337,13 @@
                                                                                             <div class="col-lg-4"><span class="dropdown-mega-sub-title" >We manage</span>
                                                                                                 <ul class="dropdown-mega-sub-nav">
                                                                                                     @foreach((new \App\Repositories\System\CodeValueRepository())->getServiceForDirectory() as $code_value)
-                                                                                                    <li><a class="dropdown-item" href="elements-accordions.html">{{$code_value->name}}</a>
+                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',$code_value->id)}}">{{$code_value->name}}</a>
                                                                                                     <p>{{truncateString($code_value->content,50)}}</p>
                                                                                                     </li>
 
                                                                                                 @endforeach
+
+
                                                                                                 </ul>
                                                                                             </div>
                                                                                             <div class="col-lg-4"><span class="dropdown-mega-sub-title">We combine</span>
@@ -419,7 +421,7 @@
                                                                             <a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.about_us')}} <i class="fas fa-chevron-down"></i></a>
                                                                             <ul class="dropdown-menu">
                                                                                 <li>
-                                                                                    <a class="dropdown-item" href="{{route('home')}}"> What are we help clients? </a>
+                                                                                    <a class="dropdown-item" href="{{route('general_information.about_us')}}"> What are we help clients? </a>
                                                                                 </li>
                                                                                 <li>
                                                                                     <a class="dropdown-item" href="{{route('general_information.about_us')}}"> What we do?</a>
