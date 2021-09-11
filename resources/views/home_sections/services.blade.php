@@ -110,11 +110,11 @@
 											<img src="{{url('img/office/our-office-9.jpg')}}" class="img-fluid" alt="">
 											<span class="thumb-info-title">
 												<span class="thumb-info-slide-info-hover-1">
-													<span class="thumb-info-inner text-4">Human resource</span>
+													<span class="thumb-info-inner text-4">Management service</span>
 												</span>
 												<span class="thumb-info-slide-info-hover-2">
                                                     		<span class="thumb-info-slide-info-hover-1">
-													<span class="thumb-info-inner text-4">Human resource</span>
+													<span class="thumb-info-inner text-4">Management service</span>
 												</span>
 													<span class="thumb-info-inner text-2">
 <a href="#" class="d-inline-flex align-items-center btn btn-with-arrow font-weight-bold text-color-light text-3 p-0 appear-animation animated fadeInUpShorter appear-animation-visible"

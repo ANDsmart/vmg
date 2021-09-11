@@ -174,64 +174,32 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="featured-boxes featured-boxes-style-2">
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700">
-                        <div class="featured-box featured-box-effect-4">
-                            <div class="box-content">
-                                <i class="icon-featured icon-screen-tablet icons text-color-primary bg-color-grey"></i>
-                                <h4 class="font-weight-bold">Mobile Apps</h4>
-                                <p class="px-3">Lorem ipsum dolor sit amt, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="900">
-                        <div class="featured-box featured-box-effect-4">
-                            <div class="box-content">
-                                <i class="icon-featured icon-layers icons text-color-light bg-color-primary"></i>
-                                <h4 class="font-weight-bold">Creative Websites</h4>
-                                <p class="px-3">Lorem ipsum dolor sit amt, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1100">
-                        <div class="featured-box featured-box-effect-4">
-                            <div class="box-content">
-                                <i class="icon-featured icon-magnifier icons text-color-primary bg-color-grey"></i>
-                                <h4 class="font-weight-bold">SEO Optimization</h4>
-                                <p class="px-3">Lorem ipsum dolor sit amt, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1500">
-                        <div class="featured-box featured-box-effect-4">
-                            <div class="box-content">
-                                <i class="icon-featured icon-screen-desktop icons text-color-light bg-color-primary"></i>
-                                <h4 class="font-weight-bold">Brand Solutions</h4>
-                                <p class="px-3">Lorem ipsum dolor sit amt, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1300">
-                        <div class="featured-box featured-box-effect-4">
-                            <div class="box-content">
-                                <i class="icon-featured icon-doc icons text-color-primary bg-color-grey"></i>
-                                <h4 class="font-weight-bold">HTML5 / CSS3 / JS</h4>
-                                <p class="px-3">Lorem ipsum dolor sit amt, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1100">
-                        <div class="featured-box featured-box-effect-4">
-                            <div class="box-content">
-                                <i class="icon-featured icon-menu icons text-color-light bg-color-primary"></i>
-                                <h4 class="font-weight-bold">Buttons</h4>
-                                <p class="px-3">Lorem ipsum dolor sit amt, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="sort-destination-loader sort-destination-loader-loaded">
+            <div class="row portfolio-list sort-destination" data-sort-id="portfolio" data-filter="*" style="position: relative; height: 1105.69px;">
+                @foreach($services as $service)
+
+                <div class="col-lg-4 isotope-item economic" style="position: absolute; left: 0px; top: 0px;">
+                    <a href="demo-business-consulting-cases-detail.html" class="text-decoration-none">
+											<span class="thumb-info custom-thumb-info-style-1 mb-4 pb-1 thumb-info-hide-wrapper-bg">
+												<span class="thumb-info-wrapper m-0">
+													<img src="{{url($service->getImageAttribute())}}" class="img-fluid" alt="">
+												</span>
+												<span class="thumb-info-caption p-3 pt-4 pb-4">
+													<span class="custom-thumb-info-title">
+														<span class="custom-thumb-info-name font-weight-semibold text-color-dark text-4">{{$service->title}}</span>
+{{--														<span class="custom-thumb-info-desc font-weight-light">Okler Themes</span>--}}
+													</span>
+													<span class="custom-arrow"></span>
+												</span>
+											</span>
+                    </a>
                 </div>
+                @endforeach
+            </div>
+            <div class="bounce-loader">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
             </div>
         </div>
     </div>
