@@ -165,9 +165,39 @@
             </div>
             <div class="col-lg-4">
                 <div class="testimonial testimonial-primary appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="800" style="animation-delay: 800ms;">
+                    @if($service_type->id == 6)
                     <blockquote>
                         <p class="mb-0">Vipawa Management Group conducts management services, marketing of the client human resources services and consultation, Legal advisory and representation on all your labour and industrial relations issues</p>
                     </blockquote>
+                        @elseif($service_type->id == 7)
+                        <blockquote>
+                            <p class="mb-0">Vipawa Management Group offers reliable law services to individual and corporate clientele in Tanzania</p>
+                        </blockquote>
+                        @elseif($service_type->id == 8)
+
+                        <blockquote>
+                            <p class="mb-0">Vipawa Management Group conducts management services, marketing of the client human resources services and consultation, Legal advisory and representation on all your labour and industrial relations issues</p>
+                        </blockquote>
+
+                    @elseif($service_type->id == 9)
+
+                        <blockquote>
+                            <p class="mb-0">Vipawa Management Group conducts management services, marketing of the client human resources services and consultation, Legal advisory and representation on all your labour and industrial relations issues</p>
+                        </blockquote>
+                    @elseif($service_type->id == 10)
+                        <blockquote>
+                            <p class="mb-0">Vipawa Management Group conducts management services, marketing of the client human resources services and consultation, Legal advisory and representation on all your labour and industrial relations issues</p>
+                        </blockquote>
+                    @elseif($service_type->id == 11)
+                        <blockquote>
+                            <p class="mb-0">Vipaji inc corporate limited offers Licenses & Permits Services to blue chip multinational and transnational corporations in Tanzania</p>
+                        </blockquote>
+                    @elseif($service_type->id == 12)
+                        <blockquote>
+                            <p class="mb-0">Vipaji inc corporate limited offers Licenses & Permits Services to blue chip multinational and transnational corporations in Tanzania</p>
+                        </blockquote>
+
+                    @endif
                 </div>
             </div>
         </div>
