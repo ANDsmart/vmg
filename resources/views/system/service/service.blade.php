@@ -173,30 +173,30 @@
                 <hr class="solid mt-5 mb-2">
             </div>
         </div>
-        <div class="row py-3 justify-content-center">
-            @foreach($services as $service)
+{{--        <div class="row py-3 justify-content-center">--}}
+{{--            @foreach($services as $service)--}}
 
-            <div class="col-sm-8 col-md-4 mb-4 mb-md-0 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" style="animation-delay: 100ms;">
-                <article>
-                    <div class="row">
-                        <div class="col">
-                            <a href="#" class="text-decoration-none">
-                                <img src="{{url($service->getImageAttribute())}}" class="img-fluid hover-effect-2 mb-3" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <h4 class="mb-0"><a href="#" class="text-2 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">{{$service->title}}</a></h4>
-                            <p class="mb-2 lead text-4">{!! truncateString($service->content,50) !!}</p>
+{{--            <div class="col-sm-8 col-md-4 mb-4 mb-md-0 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" style="animation-delay: 100ms;">--}}
+{{--                <article>--}}
+{{--                    <div class="row">--}}
+{{--                        <div class="col">--}}
+{{--                            <a href="#" class="text-decoration-none">--}}
+{{--                                <img src="{{url($service->getImageAttribute())}}" class="img-fluid hover-effect-2 mb-3" alt="">--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="row">--}}
+{{--                        <div class="col">--}}
+{{--                            <h4 class="mb-0"><a href="#" class="text-2 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">{{$service->title}}</a></h4>--}}
+{{--                            <p class="mb-2 lead text-4">{!! truncateString($service->content,50) !!}</p>--}}
 {{--                            <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla non metus pulvinar.</p>--}}
-                        </div>
-                    </div>
-                </article>
-            </div>
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </article>--}}
+{{--            </div>--}}
 
-            @endforeach
-        </div>
+{{--            @endforeach--}}
+{{--        </div>--}}
     </div>
 
     <section class="section bg-color-grey section-height-3 border-0 mt-5 mb-0">
