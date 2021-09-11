@@ -156,23 +156,39 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-10">
-                <div class="overflow-hidden">
-                    <p class="lead mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">
-                       {!! truncateString($service_type->description,100) !!}
-                    </p>
+            <div class="col-lg-8">
+                <div class="overflow-hidden mb-2">
+                    <h2 class="font-weight-normal text-7 mb-2 appear-animation animated maskUp appear-animation-visible" data-appear-animation="maskUp" data-appear-animation-delay="200" style="animation-delay: 200ms;">Find Your <strong class="font-weight-extra-bold">Oportunity</strong></h2>
+                </div>
+
+                <p class="text-color-light-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;">{!! ($service_type->description) !!}</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial testimonial-primary appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="800" style="animation-delay: 800ms;">
+                    <blockquote>
+                        <p class="mb-0">Vipawa Management Group conducts management services, marketing of the client human resources services and consultation, Legal advisory and representation on all your labour and industrial relations issues</p>
+                    </blockquote>
                 </div>
             </div>
-            <div class="col-lg-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
-                <a href="#" class="btn btn-modern btn-dark mt-1">Get a Quote!</a>
-            </div>
         </div>
+{{--        <div class="row">--}}
+{{--            <div class="col-lg-10">--}}
+{{--                <div class="overflow-hidden">--}}
+{{--                    <p class="lead mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">--}}
+{{--                       {!! truncateString($service_type->description,100) !!}--}}
+{{--                    </p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">--}}
+{{--                <a href="#" class="btn btn-modern btn-dark mt-1">Get a Quote!</a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
-        <div class="row">
-            <div class="col py-3">
-                <hr class="solid mt-5 mb-2">
-            </div>
-        </div>
+{{--        <div class="row">--}}
+{{--            <div class="col py-3">--}}
+{{--                <hr class="solid mt-5 mb-2">--}}
+{{--            </div>--}}
+{{--        </div>--}}
     </div>
 
     <section class="section bg-color-grey section-height-3 border-0 mt-5 mb-0">
@@ -188,10 +204,8 @@
                         <div class="col-md-8 pl-md-5">
                             <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">{{$service->title}}</strong> </h2>
                             <p class="text-4">{!! $service->content !!}</p>
-
                         </div>
                     </div>
-
                     <hr class="solid my-5">
 
                     @endforeach
