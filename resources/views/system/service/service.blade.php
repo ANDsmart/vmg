@@ -173,34 +173,29 @@
                 <hr class="solid mt-5 mb-2">
             </div>
         </div>
+        <div class="row py-3 justify-content-center">
+            @foreach($services as $service)
 
-        <div class="sort-destination-loader sort-destination-loader-loaded">
-            <div class="row portfolio-list sort-destination" data-sort-id="portfolio" data-filter="*" style="position: relative; height: 1105.69px;">
-                @foreach($services as $service)
+            <div class="col-sm-8 col-md-4 mb-4 mb-md-0 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" style="animation-delay: 100ms;">
+                <article>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="text-decoration-none">
+                                <img src="{{url($service->getImageAttribute())}}" class="img-fluid hover-effect-2 mb-3" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="mb-0"><a href="#" class="text-2 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">{{$service->title}}</a></h4>
+                            <p class="mb-2 lead text-4">{!! truncateString($service->content,50) !!}</p>
+{{--                            <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla non metus pulvinar.</p>--}}
+                        </div>
+                    </div>
+                </article>
+            </div>
 
-                <div class="col-lg-4 isotope-item economic" style="position: absolute; left: 0px; top: 0px;">
-                    <a href="demo-business-consulting-cases-detail.html" class="text-decoration-none">
-											<span class="thumb-info custom-thumb-info-style-1 mb-4 pb-1 thumb-info-hide-wrapper-bg">
-												<span class="thumb-info-wrapper m-0">
-													<img src="{{url($service->getImageAttribute())}}" class="img-fluid" alt="">
-												</span>
-												<span class="thumb-info-caption p-3 pt-4 pb-4">
-													<span class="custom-thumb-info-title">
-														<span class="custom-thumb-info-name font-weight-semibold text-color-dark text-4">{{$service->title}}</span>
-{{--														<span class="custom-thumb-info-desc font-weight-light">Okler Themes</span>--}}
-													</span>
-													<span class="custom-arrow"></span>
-												</span>
-											</span>
-                    </a>
-                </div>
-                @endforeach
-            </div>
-            <div class="bounce-loader">
-                <div class="bounce1"></div>
-                <div class="bounce2"></div>
-                <div class="bounce3"></div>
-            </div>
+            @endforeach
         </div>
     </div>
 
