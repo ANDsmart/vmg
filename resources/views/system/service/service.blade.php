@@ -236,7 +236,6 @@
                             <p class="text-4">{!! $service->content !!}</p>
                         </div>
                     </div>
-                    <hr class="solid my-5">
 
                     @endforeach
                 </div>
@@ -244,30 +243,7 @@
         </div>
     </section>
 
-    <div class="container-fluid">
-        <div class="row featured-boxes-full featured-boxes-full-scale">
-            <div class="col-lg-3 featured-box-full featured-box-full-primary">
-                <i class="far fa-life-ring"></i>
-                <h4>Customer Support</h4>
-                <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet.</p>
-            </div>
-            <div class="col-lg-3 featured-box-full featured-box-full-primary">
-                <i class="fas fa-film"></i>
-                <h4>Sliders</h4>
-                <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet.</p>
-            </div>
-            <div class="col-lg-3 featured-box-full featured-box-full-primary">
-                <i class="far fa-star"></i>
-                <h4>Winner</h4>
-                <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet. </p>
-            </div>
-            <div class="col-lg-3 featured-box-full featured-box-full-primary">
-                <i class="far fa-edit"></i>
-                <h4>Customizable</h4>
-                <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet.</p>
-            </div>
-        </div>
-    </div>
+
 
     <div class="container pt-4">
         <div class="row text-center pt-4 mt-5">
