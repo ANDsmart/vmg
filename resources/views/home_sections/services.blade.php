@@ -145,7 +145,7 @@
 											<img src="img/office/our-office-10.jpg" class="img-fluid" alt="">
 											<span class="thumb-info-title">
 												<span class="thumb-info-slide-info-hover-1">
-													<span class="thumb-info-inner text-4">Our Team</span>
+													<span class="thumb-info-inner text-4">We’re committed to creating Change that Matters</span>
 												</span>
 												<span class="thumb-info-slide-info-hover-2">
 													<span class="thumb-info-inner text-2">
