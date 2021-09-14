@@ -2,6 +2,7 @@
 
 namespace App\Repositories\System;
 
+use App\Models\Resource\Training;
 use App\Models\Resource\TrainingCategory;
 use App\Models\System\CodeValue;
 use App\Repositories\BaseRepository;
@@ -290,8 +291,14 @@ class CodeValueRepository extends BaseRepository
 
     public function getTrainingCategories()
     {
-        return TrainingCategory::select(['id', 'name'])->orderBy("id", "asc")->get();
+        return $this->queryActive()->where("code_id", 3)->get();
 
+    }
+
+    public function getTrainingByTrainingCategory($category_id)
+    {
+        $query = Training::where('category_id',$category_id)->get();
+        return $query;
     }
 
     /**

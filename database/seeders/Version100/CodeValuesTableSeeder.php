@@ -199,6 +199,49 @@ class CodeValuesTableSeeder extends Seeder
             ]
         );
 
+        $cv = CodeValue::updateOrCreate(
+            ['reference' => 'KNLGTOS'],
+            [
+                'id' => 13,
+                'code_id' => 3,
+                'name' => 'TOOLS & SAMPLE',
+                'lang' => NULL,
+                'description' => '',
+                'reference' => 'KNLGTOS',
+                'sort' => 8,
+                'isactive' => 1,
+                'is_system_defined' => 1,
+            ]
+        );
+        $cv = CodeValue::updateOrCreate(
+            ['reference' => 'KNLGHR'],
+            [
+                'id' => 14,
+                'code_id' => 3,
+                'name' => 'HR TOPICS',
+                'lang' => NULL,
+                'description' => '',
+                'reference' => 'KNLGHR',
+                'sort' => 9,
+                'isactive' => 1,
+                'is_system_defined' => 1,
+            ]
+        );
+        $cv = CodeValue::updateOrCreate(
+            ['reference' => 'KNLGBUSS'],
+            [
+                'id' => 15,
+                'code_id' => 3,
+                'name' => 'BUSINESS SOLUTION',
+                'lang' => NULL,
+                'description' => '',
+                'reference' => 'KNLGBUSS',
+                'sort' => 10,
+                'isactive' => 1,
+                'is_system_defined' => 1,
+            ]
+        );
+
         $this->enableForeignKeys("code_values");
 
 

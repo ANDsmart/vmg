@@ -37,6 +37,12 @@ class CodesTableSeeder extends Seeder
                 'lang' => 'service_type',
                 'is_system_defined' => 1,
             ),
+            2 => array (
+                'id' => 3,
+                'name' => 'Knowledge',
+                'lang' => 'knowledge',
+                'is_system_defined' => 1,
+            ),
 
 
 

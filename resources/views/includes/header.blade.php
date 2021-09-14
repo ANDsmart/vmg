@@ -364,56 +364,21 @@
                                                                         </li>
                                                                         <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.knowledge')}} <i class="fas fa-chevron-down"></i></a>
                                                                             <ul class="dropdown-menu">
-                                                                                <li class="dropdown-submenu"><a class="dropdown-item" href="#">BUSINESS SOLUTIONS
+                                                                                @foreach((new \App\Repositories\System\CodeValueRepository())->getTrainingCategories() as $training)
+                                                                                <li class="dropdown-submenu">
+                                                                                    <a class="dropdown-item" href="#">{{$training->name}}
                                                                                         <i class="fas fa-chevron-down"></i></a>
                                                                                     <ul class="dropdown-menu">
-                                                                                        <li><a class="dropdown-item" href="feature-headers-overview.html">
-                                                                                                Behavioral Competencies</a></li>       <li><a class="dropdown-item" href="feature-headers-overview.html">
-                                                                                                Benefits</a></li>       <li><a class="dropdown-item" href="feature-headers-overview.html">
-                                                                                                Compensation</a></li>
+
+                                                                                        @foreach((new \App\Repositories\System\CodeValueRepository())->getTrainingByTrainingCategory($training->id) as $knowledge)
+                                                                                        <li>
+                                                                                            <a class="dropdown-item" href="{{route('general_information.training.display',$knowledge->uuid)}}">
+                                                                                                {{$knowledge->title}}</a>
+                                                                                        </li>
+                                                                                            @endforeach
                                                                                     </ul>
                                                                                 </li>
-
-                                                                                <li class="dropdown-submenu"><a class="dropdown-item" href="#">HR TOPICS
-
-                                                                                        <i class="fas fa-chevron-down"></i></a>
-                                                                                    <ul class="dropdown-menu">
-                                                                                        <li><a class="dropdown-item" href="feature-headers-overview.html">
-                                                                                                Benchmarking Service</a></li>
-                                                                                        <li><a class="dropdown-item" href="feature-headers-overview.html">
-                                                                                                Diversity Hiring Solutions</a>
-                                                                                        </li>
-                                                                                        <li><a class="dropdown-item" href="feature-headers-overview.html">
-                                                                                                Employee Engagement Survey</a>
-                                                                                        </li>
-                                                                                    </ul>
-                                                                                </li>
-
-                                                                                <li class="dropdown-submenu"><a class="dropdown-item" href="#">TOOLS & SAMPLES
-
-                                                                                        <i class="fas fa-chevron-down"></i></a>
-                                                                                    <ul class="dropdown-menu">
-                                                                                        <li>
-                                                                                            <a class="dropdown-item" href="feature-headers-overview.html">
-                                                                                                Employee Handbooks</a>
-                                                                                        </li>
-                                                                                        <li>
-                                                                                            <a class="dropdown-item" href="feature-headers-overview.html">
-                                                                                                Express Requests
-                                                                                            </a>
-                                                                                        </li>
-                                                                                        <li>
-                                                                                            <a class="dropdown-item" href="feature-headers-overview.html">
-                                                                                                How-To Guides
-                                                                                            </a>
-                                                                                        </li>
-                                                                                        <li>
-                                                                                            <a class="dropdown-item" href="feature-headers-overview.html">
-                                                                                                HR Forms
-                                                                                            </a>
-                                                                                        </li>
-                                                                                    </ul>
-                                                                                </li>
+                                                                                    @endforeach
                                                                             </ul>
                                                                         </li>
 

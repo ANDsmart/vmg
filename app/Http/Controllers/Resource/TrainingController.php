@@ -33,7 +33,7 @@ class TrainingController extends Controller
     public function create()
     {
 
-        $training_types = (new CodeValueRepository())->getTrainingCategories()->pluck('name','id');
+        $training_types = (new CodeValueRepository())->query()->where('code_id',3)->pluck('name','id');
 
         return view('cms.training.create.create')
             ->with('training_types',$training_types);
@@ -104,6 +104,7 @@ class TrainingController extends Controller
             ->make(true);
 
     }
+
 
 
 }
