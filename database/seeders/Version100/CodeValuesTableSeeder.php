@@ -242,6 +242,21 @@ class CodeValuesTableSeeder extends Seeder
             ]
         );
 
+        $cv = CodeValue::updateOrCreate(
+            ['reference' => 'KNLGLEC'],
+            [
+                'id' => 16,
+                'code_id' => 3,
+                'name' => 'LEGAL & COMPLIANCE',
+                'lang' => NULL,
+                'description' => '',
+                'reference' => 'KNLGLEC',
+                'sort' => 10,
+                'isactive' => 1,
+                'is_system_defined' => 1,
+            ]
+        );
+
         $this->enableForeignKeys("code_values");
 
 

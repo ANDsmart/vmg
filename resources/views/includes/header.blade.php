@@ -362,7 +362,10 @@
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
-                                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.knowledge')}} <i class="fas fa-chevron-down"></i></a>
+                                                                        <li class="dropdown">
+                                                                            <a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.knowledge')}}
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </a>
                                                                             <ul class="dropdown-menu">
                                                                                 @foreach((new \App\Repositories\System\CodeValueRepository())->getTrainingCategories() as $training)
                                                                                 <li class="dropdown-submenu">
