@@ -251,7 +251,7 @@ class CodeValuesTableSeeder extends Seeder
                 'lang' => NULL,
                 'description' => '',
                 'reference' => 'KNLGLEC',
-                'sort' => 10,
+                'sort' => 11,
                 'isactive' => 1,
                 'is_system_defined' => 1,
             ]
