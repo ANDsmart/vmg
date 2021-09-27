@@ -366,23 +366,23 @@
                                                                             <a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.knowledge')}}
                                                                                 <i class="fas fa-chevron-down"></i>
                                                                             </a>
-                                                                            <ul class="dropdown-menu">
-                                                                                @foreach((new \App\Repositories\System\CodeValueRepository())->getTrainingCategories() as $training)
-                                                                                <li class="dropdown-submenu">
-                                                                                    <a class="dropdown-item" href="#">{{$training->name}}
-                                                                                        <i class="fas fa-chevron-down"></i></a>
-                                                                                    <ul class="dropdown-menu">
+{{--                                                                            <ul class="dropdown-menu">--}}
+{{--                                                                                @foreach((new \App\Repositories\System\CodeValueRepository())->getTrainingCategories() as $training)--}}
+{{--                                                                                <li class="dropdown-submenu">--}}
+{{--                                                                                    <a class="dropdown-item" href="#">{{$training->name}}--}}
+{{--                                                                                        <i class="fas fa-chevron-down"></i></a>--}}
+{{--                                                                                    <ul class="dropdown-menu">--}}
 
-                                                                                        @foreach((new \App\Repositories\System\CodeValueRepository())->getTrainingByTrainingCategory($training->id) as $knowledge)
-                                                                                        <li>
-                                                                                            <a class="dropdown-item" href="{{route('general_information.training.display',$knowledge->uuid)}}">
-                                                                                                {{$knowledge->title}}</a>
-                                                                                        </li>
-                                                                                            @endforeach
-                                                                                    </ul>
-                                                                                </li>
-                                                                                    @endforeach
-                                                                            </ul>
+{{--                                                                                        @foreach((new \App\Repositories\System\CodeValueRepository())->getTrainingByTrainingCategory($training->id) as $knowledge)--}}
+{{--                                                                                        <li>--}}
+{{--                                                                                            <a class="dropdown-item" href="{{route('general_information.training.display',$knowledge->uuid)}}">--}}
+{{--                                                                                                {{$knowledge->title}}</a>--}}
+{{--                                                                                        </li>--}}
+{{--                                                                                            @endforeach--}}
+{{--                                                                                    </ul>--}}
+{{--                                                                                </li>--}}
+{{--                                                                                    @endforeach--}}
+{{--                                                                            </ul>--}}
                                                                         </li>
 
                                                                         <li class="dropdown">
