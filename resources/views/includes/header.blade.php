@@ -304,18 +304,18 @@
                                                                                             <div class="col-lg-4">
                                                                                                 <span class="dropdown-mega-sub-title" >Industries</span>
                                                                                                 <ul class="dropdown-mega-sub-nav">
-                                                                                                    <li><a class="dropdown-item" href="elements-accordions.html">Agriculture</a>
+                                                                                                    <li><a class="dropdown-item" href="#">Agriculture</a>
                                                                                                     <p>We help to grow your agriculture</p>
                                                                                                     </li>
                                                                                                     <li>
-                                                                                                        <a class="dropdown-item" href="elements-toggles.html">Insights on Engineering, Construction & Building Materials
+                                                                                                        <a class="dropdown-item" href="#">Insights on Engineering, Construction & Building Materials
                                                                                                         </a>
                                                                                                     </li>
                                                                                                     <li>
-                                                                                                        <a class="dropdown-item" href="elements-tabs.html">Insights on Financial Services
+                                                                                                        <a class="dropdown-item" href="#">Insights on Financial Services
                                                                                                         </a>
                                                                                                     </li>
-                                                                                                    <li><a class="dropdown-item" href="elements-icons.html">Insights on Private Equity & Principal Investors
+                                                                                                    <li><a class="dropdown-item" href="#">Insights on Private Equity & Principal Investors
                                                                                                         </a></li>
 
                                                                                                 </ul>
