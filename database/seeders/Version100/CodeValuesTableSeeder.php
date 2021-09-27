@@ -105,7 +105,7 @@ class CodeValuesTableSeeder extends Seeder
             [
                 'id' => 6,
                 'code_id' => 2,
-                'name' => 'HR',
+                'name' => 'HUMAN RESOURCE',
                 'lang' => NULL,
                 'description' => '',
                 'reference' => 'SERTYPEHR',

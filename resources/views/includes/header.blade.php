@@ -348,12 +348,12 @@
                                                                                             </div>
                                                                                             <div class="col-lg-4"><span class="dropdown-mega-sub-title">We combine</span>
                                                                                                 <ul class="dropdown-mega-sub-nav">
-                                                                                                    <li><a class="dropdown-item" href="elements-buttons.html">Buttons</a></li>
+{{--                                                                                                    <li><a class="dropdown-item" href="elements-buttons.html">Buttons</a></li>--}}
                                                                                                 </ul>
                                                                                             </div>
                                                                                             <div class="col-lg-4"><span class="dropdown-mega-sub-title">We create</span>
                                                                                                 <ul class="dropdown-mega-sub-nav">
-                                                                                                    <li><a class="dropdown-item" href="elements-typography.html">Typography</a></li>
+{{--                                                                                                    <li><a class="dropdown-item" href="elements-typography.html">Typography</a></li>--}}
                                                                                                 </ul>
                                                                                             </div>
 
