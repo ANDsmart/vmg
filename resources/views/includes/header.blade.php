@@ -334,7 +334,7 @@
                                                                                 <li>
                                                                                     <div class="dropdown-mega-content">
                                                                                         <div class="row">
-                                                                                            <div class="col-lg-4"><span class="dropdown-mega-sub-title" >We manage</span>
+                                                                                            <div class="col-lg-4"><span class="dropdown-mega-sub-title" >Manage</span>
                                                                                                 <ul class="dropdown-mega-sub-nav">
                                                                                                     @foreach((new \App\Repositories\System\CodeValueRepository())->getServiceForDirectory() as $code_value)
                                                                                                     <li><a class="dropdown-item" href="{{route('general_information.service.display',$code_value->id)}}">{{$code_value->name}}</a>
@@ -346,12 +346,12 @@
 
                                                                                                 </ul>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"><span class="dropdown-mega-sub-title">We combine</span>
+                                                                                            <div class="col-lg-4"><span class="dropdown-mega-sub-title">Combine</span>
                                                                                                 <ul class="dropdown-mega-sub-nav">
 {{--                                                                                                    <li><a class="dropdown-item" href="elements-buttons.html">Buttons</a></li>--}}
                                                                                                 </ul>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"><span class="dropdown-mega-sub-title">We create</span>
+                                                                                            <div class="col-lg-4"><span class="dropdown-mega-sub-title">Create</span>
                                                                                                 <ul class="dropdown-mega-sub-nav">
 {{--                                                                                                    <li><a class="dropdown-item" href="elements-typography.html">Typography</a></li>--}}
                                                                                                 </ul>
