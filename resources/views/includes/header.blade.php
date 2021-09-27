@@ -294,7 +294,7 @@
                                                                 <nav class="collapse header-mobile-border-top">
                                                                     <ul class="nav nav-pills" id="mainNav">
                                                                         <li class="dropdown dropdown-mega">
-                                                                            <a class="dropdown-item dropdown-toggle" href="elements.html"> {{trans('label.industries')}} <i
+                                                                            <a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.industries')}} <i
                                                                                         class="fas fa-chevron-down"></i></a>
                                                                             <ul class="dropdown-menu">
                                                                                 <li>
@@ -328,7 +328,7 @@
                                                                         </li>
 
                                                                         <li class="dropdown dropdown-mega">
-                                                                            <a class="dropdown-item dropdown-toggle" href="elements.html"> {{trans('label.functions')}} <i
+                                                                            <a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.functions')}} <i
                                                                                         class="fas fa-chevron-down"></i></a>
                                                                             <ul class="dropdown-menu">
                                                                                 <li>
