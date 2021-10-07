@@ -304,19 +304,20 @@
                                                                                             <div class="col-lg-4">
                                                                                                 <span class="dropdown-mega-sub-title" >Industries</span>
                                                                                                 <ul class="dropdown-mega-sub-nav">
-                                                                                                    <li><a class="dropdown-item" href="#">Agriculture</a>
-                                                                                                    <p>We help to grow your agriculture</p>
+                                                                                                    <li><a class="dropdown-item" href="#">Legal</a>
                                                                                                     </li>
                                                                                                     <li>
-                                                                                                        <a class="dropdown-item" href="#">Insights on Engineering, Construction & Building Materials
+                                                                                                        <a class="dropdown-item" href="#">Accounts
                                                                                                         </a>
                                                                                                     </li>
                                                                                                     <li>
-                                                                                                        <a class="dropdown-item" href="#">Insights on Financial Services
+                                                                                                        <a class="dropdown-item" href="#">Compliance
                                                                                                         </a>
                                                                                                     </li>
-                                                                                                    <li><a class="dropdown-item" href="#">Insights on Private Equity & Principal Investors
-                                                                                                        </a></li>
+                                                                                                    <li>
+                                                                                                        <a class="dropdown-item" href="#">Marketing
+                                                                                                        </a>
+                                                                                                    </li>
 
                                                                                                 </ul>
                                                                                             </div>
@@ -347,8 +348,20 @@
                                                                                                 </ul>
                                                                                             </div>
                                                                                             <div class="col-lg-4"><span class="dropdown-mega-sub-title">Combine</span>
+                                                                                                <p>As one </p>
                                                                                                 <ul class="dropdown-mega-sub-nav">
-{{--                                                                                                    <li><a class="dropdown-item" href="elements-buttons.html">Buttons</a></li>--}}
+                                                                                                    <li><a class="dropdown-item" href="#">Coordination</a>
+                                                                                                    <p></p>
+                                                                                                    </li>
+                                                                                                    <li><a class="dropdown-item" href="#">Collaboration</a>
+                                                                                                    <p></p>
+                                                                                                    </li>
+                                                                                                    <li><a class="dropdown-item" href="#">Cooperation</a>
+                                                                                                    <p></p>
+                                                                                                    </li>
+                                                                                                    <li><a class="dropdown-item" href="#">Communication</a>
+                                                                                                    <p></p>
+                                                                                                    </li>
                                                                                                 </ul>
                                                                                             </div>
                                                                                             <div class="col-lg-4"><span class="dropdown-mega-sub-title">Create</span>

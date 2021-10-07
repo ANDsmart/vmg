@@ -523,7 +523,7 @@ return [
 
     'talk_to_professional' => 'Talk to professional',
     'welcome_vipawa' => 'Welcome Vipawa Management Group',
-    'about_vipawa' => 'VIPAWA MANAGEMENT has been established as a management and human resource consultancy in Tanzania. It is a consultative advisory organization on employment, management, and labour related matters. The company traditional business model is based on the accomplishment of management and human resources services. Based on the decision of the company to diversify our services; we have now established this company in Dar es Salaam.',
+    'about_vipawa' => 'Vipawa Management Group is a management consulting organization offering advisory and implementation services to the seres management of organizations with the aim of improving their effectiveness of their business strategies, organization performance and operational processes for the purpose of creating a business value',
 
     'services'=>[
         'services'=>'Services',

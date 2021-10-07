@@ -42,7 +42,7 @@
                                     <span>We are VMG, We </span>
                                     <span class="word-rotator-words bg-primary" style="width: 138.031px;">
 												<b class="is-hidden">Create</b>
-												<b class="is-hidden">Build</b>
+												<b class="is-hidden">Manage</b>
 												<b class="is-visible">Develop</b>
 											</span>
                                     <span> Solutions</span>
@@ -50,7 +50,7 @@
                             </div>
                             <div class="overflow-hidden mb-3">
                                 <p class="lead mb-0 appear-animation animated maskUp appear-animation-visible" data-appear-animation="maskUp" data-appear-animation-delay="200" style="animation-delay: 200ms;">
-                                  VIPAWA MANAGEMENT GROUP  has been established as a management and human resource consultancy in Tanzania. It is a consultative advisory organization on employment, management, and labour related matters. The company traditional business model is based on the accomplishment of management and human resources services. Based on the decision of the company to diversify our services; we have now established this company in Dar es Salaam.
+                                    <b>Vipawa Management Group</b> is a management consulting organization offering advisory and implementation services to the seres management of organizations with the aim of improving their effectiveness of their business strategies, organization performance and operational processes for the purpose of creating a business value
                                 </p>
                             </div>
                         </div>

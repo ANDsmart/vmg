@@ -110,30 +110,14 @@
 											<img src="{{url('img/office/our-office-9.jpg')}}" class="img-fluid" alt="">
 											<span class="thumb-info-title">
 												<span class="thumb-info-slide-info-hover-1">
-													<span class="thumb-info-inner text-4">Management service</span>
+													<span class="thumb-info-inner text-4">Improving Organization Performance</span>
 												</span>
-												<span class="thumb-info-slide-info-hover-2">
-                                                    		<span class="thumb-info-slide-info-hover-1">
-													<span class="thumb-info-inner text-4">Management service</span>
-												</span>
+								     <span class="thumb-info-slide-info-hover-2">
 													<span class="thumb-info-inner text-2">
-<a href="#" class="d-inline-flex align-items-center btn btn-with-arrow font-weight-bold text-color-light text-3 p-0 appear-animation animated fadeInUpShorter appear-animation-visible"
-   data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;">
-											PROJECT MANAGEMENT
-											<span class="d-inline-flex align-items-center bg-transparent box-shadow-none ml-3"><i
-                                                        class="fas fa-arrow-right text-color-light text-5"></i></span>
-										</a>
-                                                    </span>
+														<a href="{{route('general_information.service.display',6)}}" class="d-inline-flex align-items-center btn btn-light text-color-dark font-weight-bold px-4 btn-py-2 text-1 rounded">VIEW<i class="fa fa-arrow-right ml-2 pl-1 text-3"></i></a>
+													</span>
+												</span>
 
-                                                    			<span class="thumb-info-inner text-2">
-<a href="#"
-   class="d-inline-flex align-items-center btn btn-with-arrow font-weight-bold text-color-light text-3 p-0 appear-animation animated fadeInUpShorter appear-animation-visible"
-   data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;">
-											GET STARTED NOW
-											<span class="d-inline-flex align-items-center bg-transparent box-shadow-none ml-3"><i
-                                                        class="fas fa-arrow-right text-color-light text-5"></i></span>
-										</a>
-                                                    </span>
 												</span>
 											</span>
 										</span>
@@ -145,11 +129,11 @@
 											<img src="img/office/our-office-10.jpg" class="img-fluid" alt="">
 											<span class="thumb-info-title">
 												<span class="thumb-info-slide-info-hover-1">
-													<span class="thumb-info-inner text-4">We’re committed to creating Change that Matters</span>
+													<span class="thumb-info-inner text-4">Improve Operation Processes</span>
 												</span>
 												<span class="thumb-info-slide-info-hover-2">
 													<span class="thumb-info-inner text-2">
-														<a href="#" class="d-inline-flex align-items-center btn btn-light text-color-dark font-weight-bold px-4 btn-py-2 text-1 rounded">VIEW OUR TEAM <i class="fa fa-arrow-right ml-2 pl-1 text-3"></i></a>
+														<a href="{{route('general_information.service.display',6)}}" class="d-inline-flex align-items-center btn btn-light text-color-dark font-weight-bold px-4 btn-py-2 text-1 rounded">VIEW <i class="fa fa-arrow-right ml-2 pl-1 text-3"></i></a>
 													</span>
 												</span>
 											</span>
@@ -162,11 +146,11 @@
 											<img src="img/office/our-office-11.jpg" class="img-fluid" alt="">
 											<span class="thumb-info-title">
 												<span class="thumb-info-slide-info-hover-1">
-													<span class="thumb-info-inner text-4">Our Offices</span>
+													<span class="thumb-info-inner text-4">Effective Business Strategies</span>
 												</span>
 												<span class="thumb-info-slide-info-hover-2">
 													<span class="thumb-info-inner text-2">
-														<a href="#" class="d-inline-flex align-items-center btn btn-light text-color-dark font-weight-bold px-4 btn-py-2 text-1 rounded">VIEW OUR OFFICES <i class="fa fa-arrow-right ml-2 pl-1 text-3"></i></a>
+														<a href="{{route('general_information.service.display',6)}}" class="d-inline-flex align-items-center btn btn-light text-color-dark font-weight-bold px-4 btn-py-2 text-1 rounded">VIEW <i class="fa fa-arrow-right ml-2 pl-1 text-3"></i></a>
 													</span>
 												</span>
 											</span>
@@ -179,11 +163,11 @@
 											<img src="img/office/our-office-12.jpg" class="img-fluid" alt="">
 											<span class="thumb-info-title">
 												<span class="thumb-info-slide-info-hover-1">
-													<span class="thumb-info-inner text-4">Our Mission</span>
+													<span class="thumb-info-inner text-4">Manage and Combine resources (values)</span>
 												</span>
 												<span class="thumb-info-slide-info-hover-2">
 													<span class="thumb-info-inner text-2">
-														<a href="#" class="d-inline-flex align-items-center btn btn-light text-color-dark font-weight-bold px-4 btn-py-2 text-1 rounded">VIEW OUR MISSION <i class="fa fa-arrow-right ml-2 pl-1 text-3"></i></a>
+														<a href="{{route('general_information.service.display',6)}}" class="d-inline-flex align-items-center btn btn-light text-color-dark font-weight-bold px-4 btn-py-2 text-1 rounded">VIEW <i class="fa fa-arrow-right ml-2 pl-1 text-3"></i></a>
 													</span>
 												</span>
 											</span>
@@ -196,11 +180,11 @@
 											<img src="img/office/our-office-13.jpg" class="img-fluid" alt="">
 											<span class="thumb-info-title">
 												<span class="thumb-info-slide-info-hover-1">
-													<span class="thumb-info-inner text-4">Our Contact</span>
+													<span class="thumb-info-inner text-4">Create and manage business value</span>
 												</span>
 												<span class="thumb-info-slide-info-hover-2">
 													<span class="thumb-info-inner text-2">
-														<a href="#" class="d-inline-flex align-items-center btn btn-light text-color-dark font-weight-bold px-4 btn-py-2 text-1 rounded">VIEW OUR CONTACT <i class="fa fa-arrow-right ml-2 pl-1 text-3"></i></a>
+														<a href="{{route('general_information.service.display',6)}}" class="d-inline-flex align-items-center btn btn-light text-color-dark font-weight-bold px-4 btn-py-2 text-1 rounded">VIEW<i class="fa fa-arrow-right ml-2 pl-1 text-3"></i></a>
 													</span>
 												</span>
 											</span>
