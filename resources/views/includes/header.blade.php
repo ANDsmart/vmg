@@ -348,7 +348,7 @@
                                                                                                 </ul>
                                                                                             </div>
                                                                                             <div class="col-lg-4"><span class="dropdown-mega-sub-title">Combine</span>
-                                                                                                <p>As one </p>
+{{--                                                                                                <p>As one </p>--}}
                                                                                                 <ul class="dropdown-mega-sub-nav">
                                                                                                     <li><a class="dropdown-item" href="#">Coordination</a>
                                                                                                     <p></p>
