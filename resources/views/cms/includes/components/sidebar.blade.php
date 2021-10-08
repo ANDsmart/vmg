@@ -106,6 +106,20 @@
                                 </span>
                         </a>
                     </li>
+                    <li>
+                        <a class="nav-link" href="{!! route('cms.function.index') !!}">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                            <span>{!! __('label.functions') !!}  <br/>
+                                </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="{!! route('cms.career.index') !!}">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                            <span>{!! __('label.career') !!}  <br/>
+                                </span>
+                        </a>
+                    </li>
 
                     <li>
                         <a class="nav-link" href="{!! route('cms.user_manual.module_groups') !!}">
