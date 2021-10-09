@@ -28,7 +28,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    @include('cms.service.edit.includes.post_info')
+                    @include('cms.career.edit.includes.post_info')
 
                 </div>
 

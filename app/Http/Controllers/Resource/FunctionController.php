@@ -70,10 +70,10 @@ class FunctionController extends Controller
             ->with('image',$image);
     }
 
-    public function edit(Service $function)
+    public function edit($function)
     {
         $service_types = (new CodeValueRepository())->getServiceForDirectory()->pluck('name','id');
-
+        $function = Functions::find($function);
         return view('cms.function.edit.edit')
             ->with('function_types',$service_types)
             ->with('function',$function);
