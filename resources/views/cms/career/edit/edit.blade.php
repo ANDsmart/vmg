@@ -15,7 +15,7 @@
 @section("content")
     <div class="card">
         <div class="card-body">
-            {!! Form::open(['route' => ['cms.service.update',$service->uuid],'method'=>'put', 'autocomplete' => 'off',  'id' =>'store_service', 'class' => 'form-horizontal needs-validation', 'novalidate','enctype'=>"multipart/form-data"]) !!}
+            {!! Form::open(['route' => ['cms.career.update',$career->id],'method'=>'put', 'autocomplete' => 'off',  'id' =>'store_service', 'class' => 'form-horizontal needs-validation', 'novalidate','enctype'=>"multipart/form-data"]) !!}
             {!! Form::hidden('action_type', 2, []) !!}
 
             <div class="row">

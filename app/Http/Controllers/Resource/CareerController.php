@@ -68,12 +68,13 @@ class CareerController extends Controller
             ->with('image',$image);
     }
 
-    public function edit(Career $career)
+    public function edit($career)
     {
-        $career_types = (new CodeValueRepository())->getServiceForDirectory()->pluck('name','id');
+        $service_types = (new CodeValueRepository())->getServiceForDirectory()->pluck('name','id');
 
+        $career = Career::find($career);
         return view('cms.career.edit.edit')
-            ->with('career_types',$career_types)
+            ->with('service_types',$service_types)
             ->with('career',$career);
     }
 
