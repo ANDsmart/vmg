@@ -306,7 +306,7 @@
                                                                                                 <ul class="dropdown-mega-sub-nav">
                                                                                                     @foreach(\App\Models\Resource\Career::all() as $career)
                                                                                                     <li>
-                                                                                                        <a class="dropdown-item" href="#">{{$career->title}}</a>
+                                                                                                        <a class="dropdown-item" href="{{route('general_information.career.display',$career->id)}}">{{$career->title}}</a>
                                                                                                     </li>
                                                                                                     @endforeach
                                                                                                 </ul>
@@ -329,7 +329,7 @@
                                                                                                 <ul class="dropdown-mega-sub-nav">
                                                                                                     @foreach((new \App\Repositories\System\CodeValueRepository())->getServiceForDirectory() as $code_value)
                                                                                                     <li><a class="dropdown-item" href="{{route('general_information.service.display',$code_value->id)}}">{{$code_value->name}}</a>
-{{--                                                                                                    <p>{{truncateString($code_value->content,50)}}</p>--}}
+                                                                                                    <p>{{truncateString($code_value->content,50)}}</p>
                                                                                                     </li>
 
                                                                                                 @endforeach
@@ -341,8 +341,8 @@
                                                                                                 <p>Is one of the main function of VMG </p>
                                                                                                 <ul class="dropdown-mega-sub-nav">
                                                                                                     @foreach(\App\Models\Resource\Functions::all() as $function)
-                                                                                                    <li><a class="dropdown-item" href="#">{{$function->title}}</a>
-                                                                                                    <p>{!! $function->description !!}</p>
+                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.function.display',$function->id)}}">{{$function->title}}</a>
+{{--                                                                                                    <p>{!! $function->description !!}</p>--}}
                                                                                                     </li>
                                                                                                     @endforeach
 
