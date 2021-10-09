@@ -34,10 +34,10 @@ class CareerController extends Controller
     public function create()
     {
 
-        $career_types = (new CodeValueRepository())->getServiceForDirectory()->pluck('name','id');
+        $service_types = (new CodeValueRepository())->getServiceForDirectory()->pluck('name','id');
 
         return view('cms.career.create.create')
-            ->with('career_types',$career_types);
+            ->with('service_types',$service_types);
     }
 
 
@@ -59,8 +59,9 @@ class CareerController extends Controller
             ->with('career_type',$career_type);
     }
 
-    public function profile(Career $career)
+    public function profile($career)
     {
+        $career = Career::find($career);
         $image = $career->getImageAttribute();
         return view('cms.career.show.show')
             ->with('career',$career)

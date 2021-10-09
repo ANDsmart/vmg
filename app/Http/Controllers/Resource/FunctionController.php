@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Resource;
 
 
 use App\Http\Controllers\Controller;
+use App\Models\Resource\Functions;
 use App\Models\Resource\Service;
 use App\Models\System\CodeValue;
 use App\Repositories\Resource\FunctionRepository;
@@ -35,10 +36,10 @@ class FunctionController extends Controller
     public function create()
     {
 
-        $function_types = (new CodeValueRepository())->getServiceForDirectory()->pluck('name','id');
+        $service_types = (new CodeValueRepository())->getServiceForDirectory()->pluck('name','id');
 
         return view('cms.function.create.create')
-            ->with('function_types',$function_types);
+            ->with('service_types',$service_types);
     }
 
 
@@ -60,8 +61,9 @@ class FunctionController extends Controller
             ->with('function_type',$function_type);
     }
 
-    public function profile(Service $function)
+    public function profile($function)
     {
+        $function = Functions::find($function);
         $image = $function->getImageAttribute();
         return view('cms.function.show.show')
             ->with('function',$function)
@@ -70,10 +72,10 @@ class FunctionController extends Controller
 
     public function edit(Service $function)
     {
-        $function_types = (new CodeValueRepository())->getServiceForDirectory()->pluck('name','id');
+        $service_types = (new CodeValueRepository())->getServiceForDirectory()->pluck('name','id');
 
         return view('cms.function.edit.edit')
-            ->with('function_types',$function_types)
+            ->with('function_types',$service_types)
             ->with('function',$function);
     }
 
@@ -93,10 +95,10 @@ class FunctionController extends Controller
      */
     public function functions()
     {
-        $function_types = (new CodeValueRepository())->getServiceForDirectory();
+        $service_types = (new CodeValueRepository())->getServiceForDirectory();
         $functions = $this->function_repo->queryActive()->get();
         return view('system.function.all_functions')
-            ->with('function_types',$function_types)
+            ->with('service_types',$service_types)
             ->with('functions',$functions);
     }
 
@@ -106,10 +108,10 @@ class FunctionController extends Controller
      */
     public function getServiceByServiceType($function_type)
     {
-        $function_types = (new CodeValueRepository())->getServiceForDirectory();
+        $service_types = (new CodeValueRepository())->getServiceForDirectory();
         $functions = $this->function_repo->queryActive()->where('function_type_cv_id',$function_type)->get();
         return view('system.function.all_functions')
-            ->with('function_types',$function_types)
+            ->with('function_types',$service_types)
             ->with('functions',$functions);
     }
     /**

@@ -39,8 +39,9 @@ class FunctionRepository extends BaseRepository
             $service = $this->query()->firstOrCreate([
                 'title' => $input['title'],
                 'service_type_cv_id' => $input['service_type_cv_id'],
-                'content' => $input['content'],
-                'user_id' => Auth::id(),
+                'description' => $input['content'],
+//                'user_id' => Auth::id(),
+                'isactive' => 1,
             ]);
 
             //serve image
@@ -56,9 +57,11 @@ class FunctionRepository extends BaseRepository
           $service->update([
                 'title' => $input['title'],
                 'service_type_cv_id' => $input['service_type_cv_id'],
-                'content' => $input['content'],
-                'user_id' => Auth::id(),
-            ]);
+                'description' => $input['content'],
+//                'user_id' => Auth::id(),
+              'isactive' => 1,
+
+          ]);
 
             //serve image
             $this->saveDocuments($service->id,$input);

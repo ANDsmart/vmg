@@ -348,20 +348,14 @@
                                                                                                 </ul>
                                                                                             </div>
                                                                                             <div class="col-lg-4"><span class="dropdown-mega-sub-title">Combine</span>
-{{--                                                                                                <p>As one </p>--}}
+                                                                                                <p>Is one of the main function of VMG </p>
                                                                                                 <ul class="dropdown-mega-sub-nav">
-                                                                                                    <li><a class="dropdown-item" href="#">Coordination</a>
-                                                                                                    <p></p>
+                                                                                                    @foreach(\App\Models\Resource\Functions::all() as $function)
+                                                                                                    <li><a class="dropdown-item" href="#">{{$function->title}}</a>
+                                                                                                    <p>{!! $function->description !!}</p>
                                                                                                     </li>
-                                                                                                    <li><a class="dropdown-item" href="#">Collaboration</a>
-                                                                                                    <p></p>
-                                                                                                    </li>
-                                                                                                    <li><a class="dropdown-item" href="#">Cooperation</a>
-                                                                                                    <p></p>
-                                                                                                    </li>
-                                                                                                    <li><a class="dropdown-item" href="#">Communication</a>
-                                                                                                    <p></p>
-                                                                                                    </li>
+                                                                                                    @endforeach
+
                                                                                                 </ul>
                                                                                             </div>
                                                                                             <div class="col-lg-4"><span class="dropdown-mega-sub-title">Create</span>

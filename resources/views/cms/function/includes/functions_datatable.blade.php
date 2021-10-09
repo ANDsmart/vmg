@@ -5,7 +5,7 @@
     </div>
 
     <div class="col-md-4">
-        <a href="{{route('cms.function.create')}}" type="button" class="mb-1 mt-1 mr-1 btn btn-xs btn-primary pull-right">Create service</a>
+        <a href="{{route('cms.function.create')}}" type="button" class="mb-1 mt-1 mr-1 btn btn-xs btn-primary pull-right">Create function</a>
     </div>
 </div>
 <div class="row">
@@ -41,7 +41,7 @@
             ],
             "fnRowCallback": function(nRow, aData, iDisplayIndex, iDisplayIndexFull) {
                 $(nRow).click(function() {
-                    document.location.href = url + "/cms/function/profile/" + aData['uuid'] ;
+                    document.location.href = url + "/cms/function/profile/" + aData['id'] ;
                 }).hover(function() {
                     $(this).css('cursor','pointer');
                 }, function() {

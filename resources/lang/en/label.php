@@ -261,6 +261,7 @@ return [
     'industries' =>'Industries',
     'functions' =>'Functions',
     'knowledge' =>'Knowledge',
+    'career' =>'Career',
     'blog' => [
         'blog' =>'Blog',
         'publish' => 'Publish',

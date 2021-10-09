@@ -23,14 +23,14 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="pull-right mb-2">
-                                    <a href="{{ route('cms.service.edit',$service->uuid) }}" class="btn btn-xs btn-primary"><i class="fas fa-edit"></i> {{ __('label.crud.edit') }}</a>
-                                    {{ $service->change_status_button }}
+                                    <a href="{{ route('cms.career.edit',$career->id) }}" class="btn btn-xs btn-primary"><i class="fas fa-edit"></i> {{ __('label.crud.edit') }}</a>
+                                    {{ $career->change_status_button }}
 
-                                    <a class="btn btn-warning btn-xs   delete_blog"  style="text-decoration: none;cursor: pointer" id="{{$service->id}}">{{trans('label.crud.delete')}}</a>
-                                    @if($service->status == 1)
+                                    <a class="btn btn-warning btn-xs   delete_blog"  style="text-decoration: none;cursor: pointer" id="{{$career->id}}">{{trans('label.crud.delete')}}</a>
+                                    @if($career->status == 1)
 
                                         @else
-                                    <a href="{{ route('cms.blog.publish',$service->uuid) }}" class="btn btn-xs btn-dark"><i class="fas fa-paper-plane"></i> {{ __('label.blog.publish') }}</a>
+                                    <a href="{{ route('cms.blog.publish',$career->id) }}" class="btn btn-xs btn-dark"><i class="fas fa-paper-plane"></i> {{ __('label.blog.publish') }}</a>
                                     @endif
 
                                     <a href="{{ route('cms.client.index') }}" class="btn btn-xs btn-info"><i class="fas fa-closed-captioning"></i> {{ __('label.close') }}</a>
@@ -48,26 +48,26 @@
                                         <tbody>
                                         <tr>
                                             <th width="170px"> {{trans('label.title')}} : </th>
-                                            <td>{{$service->title}}</td>
+                                            <td>{{$career->title}}</td>
                                         </tr>
                                         <tr>
                                             <td><b>{!! trans('label.created_at') !!} :</b></td>
-                                            <td>{!! isset($service->created_at)? short_date_format($service->created_at) : 'None' !!}</td>
+                                            <td>{!! isset($career->created_at)? short_date_format($career->created_at) : 'None' !!}</td>
                                         </tr>
                                         <tr>
                                             <td><b>{!! trans('label.status') !!} :</b></td>
-                                            <td>{!! ($service->status == 1)? trans('label.published') : trans('label.draft') !!}</td>
+                                            <td>{!! ($career->status == 1)? trans('label.published') : trans('label.draft') !!}</td>
                                         </tr>
                                         <tr>
                                             <td><b>{!! trans('label.isactive') !!} :</b></td>
-                                            <td>{!! ($service->isactive)? trans('label.yes') : trans('label.no') !!}</td>
+                                            <td>{!! ($career->isactive)? trans('label.yes') : trans('label.no') !!}</td>
                                         </tr>
 
 
 
                                         <tr>
                                             <th width="170px"> {{trans('label.description')}} : </th>
-                                            <td id="description">{!! $service->content !!}</td>
+                                            <td id="description">{!! $career->description !!}</td>
                                         </tr>
                                         </tbody>
                                     </table>

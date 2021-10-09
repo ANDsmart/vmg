@@ -8,8 +8,9 @@ use App\Models\BaseModel\BaseModel;
 use App\Models\Resource\traits\ServiceAttribute;
 use App\Models\System\CodeValue;
 use App\Models\System\Document;
+use Illuminate\Database\Eloquent\Model;
 
-class Functions extends BaseModel
+class Functions extends Model
 {
     use ServiceAttribute;
 

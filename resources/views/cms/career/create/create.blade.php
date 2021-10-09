@@ -17,7 +17,7 @@
 @section("content")
     <div class="card">
         <div class="card-body">
-            {!! Form::open(['route' => ['cms.service.store'],'method'=>'post', 'autocomplete' => 'off',  'id' =>'store_blog', 'class' => 'form-horizontal needs-validation', 'novalidate','enctype'=>"multipart/form-data"]) !!}
+            {!! Form::open(['route' => ['cms.career.store'],'method'=>'post', 'autocomplete' => 'off',  'id' =>'store_blog', 'class' => 'form-horizontal needs-validation', 'novalidate','enctype'=>"multipart/form-data"]) !!}
             {!! Form::hidden('action_type', 1, []) !!}
 
             <div class="row">
@@ -30,7 +30,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    @include('cms.service.create.includes.post_info')
+                    @include('cms.career.create.includes.post_info')
 
                 </div>
 
