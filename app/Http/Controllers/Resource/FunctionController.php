@@ -80,9 +80,10 @@ class FunctionController extends Controller
     }
 
     //update note
-    public function update(Request $request,Service $function)
+    public function update(Request $request,$function)
     {
         $input = $request->all();
+        $function = Functions::find($function);
         $blog = $this->function_repo->update($input,$function);
         return redirect()->route('cms.function.index')->withFlashSuccess(trans('alert.general.updated'));
 

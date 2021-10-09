@@ -79,9 +79,10 @@ class CareerController extends Controller
     }
 
     //update note
-    public function update(Request $request,Career $career)
+    public function update(Request $request,$career)
     {
         $input = $request->all();
+        $career = Career::find($career);
         $blog = $this->career_repo->update($input,$career);
         return redirect()->route('cms.career.index')->withFlashSuccess(trans('alert.general.updated'));
 
