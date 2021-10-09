@@ -307,6 +307,8 @@
                                                                                                     @foreach(\App\Models\Resource\Career::all() as $career)
                                                                                                     <li>
                                                                                                         <a class="dropdown-item" href="{{route('general_information.career.display',$career->id)}}">{{$career->title}}</a>
+                                                                                                        <p></p>
+
                                                                                                     </li>
                                                                                                     @endforeach
                                                                                                 </ul>
