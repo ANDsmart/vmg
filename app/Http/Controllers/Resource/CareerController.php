@@ -6,6 +6,7 @@ namespace App\Http\Controllers\Resource;
 
 use App\Http\Controllers\Controller;
 use App\Models\Resource\Career;
+use App\Models\Resource\Service;
 use App\Models\System\CodeValue;
 use App\Repositories\Resource\CareerRepository;
 use App\Repositories\System\CodeValueRepository;
@@ -51,12 +52,9 @@ class CareerController extends Controller
 
     public function display($career)
     {
-
-        $career_type = CodeValue::find($career);
-        $careers = Career::where('career_type_cv_id',$career)->get();
+        $career = Career::find($career);
         return view('system.career.career')
-            ->with('careers',$careers)
-            ->with('career_type',$career_type);
+            ->with('career',$career);
     }
 
     public function profile($career)

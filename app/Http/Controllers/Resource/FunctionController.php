@@ -53,12 +53,9 @@ class FunctionController extends Controller
 
     public function display($function)
     {
-
-        $function_type = CodeValue::find($function);
-        $functions = Service::where('function_type_cv_id',$function)->get();
+        $function = Functions::find($function);
         return view('system.function.function')
-            ->with('functions',$functions)
-            ->with('function_type',$function_type);
+            ->with('function',$function);
     }
 
     public function profile($function)
