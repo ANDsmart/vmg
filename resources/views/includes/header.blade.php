@@ -294,7 +294,7 @@
                                                                 <nav class="collapse header-mobile-border-top">
                                                                     <ul class="nav nav-pills" id="mainNav">
                                                                         <li class="dropdown dropdown-mega">
-                                                                            <a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.industries')}} <i
+                                                                            <a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.careers')}} <i
                                                                                         class="fas fa-chevron-down"></i></a>
                                                                             <ul class="dropdown-menu">
                                                                                 <li>
@@ -302,23 +302,13 @@
                                                                                         <div class="row">
 
                                                                                             <div class="col-lg-4">
-                                                                                                <span class="dropdown-mega-sub-title" >Industries</span>
+                                                                                                <span class="dropdown-mega-sub-title" >Careers</span>
                                                                                                 <ul class="dropdown-mega-sub-nav">
-                                                                                                    <li><a class="dropdown-item" href="#">Legal</a>
-                                                                                                    </li>
+                                                                                                    @foreach(\App\Models\Resource\Career::all() as $career)
                                                                                                     <li>
-                                                                                                        <a class="dropdown-item" href="#">Accounts
-                                                                                                        </a>
+                                                                                                        <a class="dropdown-item" href="#">{{$career->title}}</a>
                                                                                                     </li>
-                                                                                                    <li>
-                                                                                                        <a class="dropdown-item" href="#">Compliance
-                                                                                                        </a>
-                                                                                                    </li>
-                                                                                                    <li>
-                                                                                                        <a class="dropdown-item" href="#">Marketing
-                                                                                                        </a>
-                                                                                                    </li>
-
+                                                                                                    @endforeach
                                                                                                 </ul>
                                                                                             </div>
 

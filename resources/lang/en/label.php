@@ -259,6 +259,7 @@ return [
     'slider_image' =>'Slider Image',
     'slider' =>'Sliders',
     'industries' =>'Industries',
+    'careers' =>'Careers',
     'functions' =>'Functions',
     'knowledge' =>'Knowledge',
     'career' =>'Career',
