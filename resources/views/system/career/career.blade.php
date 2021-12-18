@@ -183,7 +183,6 @@
                 <div class="col">
                     <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
                         <div class="col-md-8 pl-md-5">
-                            <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">{{$career->title}}</strong> </h2>
                             <p class="text-4">{!! $career->description !!}</p>
                         </div>
                     </div>
