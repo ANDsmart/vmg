@@ -24,36 +24,11 @@
 {{--            </div>--}}
 
             <div class="col-lg-6 mb-5 mb-lg-0">
-                <h2 class="font-weight-bold">- Contact Us</h2>
+                <h2 class="font-weight-bold">- VMG</h2>
                 <p class="custom-opacity-font text-light">Vipawa Management Group is a management consulting organization offering advisory and implementation services to the seres management of organizations with the aim of improving their effectiveness of their business strategies, organization performance and operational processes for the purpose of creating a business value.</p>
+
                 <div class="row">
-                    <div class="col-md-6 custom-sm-margin-top">
-                        <h4 class="mb-1">Call Us</h4>
-                        <a href="tel:+1234567890" class="text-decoration-none" target="_blank" title="Call Us">
-											<span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
-												Phone
-												<span class="info text-5 custom-opacity-font ">+255 (717) 443616</span>
-											</span>
-                        </a>
-                    </div>
-                    <div class="col-md-6 custom-sm-margin-top">
-                        <h4 class="mb-1">Our Location</h4>
-                        <p class=" custom-opacity-font text-light">Chabruma Street, Ali Hassan Mwinyi Road, JANGID Plaza, 3rd Floor, Room no. 303</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 custom-sm-margin-top">
-                        <h4 class="mb-1">Mail Us</h4>
-                        <a href="mail:mail@example.com" class="text-decoration-none" target="_blank" title="Mail Us">
-											<span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
-												Email
-												<span class="info text-5 custom-opacity-font ">
-													info@vipaji.co.tz
-												</span>
-											</span>
-                        </a>
-                    </div>
-                    <div class="col-md-6 custom-sm-margin-top">
+                    <div class="col-md-12 custom-sm-margin-top">
                         <h4 class="mb-1">Social Media</h4>
                         <ul class="social-icons social-icons-clean custom-social-icons-style-1 mt-2 custom-opacity-font">
                             <li class="social-icons-facebook">
@@ -81,7 +56,8 @@
                 </div>
             </div>
             <div class="col-lg-3 pt-3">
-                <h4 class="font-weight-bold">- COMPANY</h4>
+                <h2 class="font-weight-bold">- Links</h2>
+
                 <div class="nav-footer-container">
                     <div class="nav-footer d-flex">
                         <ul>
@@ -99,39 +75,20 @@
 
             </div>
             <div class="col-lg-3 pt-3">
-                <h4 class="font-weight-bold">- SEND US A MESSAGE</h4>
+                <div class="row">
+                    <div class="col-md-12 custom-sm-margin-top">
+                        <h2 class="font-weight-bold">- Our Location</h2>
 
-                <form class="contact-form" action="{{route('general_information.contact_us.send')}}" method="POST" novalidate="novalidate">
-                    @csrf
-
-                    <input type="hidden" value="Contact Form" name="subject" id="subject">
-                    <div class="contact-form-success alert alert-success d-none">
-                        Message has been sent to us.
+                        <p class=" custom-opacity-font text-light">Chabruma Street, Ali Hassan Mwinyi Road, JANGID Plaza, 3rd Floor, Room no. 303</p>
+                        <h4 class="mb-1">Contact Us</h4>
+                        <a href="tel:+1234567890" class="text-decoration-none" target="_blank" title="Call Us">
+											<span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
+												<span class="info text-5 custom-opacity-font ">Phone : +255 (717) 443616</span>
+												<span class="info text-5 custom-opacity-font ">Email : info@vipaji.co.tz</span>
+											</span>
+                        </a>
                     </div>
-
-                    <div class="contact-form-error alert alert-danger d-none">
-                        Error sending your message.
-                        <span class="mail-error-message text-1 d-block"></span>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col">
-                            <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control py-2" placeholder="Your Name..." name="name" id="name" required="">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control py-2" placeholder="Your Email Address..." name="email" id="email" required="">
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col">
-                            <textarea maxlength="5000" data-msg-required="Please enter your message." rows="4" class="form-control" placeholder="Your Message..." name="message" id="message" required=""></textarea>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col">
-                            <input type="submit" value="SUBMIT" class="btn btn-xl btn-outline btn-success text-1 font-weight-bold text-uppercase" data-loading-text="Loading...">
-                        </div>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
@@ -144,14 +101,12 @@
                     </a>
                 </div>
                 <div class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
-                    <p>© Copyright 2020. All Rights Reserved.</p>
+                    <p>© Copyright {{\Carbon\Carbon::now()->format('Y')}}. All Rights Reserved.</p>
                 </div>
                 <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
                     <nav id="sub-menu">
                         <ul>
-                            <li><i class="fas fa-angle-right"></i><a href="page-faq.html" class="ml-1 text-decoration-none"> FAQ's</a></li>
-                            <li><i class="fas fa-angle-right"></i><a href="sitemap.html" class="ml-1 text-decoration-none"> Sitemap</a></li>
-                            <li><i class="fas fa-angle-right"></i><a href="contact-us.html" class="ml-1 text-decoration-none"> Contact Us</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="{{route('general_information.about_us')}}" class="ml-1 text-decoration-none"> Contact Us</a></li>
                         </ul>
                     </nav>
                 </div>

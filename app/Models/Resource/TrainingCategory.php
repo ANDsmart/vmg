@@ -8,8 +8,9 @@ use App\Models\BaseModel\BaseModel;
 use App\Models\Resource\traits\ServiceAttribute;
 use App\Models\Resource\traits\TrainingAttribute;
 use App\Models\System\Document;
+use Illuminate\Database\Eloquent\Model;
 
-class TrainingCategory extends BaseModel
+class TrainingCategory extends Model
 {
 
     protected $guarded = [];
