@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cms\Client;
 use App\Models\Cms\Testimonial;
 use App\Models\Resource\Service;
 use App\Models\Resource\Slider;
@@ -29,8 +30,9 @@ class WelcomeController extends Controller
         $services = Service::where('isactive',1)->orderBy('service_type_cv_id')->get();
         $sliders = Slider::where('isactive',1)->get();
         $testimonials = Testimonial::where('isactive',0)->paginate(6);
+        $clients = Client::where('isactive',1)->get();
         return view('welcome')
-            ->with('clients',\App\Models\Cms\Client::all())
+            ->with('clients',$clients)
             ->with('trainings',Training::all())
             ->with('sliders',$sliders)
             ->with('testimonials',$testimonials)
