@@ -11,8 +11,8 @@
                             <nav class="header-nav-top">
                                 <ul class="nav nav-pills">
                                     <li class="nav-item nav-item-anim-icon d-none d-md-block"><a class="nav-link pl-0" href="{{route('general_information.about_us')}}" target="_blank"><i class="fas fa-angle-right"></i> About Us</a></li>
-                                    <li class="nav-item nav-item-anim-icon d-none d-md-block">
-                                        <a class="nav-link" href="{{route('general_information.contact_us')}}" target="_blank"><i class="fas fa-angle-right" ></i> Contact Us</a></li>
+{{--                                    <li class="nav-item nav-item-anim-icon d-none d-md-block">--}}
+{{--                                        <a class="nav-link" href="{{route('general_information.contact_us')}}" target="_blank"><i class="fas fa-angle-right" ></i> Contact Us</a></li>--}}
                                                                             @include("includes.lang")
 
                                     <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show"><span class="ws-nowrap"><i
