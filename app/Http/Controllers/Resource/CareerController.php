@@ -10,6 +10,7 @@ use App\Models\Resource\Service;
 use App\Models\System\CodeValue;
 use App\Repositories\Resource\CareerRepository;
 use App\Repositories\System\CodeValueRepository;
+use App\Repositories\System\DocumentResourceRepository;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
 
@@ -53,14 +54,20 @@ class CareerController extends Controller
     public function display($career)
     {
         $career = Career::find($career);
+        $document_resource = $career->documents()->where('document_id', 8)->first();
+        $document_resource_repo = new DocumentResourceRepository();
+        $image = isset($document_resource) ? $document_resource_repo->getDocFullPathUrl($document_resource->pivot->id) : '';
         return view('system.career.career')
-            ->with('career',$career);
+            ->with('career',$career)
+            ->with('image',$image);
     }
 
     public function profile($career)
     {
         $career = Career::find($career);
-        $image = $career->getImageAttribute();
+        $document_resource = $career->documents()->where('document_id', 8)->first();
+        $document_resource_repo = new DocumentResourceRepository();
+        $image = isset($document_resource) ? $document_resource_repo->getDocFullPathUrl($document_resource->pivot->id) : '';
         return view('cms.career.show.show')
             ->with('career',$career)
             ->with('image',$image);

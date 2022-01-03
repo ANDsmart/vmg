@@ -156,29 +156,21 @@
         </div>
 
 
-{{--        <div class="row">--}}
-{{--            <div class="col-lg-10">--}}
-{{--                <div class="overflow-hidden">--}}
-{{--                    <p class="lead mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">--}}
-{{--                       {!! truncateString($career_type->description,100) !!}--}}
-{{--                    </p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="col-lg-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">--}}
-{{--                <a href="#" class="btn btn-modern btn-dark mt-1">Get a Quote!</a>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-
-{{--        <div class="row">--}}
-{{--            <div class="col py-3">--}}
-{{--                <hr class="solid mt-5 mb-2">--}}
-{{--            </div>--}}
-{{--        </div>--}}
     </div>
 
     <section class="section bg-color-grey section-height-3 border-0 mt-5 mb-0">
         <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
+                        <div class="col-md-8 pl-md-5">
+                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url($image)}}" alt="layout styles" />
 
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             <div class="row">
                 <div class="col">
                     <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
