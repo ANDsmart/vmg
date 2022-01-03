@@ -99,16 +99,16 @@
                                                                                             </div>
                                                                                             <div class="col-lg-4"><span class="dropdown-mega-sub-title">Create</span>
                                                                                                 <ul class="dropdown-mega-sub-nav">
-                                                                                                    <li><a class="dropdown-item" href="http://142.93.210.219/resource/general_information/display/6">EFFECTIVE BUSINESS STRATEGIES</a>
+                                                                                                    <li><a class="dropdown-item" href="http://142.93.210.219/resource/general_information/display/6" style="color: #000000">EFFECTIVE BUSINESS STRATEGIES</a>
                                                                                                         <p></p>
                                                                                                     </li>
-                                                                                                    <li><a class="dropdown-item" href="http://142.93.210.219/resource/general_information/display/6">MANAGE RESOURCE</a>
+                                                                                                    <li><a class="dropdown-item" href="http://142.93.210.219/resource/general_information/display/6" style="color: #000000">MANAGE RESOURCE</a>
                                                                                                         <p></p>
                                                                                                     </li>
-                                                                                                    <li><a class="dropdown-item" href="http://142.93.210.219/resource/general_information/display/6">MANAGE BUSINESS VALUES</a>
+                                                                                                    <li><a class="dropdown-item" href="http://142.93.210.219/resource/general_information/display/6" style="color: #000000">MANAGE BUSINESS VALUES</a>
                                                                                                         <p></p>
                                                                                                     </li>
-                                                                                                    <li><a class="dropdown-item" href="http://142.93.210.219/resource/general_information/display/6">IMPROVE ORGANIZATION PERFORMANCE</a>
+                                                                                                    <li><a class="dropdown-item" href="http://142.93.210.219/resource/general_information/display/6" style="color: #000000">IMPROVE ORGANIZATION PERFORMANCE</a>
                                                                                                         <p></p>
                                                                                                     </li>
 
@@ -127,13 +127,13 @@
                                                                             <ul class="dropdown-menu">
                                                                                 @foreach((new \App\Repositories\System\CodeValueRepository())->getTrainingCategories() as $training)
                                                                                 <li class="dropdown-submenu">
-                                                                                    <a class="dropdown-item" href="#">{{$training->name}}
+                                                                                    <a class="dropdown-item" href="#" style="color: #000000">{{$training->name}}
                                                                                         <i class="fas fa-chevron-down"></i></a>
                                                                                     <ul class="dropdown-menu">
 
                                                                                         @foreach((new \App\Repositories\System\CodeValueRepository())->getTrainingByTrainingCategory($training->id) as $knowledge)
                                                                                         <li>
-                                                                                            <a class="dropdown-item" href="{{route('general_information.training.display',$knowledge->uuid)}}">
+                                                                                            <a class="dropdown-item" href="{{route('general_information.training.display',$knowledge->uuid)}}" style="color: #000000">
                                                                                                 {{$knowledge->title}}</a>
                                                                                         </li>
                                                                                             @endforeach
@@ -147,7 +147,7 @@
                                                                             <a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.about_us')}} <i class="fas fa-chevron-down"></i></a>
                                                                             <ul class="dropdown-menu">
                                                                                 <li>
-                                                                                    <a class="dropdown-item" href="{{route('general_information.about_us')}}"> WHAT WE DO?</a>
+                                                                                    <a class="dropdown-item" href="{{route('general_information.about_us')}}" style="color: #000000"> WHAT WE DO?</a>
                                                                                 </li>
 
                                                                             </ul>
