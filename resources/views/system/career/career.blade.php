@@ -175,7 +175,7 @@
             <div class="row">
                 <div class="col">
                     <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
-                        <div class="col-md-8 pl-md-5">
+                        <div class="col-md-12 pl-md-5">
                             <p class="text-4">{!! $career->description !!}</p>
                         </div>
                     </div>
