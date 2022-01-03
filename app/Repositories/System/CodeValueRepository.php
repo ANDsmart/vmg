@@ -297,7 +297,7 @@ class CodeValueRepository extends BaseRepository
 
     public function getTrainingByTrainingCategory($category_id)
     {
-        $query = Training::where('category_id',$category_id)->get();
+        $query = Training::where('category_id',$category_id)->where('isactive',0)->get();
         return $query;
     }
 
