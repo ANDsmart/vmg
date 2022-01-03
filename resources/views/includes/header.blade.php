@@ -88,11 +88,10 @@
                                                                                                 </ul>
                                                                                             </div>
                                                                                             <div class="col-lg-4"><span class="dropdown-mega-sub-title">Combine</span>
-                                                                                                <p>Is one of the main function of VMG </p>
                                                                                                 <ul class="dropdown-mega-sub-nav">
                                                                                                     @foreach(\App\Models\Resource\Functions::all() as $function)
                                                                                                     <li><a class="dropdown-item" href="{{route('general_information.function.display',$function->id)}}">{{$function->title}}</a>
-{{--                                                                                                    <p>{!! $function->description !!}</p>--}}
+                                                                                                    <p></p>
                                                                                                     </li>
                                                                                                     @endforeach
 
