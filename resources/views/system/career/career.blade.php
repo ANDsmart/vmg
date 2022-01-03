@@ -164,8 +164,9 @@
                 <div class="col">
                     <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
                         <div class="col-md-8 pl-md-5">
+                            @if(($image))
                             <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url($image)}}" alt="layout styles" />
-
+                            @endif
                         </div>
                     </div>
 
