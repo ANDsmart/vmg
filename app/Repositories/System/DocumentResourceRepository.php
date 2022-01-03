@@ -72,6 +72,7 @@ class DocumentResourceRepository extends BaseRepository
             $resource = (new DocumentRepository())->getResourceInstance($document_id, $resource_id);
             $ext = $this->getDocExtension($document_file_input_key);
 
+
             if($check_if_recurring == false)
             {
                 /*for non recurring document*/

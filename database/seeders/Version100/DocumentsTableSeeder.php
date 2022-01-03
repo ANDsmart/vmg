@@ -92,6 +92,17 @@ class DocumentsTableSeeder extends Seeder
                 'isactive' => 1,
             ),
 
+            7 => array (
+                'id' => 8,
+                'name' => 'Carrier Images',
+                'document_group_id' => 7,
+                'description' => 'This is carrier images',
+                'isrecurring' => 1,
+                'ismandatory' => 1,
+                'isrenewable' => 1,
+                'isactive' => 1,
+            ),
+
         ));
 
         $this->enableForeignKeys("documents");

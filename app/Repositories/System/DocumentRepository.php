@@ -7,6 +7,7 @@ use App\Models\Auth\User;
 use App\Models\Cms\Blog;
 use App\Models\Cms\Client;
 use App\Models\Cms\ModuleFunctionalPart;
+use App\Models\Resource\Career;
 use App\Models\Resource\Service;
 use App\Models\Resource\Slider;
 use App\Models\Resource\Training;
@@ -55,6 +56,7 @@ class DocumentRepository extends BaseRepository
     /*Get Resource from document id from definition for each document group*/
     public function getResourceInstance($document_id, $resource_id)
     {
+
         $document = (new DocumentRepository())->find($document_id);
         $document_group_id = $document->document_group_id;
         $resource = null;
@@ -84,6 +86,10 @@ class DocumentRepository extends BaseRepository
                 $resource = Slider::query()->find($resource_id);
                 break;
 
+              case 8:
+                //
+                $resource = Career::query()->find($resource_id);
+                break;
 
         }
 

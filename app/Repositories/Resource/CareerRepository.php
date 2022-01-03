@@ -62,6 +62,7 @@ class CareerRepository extends BaseRepository
 //                'user_id' => Auth::id(),
               'isactive' =>$input['isactive'],
 
+
           ]);
 
             //serve image
@@ -77,7 +78,7 @@ class CareerRepository extends BaseRepository
     {
         $document_resource_repo = new DocumentResourceRepository();
         if((request()->file('service_image'))){
-            $document_resource_repo->saveDocument($service_id,4,'service_image', $input);
+            $document_resource_repo->saveDocument($service_id,8,'service_image', $input);
         }
 
     }

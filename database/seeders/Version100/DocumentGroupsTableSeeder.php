@@ -57,6 +57,12 @@ class DocumentGroupsTableSeeder extends Seeder
                     'name' => 'Slider ',
                     'top_path' => '/storage/cms/slider_images',
                 ),
+            6 =>
+                array (
+                    'id' => 7,
+                    'name' => 'Carrier ',
+                    'top_path' => '/storage/cms/carrier',
+                ),
         ));
         $this->enableForeignKeys("document_groups");
 
