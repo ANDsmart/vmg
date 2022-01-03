@@ -59,7 +59,7 @@
                                                                             <ul class="dropdown-menu">
                                                                                 @foreach(\App\Models\Resource\Career::where('isactive',1)->get() as $career)
                                                                                     <li>
-                                                                                        <a class="dropdown-item" href="{{route('general_information.career.display',$career->id)}}">{{$career->title}}</a>
+                                                                                        <a class="dropdown-item" href="{{route('general_information.career.display',$career->id)}}" style="color: #000000">{{$career->title}}</a>
                                                                                         <p></p>
 
                                                                                     </li>
