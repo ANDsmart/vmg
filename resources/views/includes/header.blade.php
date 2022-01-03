@@ -57,7 +57,7 @@
                                                                             <a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.careers')}} <i class="fas fa-chevron-down"></i></a>
 
                                                                             <ul class="dropdown-menu">
-                                                                                @foreach(\App\Models\Resource\Career::all() as $career)
+                                                                                @foreach(\App\Models\Resource\Career::where('isactive',1)->get() as $career)
                                                                                     <li>
                                                                                         <a class="dropdown-item" href="{{route('general_information.career.display',$career->id)}}">{{$career->title}}</a>
                                                                                         <p></p>

@@ -60,7 +60,7 @@ class CareerRepository extends BaseRepository
                 'service_type_cv_id' => $input['service_type_cv_id'],
                 'description' => $input['content'],
 //                'user_id' => Auth::id(),
-              'isactive' =>1,
+              'isactive' =>$input['isactive'],
 
           ]);
 
@@ -90,7 +90,7 @@ class CareerRepository extends BaseRepository
     /*Get all for Datatable Client*/
     public function getAllForDt()
     {
-        return $this->query()->where('isactive', 1);
+        return $this->query()->get();
     }
 
 
