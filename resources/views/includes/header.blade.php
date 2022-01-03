@@ -147,10 +147,7 @@
                                                                             <a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.about_us')}} <i class="fas fa-chevron-down"></i></a>
                                                                             <ul class="dropdown-menu">
                                                                                 <li>
-                                                                                    <a class="dropdown-item" href="{{route('general_information.about_us')}}"> What are we help clients? </a>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <a class="dropdown-item" href="{{route('general_information.about_us')}}"> What we do?</a>
+                                                                                    <a class="dropdown-item" href="{{route('general_information.about_us')}}"> WHAT WE DO?</a>
                                                                                 </li>
 
                                                                             </ul>
