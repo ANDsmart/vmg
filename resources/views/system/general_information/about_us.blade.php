@@ -112,16 +112,35 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-12 pb-sm-4 pb-lg-0 pr-lg-5 mb-sm-5 mb-lg-0">
                         <h2 class="text-color-dark font-weight-normal text-6 mb-2">Who <strong class="font-weight-extra-bold">We Are</strong></h2>
-                        <p><strong>VIPAWA MANAGEMENT GROUP </strong>conducts management services, marketing of the client human resources services and consultation, Legal advisory and representation on all your labour and industrial relations issues.&nbsp; The company also prepares and conducts seminar and training on labour laws and administration.</p>
-                        <p>We have a growing reputation earned as a result of helping clients reach their goals by consistently delivering innovative solutions to complex management, business and labour issues which match our client’s needs. From daily advice to advising on the most complex human resources, management issues and industrial disputes, our clients rely on our advice to guide them through all of their labour needs and when face challenges.</p>
-                        <p>We pride ourselves on providing cost-effective and time-efficient services and on having strong relationships with other human resources and management personnel nationally and internationally which enables us to provide a seamless service to clients in global environments. We support our clients in managing and expanding their operations wherever they may be.</p>
-                        <p>Moreover, the company has a vast experience in conflict management, Background checks, preparation of HR Policy and procedures, HR system assessment.&nbsp;&nbsp; Effective handling of issues. Conflict management Background checks.</p>
+                        <p><strong>VIPAWA MANAGEMENT GROUP </strong>has been established as a business consultancy in Tanzania since
+                            2010. Vipaji have served clients across Asia, Europe, East Africa, and North America. It is a
+                            consultative advisory organization on Human Resource Management, Legal, Finance and Audit, Tax,
+                            Information Technology and Technologies and Asset Valuation.</p>
+
+                        <p>The aim of Vipaji Inc Corporate Limited is to focus on upholding innovation to identify business
+                            efficiencies and adding value to our clients and the capital markets. Our approach is centered on in-
+                            depth understanding of our clients’ businesses, ensuring compliance to the applicable international
+                            and local laws and regulations while appreciating commercial reality. We look at ourselves as
+                            business advisors with powerful business propositions. Our reputation is derived from qualification
+                            and experiences of our partners and employees, respect our people have gathered in the market
+                            and set of ethical values that we all believe in. Quality and compliance are at the center of our
+                            success story</p>
+
+                        <p>Our Business Consulting service lines are built on set of pragmatic solutions based on deep and
+                            relevant industry experiences. Directors and employees of Vipaji are proud to have gathered vast
+                            experiences from a wide range of clients, from multinational subsidiaries in Tanzania, government
+                            and non-government projects, to entrepreneurial establishments</p>
+
+                        <p>The Company also takes the advantage of small and medium enterprises which are rapidly growing
+                            in the country. With our primary operational target area being Tanzania, we provide a full range of
+                            assurance and advisory services</p>
+                        <p>Our philosophy is based on integrity, objective independence and strict adherence to professional
+                            standards, regulations and Laws</p>
                         <div>
                             <p>&nbsp;</p>
                         </div>
                         <p align="right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>VIPAWA MANAGEMENT GROUP&nbsp;</strong> </em></p>
-                        <p>&nbsp;HR Policy and procedures HR system assessment. Effective handling of grievances and disciplinary procedures. Performance management.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                        <p>Vipaji Inc T Limited has an expertise in conducting seminars and training on labour laws, human resource management, supervisory and strategic management as a tailor made courses upon request by the client or from the researches which has been conducted more offenly.&nbsp;&nbsp; The company will also provide Recruitment services to its clients and organizational restructuring.</p>                    </div>
+                    </div>
                     <div class="col-sm-8 col-md-6 col-lg-4 offset-sm-4 offset-md-4 offset-lg-2 mt-sm-5" style="top: 1.7rem;">
                         <img src="img/generic/generic-corporate-3-1.jpg" class="img-fluid position-absolute d-none d-sm-block appear-animation animated expandIn appear-animation-visible" data-appear-animation="expandIn" data-appear-animation-delay="300" style="top: 10%; left: -50%; animation-delay: 300ms;" alt="">
                         <img src="img/generic/generic-corporate-3-2.jpg" class="img-fluid position-absolute d-none d-sm-block appear-animation animated expandIn appear-animation-visible" data-appear-animation="expandIn" style="top: -33%; left: -29%; animation-delay: 100ms;" alt="">

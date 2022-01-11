@@ -10,8 +10,7 @@
 
     <title>VMG</title>
 
-    <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="Porto - Responsive HTML5 Template">
+    <meta name="keywords" content="HUMAN RESOURCE CONSULTANCY" />
     <meta name="author" content="okler.net">
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
