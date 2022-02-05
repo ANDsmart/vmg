@@ -105,7 +105,7 @@ class CodeValuesTableSeeder extends Seeder
             [
                 'id' => 6,
                 'code_id' => 2,
-                'name' => 'HUMAN RESOURCE',
+                'name' => 'HUMAN RESOURCE MANAGEMENT',
                 'lang' => NULL,
                 'description' => '',
                 'reference' => 'SERTYPEHR',
@@ -119,7 +119,7 @@ class CodeValuesTableSeeder extends Seeder
             [
                 'id' => 7,
                 'code_id' => 2,
-                'name' => 'LAW',
+                'name' => 'LEGAL COMPLIANCE',
                 'lang' => NULL,
                 'description' => '',
                 'reference' => 'SERTYPELW',
@@ -147,7 +147,7 @@ class CodeValuesTableSeeder extends Seeder
             [
                 'id' => 9,
                 'code_id' => 2,
-                'name' => 'FINANCE',
+                'name' => 'FINANCIAL MANAGEMENT',
                 'lang' => NULL,
                 'description' => '',
                 'reference' => 'SERTYPFINA',
@@ -161,7 +161,7 @@ class CodeValuesTableSeeder extends Seeder
             [
                 'id' => 10,
                 'code_id' => 2,
-                'name' => 'TRAINING',
+                'name' => 'INFORMATION TECHNOLOGY',
                 'lang' => NULL,
                 'description' => '',
                 'reference' => 'SERTYPETRA',
@@ -175,7 +175,7 @@ class CodeValuesTableSeeder extends Seeder
             [
                 'id' => 11,
                 'code_id' => 2,
-                'name' => 'COMPLIANCE',
+                'name' => 'COMPLIANCE MANAGEMENT',
                 'lang' => NULL,
                 'description' => '',
                 'reference' => 'SERTYPECO',
@@ -184,20 +184,7 @@ class CodeValuesTableSeeder extends Seeder
                 'is_system_defined' => 1,
             ]
         );
-        $cv = CodeValue::updateOrCreate(
-            ['reference' => 'SERTYPEMA'],
-            [
-                'id' => 12,
-                'code_id' => 2,
-                'name' => 'MARKETING',
-                'lang' => NULL,
-                'description' => '',
-                'reference' => 'SERTYPEMA',
-                'sort' => 7,
-                'isactive' => 1,
-                'is_system_defined' => 1,
-            ]
-        );
+
 
         $cv = CodeValue::updateOrCreate(
             ['reference' => 'KNLGTOS'],

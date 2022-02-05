@@ -23,32 +23,32 @@
 
 
     <!-- Vendor CSS -->
-    {{ Html::style(url('vendor/bootstrap/css/bootstrap.min.css')) }}
-    {{ Html::style(url('vendor/fontawesome-free/css/all.min.css')) }}
-    {{ Html::style(url('vendor/animate/animate.min.css')) }}
-    {{ Html::style(url('vendor/simple-line-icons/css/simple-line-icons.min.css')) }}
-    {{ Html::style(url('vendor/owl.carousel/assets/owl.carousel.min.css')) }}
-    {{ Html::style(url('vendor/owl.carousel/assets/owl.theme.default.min.css')) }}
-    {{ Html::style(url('vendor/magnific-popup/magnific-popup.min.css')) }}
+{{ Html::style(url('vendor/bootstrap/css/bootstrap.min.css')) }}
+{{ Html::style(url('vendor/fontawesome-free/css/all.min.css')) }}
+{{ Html::style(url('vendor/animate/animate.min.css')) }}
+{{ Html::style(url('vendor/simple-line-icons/css/simple-line-icons.min.css')) }}
+{{ Html::style(url('vendor/owl.carousel/assets/owl.carousel.min.css')) }}
+{{ Html::style(url('vendor/owl.carousel/assets/owl.theme.default.min.css')) }}
+{{ Html::style(url('vendor/magnific-popup/magnific-popup.min.css')) }}
 
-    <!-- Theme CSS -->
-    {{ Html::style(url('css/theme.css')) }}
-    {{ Html::style(url('css/theme-elements.css')) }}
-    {{ Html::style(url('css/theme-blog.css')) }}
-    {{ Html::style(url('css/theme-shop.css')) }}
-    {{ Html::style(url('vendor/rs-plugin/css/settings.css')) }}
-    {{ Html::style(url('vendor/rs-plugin/css/layers.css')) }}
-    {{ Html::style(url('vendor/rs-plugin/css/navigation.css')) }}
+<!-- Theme CSS -->
+{{ Html::style(url('css/theme.css')) }}
+{{ Html::style(url('css/theme-elements.css')) }}
+{{ Html::style(url('css/theme-blog.css')) }}
+{{ Html::style(url('css/theme-shop.css')) }}
+{{ Html::style(url('vendor/rs-plugin/css/settings.css')) }}
+{{ Html::style(url('vendor/rs-plugin/css/layers.css')) }}
+{{ Html::style(url('vendor/rs-plugin/css/navigation.css')) }}
 
 
-    <!-- Demo CSS -->
-    {{ Html::style(url('css/demos/demo-landing.css')) }}
-    {{ Html::style(url('css/demos/demo-business-consulting.css')) }}
-    {{ Html::style(url('css/demos/demo-business-consulting-2.css')) }}
-    {{ Html::style(url('css/demos/demo-medical.css')) }}
+<!-- Demo CSS -->
+{{ Html::style(url('css/demos/demo-landing.css')) }}
+{{ Html::style(url('css/demos/demo-business-consulting.css')) }}
+{{ Html::style(url('css/demos/demo-business-consulting-2.css')) }}
+{{ Html::style(url('css/demos/demo-medical.css')) }}
 
-    <!-- Skin CSS -->
-{{--    {{ Html::style(url('css/skins/skin-business-consulting.css')) }}--}}
+<!-- Skin CSS -->
+    {{--    {{ Html::style(url('css/skins/skin-business-consulting.css')) }}--}}
 
     <link rel="stylesheet" href="">
 
@@ -58,7 +58,7 @@
     {{ Html::script(url('master/style-switcher/style.switcher.localstorage.js')) }}
 
 
-    <!-- Theme Custom CSS -->
+<!-- Theme Custom CSS -->
     {{ Html::style(url('css/custom.css')) }}
 
     <style>
@@ -72,11 +72,11 @@
 
     </style>
 
-       @yield('after-styles')
+    @yield('after-styles')
 
-       @yield('after-scripts')
+    @yield('after-scripts')
 
-    <!-- Head Libs -->
+<!-- Head Libs -->
     {{ Html::script(url('vendor/modernizr/modernizr.min.js')) }}
 
 </head>

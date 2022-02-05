@@ -53,21 +53,6 @@
                             <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
                                                                 <nav class="collapse header-mobile-border-top">
                                                                     <ul class="nav nav-pills" id="mainNav">
-                                                                        <li class="dropdown">
-                                                                            <a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.careers')}} <i class="fas fa-chevron-down"></i></a>
-
-                                                                            <ul class="dropdown-menu">
-                                                                                @foreach(\App\Models\Resource\Career::where('isactive',1)->get() as $career)
-                                                                                    <li>
-                                                                                        <a class="dropdown-item" href="{{route('general_information.career.display',$career->id)}}" style="color: #000000">{{$career->title}}</a>
-                                                                                        <p></p>
-
-                                                                                    </li>
-                                                                                @endforeach
-                                                                            </ul>
-
-                                                                        </li>
-
                                                                         <li class="dropdown dropdown-mega">
                                                                             <a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.functions')}} <i
                                                                                         class="fas fa-chevron-down"></i></a>
@@ -78,11 +63,11 @@
                                                                                             <div class="col-lg-4"><span class="dropdown-mega-sub-title" >Manage</span>
                                                                                                 <ul class="dropdown-mega-sub-nav">
                                                                                                     @foreach((new \App\Repositories\System\CodeValueRepository())->getServiceForDirectory() as $code_value)
-                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',$code_value->id)}}">{{$code_value->name}}</a>
-                                                                                                    <p>{{truncateString($code_value->content,50)}}</p>
-                                                                                                    </li>
+                                                                                                        <li><a class="dropdown-item" href="{{route('general_information.service.display',$code_value->id)}}">{{$code_value->name}}</a>
+                                                                                                            <p>{{truncateString($code_value->content,50)}}</p>
+                                                                                                        </li>
 
-                                                                                                @endforeach
+                                                                                                    @endforeach
 
 
                                                                                                 </ul>
@@ -90,9 +75,9 @@
                                                                                             <div class="col-lg-4"><span class="dropdown-mega-sub-title">Combine</span>
                                                                                                 <ul class="dropdown-mega-sub-nav">
                                                                                                     @foreach(\App\Models\Resource\Functions::all() as $function)
-                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.function.display',$function->id)}}">{{$function->title}}</a>
-                                                                                                    <p></p>
-                                                                                                    </li>
+                                                                                                        <li><a class="dropdown-item" href="{{route('general_information.function.display',$function->id)}}">{{$function->title}}</a>
+                                                                                                            <p></p>
+                                                                                                        </li>
                                                                                                     @endforeach
 
                                                                                                 </ul>
@@ -126,22 +111,38 @@
                                                                             </a>
                                                                             <ul class="dropdown-menu">
                                                                                 @foreach((new \App\Repositories\System\CodeValueRepository())->getTrainingCategories() as $training)
-                                                                                <li class="dropdown-submenu">
-                                                                                    <a class="dropdown-item" href="#" style="color: #000000">{{$training->name}}
-                                                                                        <i class="fas fa-chevron-down"></i></a>
-                                                                                    <ul class="dropdown-menu">
+                                                                                    <li class="dropdown-submenu">
+                                                                                        <a class="dropdown-item" href="#" style="color: #000000">{{$training->name}}
+                                                                                            <i class="fas fa-chevron-down"></i></a>
+                                                                                        <ul class="dropdown-menu">
 
-                                                                                        @foreach((new \App\Repositories\System\CodeValueRepository())->getTrainingByTrainingCategory($training->id) as $knowledge)
-                                                                                        <li>
-                                                                                            <a class="dropdown-item" href="{{route('general_information.training.display',$knowledge->uuid)}}" style="color: #000000">
-                                                                                                {{$knowledge->title}}</a>
-                                                                                        </li>
+                                                                                            @foreach((new \App\Repositories\System\CodeValueRepository())->getTrainingByTrainingCategory($training->id) as $knowledge)
+                                                                                                <li>
+                                                                                                    <a class="dropdown-item" href="{{route('general_information.training.display',$knowledge->uuid)}}" style="color: #000000">
+                                                                                                        {{$knowledge->title}}</a>
+                                                                                                </li>
                                                                                             @endforeach
-                                                                                    </ul>
-                                                                                </li>
-                                                                                    @endforeach
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                @endforeach
                                                                             </ul>
                                                                         </li>
+
+                                                                        <li class="dropdown">
+                                                                            <a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.careers')}} <i class="fas fa-chevron-down"></i></a>
+
+                                                                            <ul class="dropdown-menu">
+                                                                                @foreach(\App\Models\Resource\Career::where('isactive',1)->get() as $career)
+                                                                                    <li>
+                                                                                        <a class="dropdown-item" href="{{route('general_information.career.display',$career->id)}}" style="color: #000000">{{$career->title}}</a>
+                                                                                        <p></p>
+
+                                                                                    </li>
+                                                                                @endforeach
+                                                                            </ul>
+
+                                                                        </li>
+
 
                                                                         <li class="dropdown">
                                                                             <a class="dropdown-item dropdown-toggle" href="#"> {{trans('label.about_us')}} <i class="fas fa-chevron-down"></i></a>
