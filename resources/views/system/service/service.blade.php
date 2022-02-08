@@ -39,7 +39,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="overflow-hidden mb-2">
-                    <h2 class="font-weight-normal text-7 mb-2 appear-animation animated maskUp appear-animation-visible" data-appear-animation="maskUp" data-appear-animation-delay="200" style="animation-delay: 200ms;">Find Your <strong class="font-weight-extra-bold">Oportunity</strong></h2>
+{{--                    <h2 class="font-weight-normal text-7 mb-2 appear-animation animated maskUp appear-animation-visible" data-appear-animation="maskUp" data-appear-animation-delay="200" style="animation-delay: 200ms;">Find Your <strong class="font-weight-extra-bold">Oportunity</strong></h2>--}}
                 </div>
 
                 <p class="text-color-light-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;">{!! ($service_type->description) !!}</p>

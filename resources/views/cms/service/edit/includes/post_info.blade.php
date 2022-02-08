@@ -17,6 +17,16 @@
     </div>
 </div>
 
+<div class="row">
+    <div class="col-12">
+        {!! Form::label('isactive', __("label.isactve"), ['class' => 'required_asterik']) !!}
+
+        {!! Form::select('isactive',[1 =>'Yes',0=>'No', ],$service->isactve , ['id'=>'title', 'class' => 'form-control','required']) !!}
+        {!! $errors->first('isactive', '<span class="badge badge-danger">:message</span>') !!}
+
+    </div>
+</div>
+
 <div class="row form-group ">
     <div class="col-sm-12">
         <div class="row">

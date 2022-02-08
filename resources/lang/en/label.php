@@ -525,7 +525,9 @@ return [
 
     'talk_to_professional' => 'Talk to professional',
     'welcome_vipawa' => 'Welcome Vipawa Management Group',
-    'about_vipawa' => 'Vipawa Management Group is a management consulting organization offering advisory and implementation services to the seres management of organizations with the aim of improving their effectiveness of their business strategies, organization performance and operational processes for the purpose of creating a business value',
+
+
+
 
     'services'=>[
         'services'=>'Services',

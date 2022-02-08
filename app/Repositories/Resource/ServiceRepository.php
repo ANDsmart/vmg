@@ -57,6 +57,7 @@ class ServiceRepository extends BaseRepository
                 'title' => $input['title'],
                 'service_type_cv_id' => $input['service_type_cv_id'],
                 'content' => $input['content'],
+              'isactive' =>$input['isactive'],
                 'user_id' => Auth::id(),
             ]);
 
@@ -86,7 +87,7 @@ class ServiceRepository extends BaseRepository
     /*Get all for Datatable Client*/
     public function getAllForDt()
     {
-        return $this->query()->where('isactive', 1);
+        return $this->query();
     }
 
 

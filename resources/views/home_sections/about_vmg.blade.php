@@ -3,8 +3,9 @@
         <div class="row">
             <div class="col-md-6 col-lg-6">
                 <h2 class="font-weight-bold text-color-dark">- {{trans('label.about_us')}}</h2>
-                <p class="pl-4" >{{trans('label.about_vipawa')}}
-                </p>
+                <p> VMG at its core is built to improve organization performance and effectiveness in the area of Human Resource Management, Legal Compliance, Financial Management, Information Technology and Compliance Management </p>
+                <p> VMG Consultants work to identify and solve complex business, organizational and operational problems and define and improve processes.Our Human Resource Management Consultants have extensive experience and expertise to offer wide range of Human Resource services from talent acquisition to governing policies, overseeing their execution and managing the relationships between organization and employee of different levels to keep them in line with the organization goals</p>
+
                 <div class="pl-4">
                     <a class="btn btn-outline custom-border-width btn-primary mt-3 mb-2 custom-border-radius font-weight-semibold text-uppercase" href="{{route('general_information.about_us')}}">{{trans('label.read_more')}}</a>
                 </div>

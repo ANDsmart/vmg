@@ -107,7 +107,11 @@ class CodeValuesTableSeeder extends Seeder
                 'code_id' => 2,
                 'name' => 'HUMAN RESOURCE MANAGEMENT',
                 'lang' => NULL,
-                'description' => '',
+                'description' => 'At VMG our Human Resource Management functions can be classified into the following three categories.
+1. Operative Functions, and
+2. Advisory Functions.
+3. Managerial Functions,
+',
                 'reference' => 'SERTYPEHR',
                 'sort' => 1,
                 'isactive' => 1,

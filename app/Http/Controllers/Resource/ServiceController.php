@@ -53,7 +53,7 @@ class ServiceController extends Controller
     {
 
         $service_type = CodeValue::find($service);
-        $services = Service::where('service_type_cv_id',$service)->get();
+        $services = Service::where('service_type_cv_id',$service)->where('isactive',1)->get();
         return view('system.service.service')
             ->with('services',$services)
             ->with('service_type',$service_type);
