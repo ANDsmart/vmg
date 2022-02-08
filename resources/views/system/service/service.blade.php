@@ -42,7 +42,16 @@
 {{--                    <h2 class="font-weight-normal text-7 mb-2 appear-animation animated maskUp appear-animation-visible" data-appear-animation="maskUp" data-appear-animation-delay="200" style="animation-delay: 200ms;">Find Your <strong class="font-weight-extra-bold">Oportunity</strong></h2>--}}
                 </div>
 
-                <p class="text-color-light-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;">{!! ($service_type->description) !!}</p>
+{{--                <p class="text-color-light-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;">{!! ($service_type->description) !!}</p>--}}
+
+                @if($service_type->id == 6)
+                    <p class="text-color-light-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;">At VMG our Human Resource Management functions can be classified into the following three categories.</p>
+                    <ol>
+                        <li class="text-4">Operative Functions</li>
+                        <li class="text-4">Advisory Functions</li>
+                        <li class="text-4">Managerial Functions</li>
+                    </ol>
+                @endif
             </div>
             <div class="col-lg-4">
                 <div class="testimonial testimonial-primary appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="800" style="animation-delay: 800ms;">

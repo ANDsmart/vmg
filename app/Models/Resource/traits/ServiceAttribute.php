@@ -14,7 +14,7 @@ trait ServiceAttribute
     {
         $document_resource = $this->documents()->where('document_id', 4)->first();
         $document_resource_repo = new DocumentResourceRepository();
-        $client_logo = isset($document_resource) ? $document_resource_repo->getDocFullPathUrl($document_resource->pivot->id) : '';
+        $client_logo = isset($document_resource) ? $document_resource_repo->getDocFullPathUrl($document_resource->pivot->id) : 'img/default_image.png';
         return $client_logo;
     }
 }
