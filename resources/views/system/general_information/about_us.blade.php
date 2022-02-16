@@ -57,18 +57,30 @@
                     </div>
 
                     <div class="row mt-3 mb-5">
+                        <div class="col-md-4 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800" style="animation-delay: 800ms;">
+                            <h3 class="font-weight-bold text-4 mb-2">Our Goal</h3>
+                            <p>To develop, To improve, To cultivate organization resources in harmony and create a great value for organizations</p>
+                        </div>
                         <div class="col-md-4 appear-animation animated fadeInLeftShorter appear-animation-visible" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="800" style="animation-delay: 800ms;">
                             <h3 class="font-weight-bold text-4 mb-2">Our Mission</h3>
-                            <p>To build long term relationships with our customers and clients and provide exceptional customer services by providing robust services, business through innovation, Commitment, and researches advice and guidance</p>
+                            <p>Improve effectiveness </p>
+                            <ol>
+                                <li>In Business strategies</li>
+                                <li>Organization performance</li>
+                                <li>Operational processes.</li>
+                            </ol>
                         </div>
                         <div class="col-md-4 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="600" style="animation-delay: 600ms;">
                             <h3 class="font-weight-bold text-4 mb-2">Our Vision</h3>
-                            <p>To provide quality services that exceeds the expectations of our esteemed customers..</p>
+                            <p>To create a lifelong value of organization resources through Managing and combining organization resources.</p>
+                            <ol>
+                                <li>Manage</li>
+                                <li>Combine</li>
+                                <li>Create</li>
+                            </ol>
+
                         </div>
-                        <div class="col-md-4 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800" style="animation-delay: 800ms;">
-                            <h3 class="font-weight-bold text-4 mb-2">Why Us</h3>
-                            <p>We believe in treating our customers with respect, confidentiality and faith. We grow through creativity, invention and innovation. We integrate honesty, Teamwork, flexibility, Professionalism / adaptability, social responsibility, integrity and business ethics into all aspects of our business functioning.</p>
-                        </div>
+
                     </div>
 
                 </div>
@@ -112,13 +124,16 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-12 pb-sm-4 pb-lg-0 pr-lg-5 mb-sm-5 mb-lg-0">
                         <h2 class="text-color-dark font-weight-normal text-6 mb-2">Who <strong class="font-weight-extra-bold">We Are</strong></h2>
-                        <p><strong>VMG </strong> at its core is built to improve organization performance and effectiveness in the area of Human Resource Management, Legal Compliance, Financial Management, Information Technology and Compliance Management.</p>
+                        <p><strong>VMG </strong> is a set of activities including
+                            planning and decision making, organizing, leading and controlling directed at an organization`s human,
+                            financial, physical, and information resources with the aim of achieving organization goals in an efficient and effective manner.
+                        </p>
 
-                        <p>VMG Consultants work to identify and solve complex business, organizational and operational problems and define and improve processes.</p>
+                        <p>VMG is a management consulting organization offering advisory and implementation services to the senior management of organizations with the aim of improving their effectiveness of their business strategies, organization performance and operation processes for the purpose of creating a larger(grand) value.</p>
 
-                        <p>Our Human Resource Management Consultants have extensive experience and expertise to offer wide range of Human Resource services from talent acquisition to governing policies, overseeing their execution and managing the relationships between organization and employee of different levels to keep them in line with the organization goals. </p>
+                        <p>VMG is Management Consulting organization works to help organization improve their performance.</p>
 
-                        <p>Human Resource planning, Job Analysis and Design, Wage and Salary Administration, Labour relations, and Personnel Records are among the areas that we do for our clients help them attain their organization goals.</p>
+                        <p>VMG consultants work to identify and solve complex business, organizational and operational problems and define and improve process.</p>
                         <div>
                             <p>&nbsp;</p>
                         </div>
