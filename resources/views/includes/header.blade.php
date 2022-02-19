@@ -84,16 +84,16 @@
                                                                                             </div>
                                                                                             <div class="col-lg-4"><span class="dropdown-mega-sub-title">Create</span>
                                                                                                 <ul class="dropdown-mega-sub-nav">
-                                                                                                    <li><a class="dropdown-item" href="http://142.93.210.219/resource/general_information/display/6" style="color: #000000">EFFECTIVE BUSINESS STRATEGIES</a>
+                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',6)}}" style="color: #000000">EFFECTIVE BUSINESS STRATEGIES</a>
                                                                                                         <p></p>
                                                                                                     </li>
-                                                                                                    <li><a class="dropdown-item" href="http://142.93.210.219/resource/general_information/display/6" style="color: #000000">MANAGE RESOURCE</a>
+                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',6)}}" style="color: #000000">MANAGE RESOURCE</a>
                                                                                                         <p></p>
                                                                                                     </li>
-                                                                                                    <li><a class="dropdown-item" href="http://142.93.210.219/resource/general_information/display/6" style="color: #000000">MANAGE BUSINESS VALUES</a>
+                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',6)}}" style="color: #000000">MANAGE BUSINESS VALUES</a>
                                                                                                         <p></p>
                                                                                                     </li>
-                                                                                                    <li><a class="dropdown-item" href="http://142.93.210.219/resource/general_information/display/6" style="color: #000000">IMPROVE ORGANIZATION PERFORMANCE</a>
+                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',6)}}" style="color: #000000">IMPROVE ORGANIZATION PERFORMANCE</a>
                                                                                                         <p></p>
                                                                                                     </li>
 
