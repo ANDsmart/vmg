@@ -89,7 +89,7 @@
                                                                                             </div>
                                                                                             <div class="col-lg-4">
                                                                                                 <span class="dropdown-mega-sub-title">Create</span>
-                                                                                                <p>We business value  </p>
+                                                                                                <p>We create business value  </p>
 
                                                                                                 <ul class="dropdown-mega-sub-nav">
                                                                                                     <li><a class="dropdown-item" href="{{route('general_information.service.display',6)}}" style="color: #000000">EFFECTIVE BUSINESS STRATEGIES</a>
