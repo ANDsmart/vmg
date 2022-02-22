@@ -60,7 +60,9 @@
                                                                                 <li>
                                                                                     <div class="dropdown-mega-content">
                                                                                         <div class="row">
-                                                                                            <div class="col-lg-4"><span class="dropdown-mega-sub-title" >Manage</span>
+                                                                                            <div class="col-lg-4">
+                                                                                                <span class="dropdown-mega-sub-title" >Manage</span>
+                                                                                                <p>We manage resources </p>
                                                                                                 <ul class="dropdown-mega-sub-nav">
                                                                                                     @foreach((new \App\Repositories\System\CodeValueRepository())->getServiceForDirectory() as $code_value)
                                                                                                         <li><a class="dropdown-item" href="{{route('general_information.service.display',$code_value->id)}}">{{$code_value->name}}</a>
@@ -72,7 +74,10 @@
 
                                                                                                 </ul>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"><span class="dropdown-mega-sub-title">Combine</span>
+                                                                                            <div class="col-lg-4">
+                                                                                                <span class="dropdown-mega-sub-title">Combine</span>
+                                                                                                <p>We combine  resources </p>
+
                                                                                                 <ul class="dropdown-mega-sub-nav">
                                                                                                     @foreach(\App\Models\Resource\Functions::all() as $function)
                                                                                                         <li><a class="dropdown-item" href="{{route('general_information.function.display',$function->id)}}">{{$function->title}}</a>
@@ -82,7 +87,10 @@
 
                                                                                                 </ul>
                                                                                             </div>
-                                                                                            <div class="col-lg-4"><span class="dropdown-mega-sub-title">Create</span>
+                                                                                            <div class="col-lg-4">
+                                                                                                <span class="dropdown-mega-sub-title">Create</span>
+                                                                                                <p>We business value  </p>
+
                                                                                                 <ul class="dropdown-mega-sub-nav">
                                                                                                     <li><a class="dropdown-item" href="{{route('general_information.service.display',6)}}" style="color: #000000">EFFECTIVE BUSINESS STRATEGIES</a>
                                                                                                         <p></p>

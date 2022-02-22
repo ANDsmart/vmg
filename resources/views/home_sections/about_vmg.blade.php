@@ -12,46 +12,46 @@
             </div>
             <div class="col-md-6 col-lg-6">
                 <div class="content-grid custom-content-grid mt-5 mb-4">
-                    <div class="row content-grid-row">
-                        <div class="content-grid-item col-lg-6 bg-color-light p-4">
-                            <div class="counters">
-                                <div class="counter custom-sm-counter-style">
-                                    <img class="counter-icon" src="img/demos/business-consulting/icons/icon-1.png" alt="">
-                                    <strong class="text-color-primary custom-primary-font" data-to="15" data-append="+">15+</strong>
-                                    <label>Years in Business</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-grid-item col-lg-6 p-4">
-                            <div class="counters">
-                                <div class="counter margin-style-2 custom-sm-counter-style">
-                                    <img class="counter-icon" src="img/demos/business-consulting/icons/icon-2.png" alt="">
-                                    <strong class="text-color-primary custom-primary-font" data-to="2000" data-append="+">2000+</strong>
-                                    <label>Successfull Cases</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row content-grid-row">
-                        <div class="content-grid-item col-lg-6 p-4">
-                            <div class="counters">
-                                <div class="counter custom-sm-counter-style">
-                                    <img class="counter-icon" src="img/demos/business-consulting/icons/icon-3.png" alt="">
-                                    <strong class="text-color-primary custom-primary-font" data-to="240" data-append="+">240+</strong>
-                                    <label>Satisfied Clients</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-grid-item col-lg-6 bg-color-light p-4">
-                            <div class="counters">
-                                <div class="counter margin-style-2 custom-sm-counter-style">
-                                    <img class="counter-icon" src="img/demos/business-consulting/icons/icon-4.png" alt="">
-                                    <strong class="text-color-primary custom-primary-font" data-to="130" data-append="+">130+</strong>
-                                    <label>Pro Consultants</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+{{--                    <div class="row content-grid-row">--}}
+{{--                        <div class="content-grid-item col-lg-6 bg-color-light p-4">--}}
+{{--                            <div class="counters">--}}
+{{--                                <div class="counter custom-sm-counter-style">--}}
+{{--                                    <img class="counter-icon" src="img/demos/business-consulting/icons/icon-1.png" alt="">--}}
+{{--                                    <strong class="text-color-primary custom-primary-font" data-to="15" data-append="+">15+</strong>--}}
+{{--                                    <label>Years in Business</label>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="content-grid-item col-lg-6 p-4">--}}
+{{--                            <div class="counters">--}}
+{{--                                <div class="counter margin-style-2 custom-sm-counter-style">--}}
+{{--                                    <img class="counter-icon" src="img/demos/business-consulting/icons/icon-2.png" alt="">--}}
+{{--                                    <strong class="text-color-primary custom-primary-font" data-to="2000" data-append="+">2000+</strong>--}}
+{{--                                    <label>Successfull Cases</label>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="row content-grid-row">--}}
+{{--                        <div class="content-grid-item col-lg-6 p-4">--}}
+{{--                            <div class="counters">--}}
+{{--                                <div class="counter custom-sm-counter-style">--}}
+{{--                                    <img class="counter-icon" src="img/demos/business-consulting/icons/icon-3.png" alt="">--}}
+{{--                                    <strong class="text-color-primary custom-primary-font" data-to="240" data-append="+">240+</strong>--}}
+{{--                                    <label>Satisfied Clients</label>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="content-grid-item col-lg-6 bg-color-light p-4">--}}
+{{--                            <div class="counters">--}}
+{{--                                <div class="counter margin-style-2 custom-sm-counter-style">--}}
+{{--                                    <img class="counter-icon" src="img/demos/business-consulting/icons/icon-4.png" alt="">--}}
+{{--                                    <strong class="text-color-primary custom-primary-font" data-to="130" data-append="+">130+</strong>--}}
+{{--                                    <label>Pro Consultants</label>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>
