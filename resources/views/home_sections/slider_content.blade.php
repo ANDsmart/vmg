@@ -42,20 +42,28 @@
 <section class="section-custom-medical">
     <div class="container">
         <div class="row medical-schedules">
-            <div class="col-xl-3 box-one bg-color-primary appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="0">
-                <div class="feature-box feature-box-style-2 align-items-center p-4">
-                    <div class="feature-box-icon p-0">
+{{--            <div class="col-xl-3 box-one bg-color-primary appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="0">--}}
+{{--                <div class="feature-box feature-box-style-2 align-items-center p-4">--}}
+{{--                    <div class="feature-box-icon p-0">--}}
 {{--                        <img src="img/demos/medical/icons/medical-icon-heart.png" alt class="img-fluid pt-1" />--}}
-                    </div>
-                    <div class="feature-box-info">
+{{--                    </div>--}}
+{{--                    <div class="feature-box-info">--}}
 {{--                        <i class="icon-arrow-right-circle icons"></i>--}}
 
-                        <h4 class="m-0 p-0"> </h4>
+{{--                        <h4 class="m-0 p-0"> </h4>--}}
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 box-three bg-color-primary appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="1200">
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+                        <div class="col-xl-3 box-two bg-color-primary appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="600">
+                            <h5 class="m-0">
+{{--                                <a href="demo-medical-doctors.html" title="">--}}
+{{--                                    Doctors Timetable--}}
+{{--                                    <i class="icon-arrow-right-circle icons"></i>--}}
+{{--                                </a>--}}
+                            </h5>
+                        </div>
+            <div class="col-xl-3  box-three bg-color-primary appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="1200">
                 <div class="expanded-info p-4 bg-color-primary">
                     <div class="info custom-info">
                         <span>Mon-Fri</span>
@@ -76,14 +84,7 @@
                 </h5>
             </div>
 
-            <div class="col-xl-3 box-two bg-color-primary appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="600">
-                <h5 class="m-0">
-                    <a href="demo-medical-doctors.html" title="">
-{{--                        Doctors Timetable--}}
-{{--                        <i class="icon-arrow-right-circle icons"></i>--}}
-                    </a>
-                </h5>
-            </div>
+
 
             <div class="col-xl-3 box-four bg-color-primary p-0 appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="1800">
                 <a href="tel:+008001234567" class="text-decoration-none">
@@ -98,6 +99,14 @@
                     </div>
                 </a>
             </div>
+                        <div class="col-xl-3 box-two bg-color-primary appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="600">
+                            <h5 class="m-0">
+{{--                                <a href="demo-medical-doctors.html" title="">--}}
+{{--                                    Doctors Timetable--}}
+{{--                                    <i class="icon-arrow-right-circle icons"></i>--}}
+{{--                                </a>--}}
+                            </h5>
+                        </div>
 
     </div>
 </section>
