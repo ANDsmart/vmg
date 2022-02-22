@@ -26,10 +26,12 @@
 {{--                     data-x="{{$slider->position}}" data-hoffset="100"--}}
 {{--                     data-y="center" data-voffset="5"--}}
 {{--                     data-start="2000"--}}
-{{--                     style="color: white ; font-size: {{$slider->description_size}}px"--}}
+{{--                     style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 20px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 20px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"--}}
 {{--                     data-transform_in="y:[100%];opacity:0;s:500;"   >{!! $slider->description !!}--}}
 {{--                </div>--}}
-                <div class="tp-caption bottom-label" data-x="{{$slider->position}}" data-hoffset="100" data-y="center" data-voffset="5" data-start="2000" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 20px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 20px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;" data-transform_in="y:[100%];opacity:0;s:500;" id="layer-141964849">{!! strip_tags($slider->description) !!}</div>
+
+
+                <div class="tp-caption bottom-label" data-x="{{$slider->position}}" data-hoffset="100" data-y="center" data-voffset="5" data-start="2000" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 20px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 20px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;" data-transform_in="y:[100%];opacity:0;s:500;" id="layer-815074079">{!! strip_tags($slider->description) !!}</div>
 
             </li>
 
