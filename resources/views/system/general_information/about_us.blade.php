@@ -88,36 +88,36 @@
 
         </div>
 
-        <section class="section section-primary border-0 mb-0 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-plugin-options="{'accY': -150}" style="animation-delay: 100ms;">
-            <div class="container">
-                <div class="row counters counters-sm pb-4 pt-3">
-                    <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
-                        <div class="counter">
-                            <i class="icons icon-user text-color-light"></i>
-                            <strong class="text-color-light font-weight-extra-bold" data-to="30000" data-append="+">30000+</strong>
-                            <label class="text-4 mt-1 text-color-light">Happy Clients</label>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
-                        <div class="counter">
-                            <i class="icons icon-badge text-color-light"></i>
-                            <strong class="text-color-light font-weight-extra-bold" data-to="15">15</strong>
-                            <label class="text-4 mt-1 text-color-light">Years In Business</label>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 mb-5 mb-sm-0">
-                        <div class="counter">
-                            <i class="icons icon-graph text-color-light"></i>
-                            <strong class="text-color-light font-weight-extra-bold" data-to="178">178</strong>
-                            <label class="text-4 mt-1 text-color-light">High Score</label>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
+{{--        <section class="section section-primary border-0 mb-0 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-plugin-options="{'accY': -150}" style="animation-delay: 100ms;">--}}
+{{--            <div class="container">--}}
+{{--                <div class="row counters counters-sm pb-4 pt-3">--}}
+{{--                    <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">--}}
+{{--                        <div class="counter">--}}
+{{--                            <i class="icons icon-user text-color-light"></i>--}}
+{{--                            <strong class="text-color-light font-weight-extra-bold" data-to="30000" data-append="+">30000+</strong>--}}
+{{--                            <label class="text-4 mt-1 text-color-light">Happy Clients</label>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">--}}
+{{--                        <div class="counter">--}}
+{{--                            <i class="icons icon-badge text-color-light"></i>--}}
+{{--                            <strong class="text-color-light font-weight-extra-bold" data-to="15">15</strong>--}}
+{{--                            <label class="text-4 mt-1 text-color-light">Years In Business</label>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-sm-6 col-lg-3 mb-5 mb-sm-0">--}}
+{{--                        <div class="counter">--}}
+{{--                            <i class="icons icon-graph text-color-light"></i>--}}
+{{--                            <strong class="text-color-light font-weight-extra-bold" data-to="178">178</strong>--}}
+{{--                            <label class="text-4 mt-1 text-color-light">High Score</label>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-sm-6 col-lg-3">--}}
 
-                    </div>
-                </div>
-            </div>
-        </section>
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
 
         <section class="section section-height-3 bg-color-grey-scale-1 m-0 border-0">
             <div class="container">

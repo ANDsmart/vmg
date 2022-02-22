@@ -106,7 +106,7 @@
                 <div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
                     <nav id="sub-menu">
                         <ul>
-                            <li><i class="fas fa-angle-right"></i><a href="{{route('general_information.about_us')}}" class="ml-1 text-decoration-none"> Contact Us</a></li>
+{{--                            <li><i class="fas fa-angle-right"></i><a href="{{route('general_information.about_us')}}" class="ml-1 text-decoration-none"> Contact Us</a></li>--}}
                         </ul>
                     </nav>
                 </div>
