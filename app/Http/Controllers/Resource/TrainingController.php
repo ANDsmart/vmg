@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Resource;
 
 
 use App\Http\Controllers\Controller;
+use App\Models\Cms\Category;
 use App\Models\Resource\Training;
+use App\Models\System\CodeValue;
 use App\Repositories\Resource\TrainingRepository;
 use App\Repositories\System\CodeValueRepository;
 use Illuminate\Http\Request;
@@ -96,7 +98,7 @@ class TrainingController extends Controller
         return DataTables::of($result_list)
             ->addIndexColumn()
             ->addColumn('category', function ($blog) {
-                return isset($blog->category_id) ? $blog->category_id : '';
+                return isset($blog->category_id) ? CodeValue::find($blog->category_id) : '';
             })->addColumn('status', function ($blog) {
                 return ($blog->isactive == 1) ? trans('label.active') : trans('label.inactive');
             })

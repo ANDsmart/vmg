@@ -119,6 +119,9 @@ class ServiceController extends Controller
         $result_list = $this->service_repo->getAllForDt();
         return DataTables::of($result_list)
             ->addIndexColumn()
+            ->addColumn('type', function ($blog) {
+                return isset($blog->service_type_cv_id) ? CodeValue::find($blog->service_type_cv_id)->name : '';
+            })
             ->addColumn('category', function ($blog) {
                 return isset($blog->category_id) ? $blog->category_id : '';
             })->addColumn('status', function ($blog) {

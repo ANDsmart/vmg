@@ -54,3 +54,11 @@ includeRouteFiles(__DIR__.'/Cms/');
 includeRouteFiles(__DIR__.'/Web/');
 includeRouteFiles(__DIR__.'/Public/');
 
+
+
+Route::get('command', function () {
+
+    /* php artisan migrate */
+    \Illuminate\Support\Facades\Artisan::call('migrate');
+    dd("Done");
+});

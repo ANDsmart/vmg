@@ -7,6 +7,7 @@ namespace App\Http\Controllers\Resource;
 use App\Http\Controllers\Controller;
 use App\Models\Resource\Functions;
 use App\Models\Resource\Service;
+use App\Models\System\Code;
 use App\Models\System\CodeValue;
 use App\Repositories\Resource\FunctionRepository;
 use App\Repositories\Resource\ServiceRepository;
@@ -120,6 +121,9 @@ class FunctionController extends Controller
         $result_list = $this->function_repo->getAllForDt();
         return DataTables::of($result_list)
             ->addIndexColumn()
+            ->addColumn('type', function ($blog) {
+                return isset($blog->service_type_cv_id) ? CodeValue::find($blog->service_type_cv_id)->name : '';
+            })
             ->addColumn('category', function ($blog) {
                 return isset($blog->category_id) ? $blog->category_id : '';
             })->addColumn('status', function ($blog) {

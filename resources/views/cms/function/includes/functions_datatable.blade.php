@@ -36,7 +36,7 @@
             columns: [
                 // { data: 'DT_Row_Index', name: 'DT_Row_Index', orderable: false, searchable: false},
                 { data: 'title', name: 'title', orderable: false, searchable: true },
-                { data: 'service_type_cv_id', name: 'service_type_cv_id', orderable: false, searchable: false },
+                { data: 'type', name: 'type', orderable: false, searchable: false },
                 { data: 'status', name: 'status', orderable: false, searchable: false },
             ],
             "fnRowCallback": function(nRow, aData, iDisplayIndex, iDisplayIndexFull) {

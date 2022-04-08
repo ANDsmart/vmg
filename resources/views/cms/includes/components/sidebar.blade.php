@@ -21,37 +21,37 @@
                         </a>
                     </li>
 
-                    <li class="nav-parent">
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-copy" aria-hidden="true"></i>
-                            <span>{{trans('label.blog.post')}}</span>
-                        </a>
-                        <ul class="nav nav-children">
-                            <li>
-                                <a class="nav-link" href="{{route('cms.blog.create')}}">
-                                    {{trans('label.blog.new_post')}}
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="{{route('cms.blog.index')}}">
-                                    {{trans('label.blog.posts')}}
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="{{route('cms.category.index')}}">
-                                   {{trans('label.blog.categories')}}
-                                </a>
-                            </li>
+{{--                    <li class="nav-parent">--}}
+{{--                        <a class="nav-link" href="#">--}}
+{{--                            <i class="fas fa-copy" aria-hidden="true"></i>--}}
+{{--                            <span>{{trans('label.blog.post')}}</span>--}}
+{{--                        </a>--}}
+{{--                        <ul class="nav nav-children">--}}
+{{--                            <li>--}}
+{{--                                <a class="nav-link" href="{{route('cms.blog.create')}}">--}}
+{{--                                    {{trans('label.blog.new_post')}}--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a class="nav-link" href="{{route('cms.blog.index')}}">--}}
+{{--                                    {{trans('label.blog.posts')}}--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a class="nav-link" href="{{route('cms.category.index')}}">--}}
+{{--                                   {{trans('label.blog.categories')}}--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
 
-                        </ul>
-                    </li>
+{{--                        </ul>--}}
+{{--                    </li>--}}
 
-                    <li>
-                        <a class="nav-link" href="{{route('cms.faq.index')}}">
-                            <i class="fas fa-question" aria-hidden="true"></i>
-                            <span>{{trans('label.faqs')}}</span>
-                        </a>
-                    </li>
+{{--                    <li>--}}
+{{--                        <a class="nav-link" href="{{route('cms.faq.index')}}">--}}
+{{--                            <i class="fas fa-question" aria-hidden="true"></i>--}}
+{{--                            <span>{{trans('label.faqs')}}</span>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
 
                     <li>
                         <a class="nav-link" href="{{route('cms.client.index')}}">
@@ -67,21 +67,21 @@
                         </a>
                     </li>
 
-                    <li>
-                        <a class="nav-link" href="{!! route('admin.user_manage.index') !!}">
-                            <i class="fas fa-users" aria-hidden="true"></i>
-                            <span>{!! __('label.administrator.users.manage_users') !!}  <br/>
-                                </span>
-                        </a>
-                    </li>
+{{--                    <li>--}}
+{{--                        <a class="nav-link" href="{!! route('admin.user_manage.index') !!}">--}}
+{{--                            <i class="fas fa-users" aria-hidden="true"></i>--}}
+{{--                            <span>{!! __('label.administrator.users.manage_users') !!}  <br/>--}}
+{{--                                </span>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
 
-                    <li>
-                        <a class="nav-link" href="{!! route('admin.system_menu') !!}">
-                            <i class="fas fa-cog" aria-hidden="true"></i>
-                            <span>{!! __('label.system') !!}  <br/>
-                                </span>
-                        </a>
-                    </li>
+{{--                    <li>--}}
+{{--                        <a class="nav-link" href="{!! route('admin.system_menu') !!}">--}}
+{{--                            <i class="fas fa-cog" aria-hidden="true"></i>--}}
+{{--                            <span>{!! __('label.system') !!}  <br/>--}}
+{{--                                </span>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
                     <li>
                         <a class="nav-link" href="{!! route('cms.slider.index') !!}">
                             <i class="fas fa-cog" aria-hidden="true"></i>
