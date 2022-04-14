@@ -83,8 +83,8 @@
                         <h4 class="mb-1">Contact Us</h4>
                         <a href="tel:+1234567890" class="text-decoration-none" target="_blank" title="Call Us">
 											<span class="custom-call-to-action-2 text-color-light text-2 custom-opacity-font">
-												<span class="info text-5 custom-opacity-font ">Phone : +255 (717) 443616</span>
-												<span class="info text-5 custom-opacity-font ">Email : info@vipaji.co.tz</span>
+												<span class="info text-5 custom-opacity-font ">Phone : +255 (757) 888110</span>
+												<span class="info text-5 custom-opacity-font ">Email : info@vmg.co.tz</span>
 											</span>
                         </a>
                     </div>

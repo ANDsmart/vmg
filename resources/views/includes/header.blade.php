@@ -16,7 +16,7 @@
                                                                             @include("includes.lang")
 
                                     <li class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show"><span class="ws-nowrap"><i
-                                                    class="fas fa-phone"></i> +255 (717) 443616</span></li>
+                                                    class="fas fa-phone"></i> +255 (757) 888110</span></li>
                                 </ul>
                             </nav>
                         </div>
