@@ -4,8 +4,7 @@
         <ul>
             @foreach($sliders as $slider)
             <li data-transition="fade">
-                <img src="{{config('images.base_url')  }}}"
-{{--                <img src="{{url($slider->getImageAttribute())}}"--}}
+                <img src="{{url($slider->getImageAttribute())}}"
                      alt=""
                      data-bgposition="center center"
                      data-bgfit="cover"

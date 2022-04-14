@@ -6,6 +6,7 @@ namespace App\Http\Controllers\Resource;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Resource\SendContactUsRequest;
+use App\Models\Cms\AboutUs;
 use App\Models\Cms\Module;
 use App\Models\Cms\ModuleGroup;
 use App\Repositories\Cms\ContactUsRepository;
@@ -24,7 +25,9 @@ class GeneralInformationController extends Controller
     //about us
     public function aboutUs()
     {
-        return view('system.general_information.about_us');
+        $about_us = AboutUs::first();
+        return view('system.general_information.about_us')
+            ->with('about_us',$about_us);
     }
 
     //contact us

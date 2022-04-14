@@ -120,14 +120,14 @@
                                 </span>
                         </a>
                     </li>
-
                     <li>
-                        <a class="nav-link" href="{!! route('cms.user_manual.module_groups') !!}">
-                            <i class="fas fa-align-center" aria-hidden="true"></i>
-                            <span>{!! __('label.user_manual') !!}  <br/>
-                                </span>
+                        <a class="nav-link" href="{!! route('cms.about_us.index') !!}">
+                            <i class="fas fa-cog" aria-hidden="true"></i>
+                            <span>{!! __('About us') !!}  <br/>
+                            </span>
                         </a>
                     </li>
+
 
                 </ul>
             </nav>
