@@ -19,6 +19,9 @@
 
         {!! Form::text('color',$slider->color , ['placeholder' => __('Color')  ,'id'=>'video_link', 'class' => 'form-control','required']) !!}
         {!! $errors->first('color', '<span class="badge badge-danger">:message</span>') !!}
+
+
+        @include('cms.includes.color_choose')
     </div>
 
     <div class="col-md-3">

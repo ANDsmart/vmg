@@ -285,7 +285,7 @@ class CodeValueRepository extends BaseRepository
     }
     public function getServiceForDirectory()
     {
-        return $this->queryServicesForDirectory()->select(['id', 'name', 'reference'])->orderBy("id", "asc")->get();
+        return $this->queryServicesForDirectory()->select(['id', 'name', 'reference'])->where('id',6)->orderBy("id", "asc")->get();
     }
 
 

@@ -79,11 +79,11 @@
                                                                                                 <p>We combine  resources </p>
 
                                                                                                 <ul class="dropdown-mega-sub-nav">
-                                                                                                    @foreach(\App\Models\Resource\Functions::all() as $function)
-                                                                                                        <li><a class="dropdown-item" href="{{route('general_information.function.display',$function->id)}}">{{$function->title}}</a>
-                                                                                                            <p></p>
-                                                                                                        </li>
-                                                                                                    @endforeach
+{{--                                                                                                    @foreach(\App\Models\Resource\Functions::all() as $function)--}}
+{{--                                                                                                        <li><a class="dropdown-item" href="{{route('general_information.function.display',$function->id)}}">{{$function->title}}</a>--}}
+{{--                                                                                                            <p></p>--}}
+{{--                                                                                                        </li>--}}
+{{--                                                                                                    @endforeach--}}
 
                                                                                                 </ul>
                                                                                             </div>
@@ -92,18 +92,18 @@
                                                                                                 <p>We create business value  </p>
 
                                                                                                 <ul class="dropdown-mega-sub-nav">
-                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',6)}}" style="color: #000000">EFFECTIVE BUSINESS STRATEGIES</a>
-                                                                                                        <p></p>
-                                                                                                    </li>
-                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',6)}}" style="color: #000000">MANAGE RESOURCE</a>
-                                                                                                        <p></p>
-                                                                                                    </li>
-                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',6)}}" style="color: #000000">MANAGE BUSINESS VALUES</a>
-                                                                                                        <p></p>
-                                                                                                    </li>
-                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',6)}}" style="color: #000000">IMPROVE ORGANIZATION PERFORMANCE</a>
-                                                                                                        <p></p>
-                                                                                                    </li>
+{{--                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',6)}}" style="color: #000000">EFFECTIVE BUSINESS STRATEGIES</a>--}}
+{{--                                                                                                        <p></p>--}}
+{{--                                                                                                    </li>--}}
+{{--                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',6)}}" style="color: #000000">MANAGE RESOURCE</a>--}}
+{{--                                                                                                        <p></p>--}}
+{{--                                                                                                    </li>--}}
+{{--                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',6)}}" style="color: #000000">MANAGE BUSINESS VALUES</a>--}}
+{{--                                                                                                        <p></p>--}}
+{{--                                                                                                    </li>--}}
+{{--                                                                                                    <li><a class="dropdown-item" href="{{route('general_information.service.display',6)}}" style="color: #000000">IMPROVE ORGANIZATION PERFORMANCE</a>--}}
+{{--                                                                                                        <p></p>--}}
+{{--                                                                                                    </li>--}}
 
                                                                                                 </ul>
                                                                                             </div>
