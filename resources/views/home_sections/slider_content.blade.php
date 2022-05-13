@@ -94,7 +94,7 @@
                         </div>
                         <div class="feature-box-info">
                             <label class="font-weight-light" style="color: #ffffff">CALL US</label>
-                            <strong class="font-weight-normal">0717 443 616</strong>
+                            <strong class="font-weight-normal"> +255 (757) 888 110</strong>
                         </div>
                     </div>
                 </a>
