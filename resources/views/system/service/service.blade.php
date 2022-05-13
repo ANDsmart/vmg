@@ -46,11 +46,31 @@
 
                 @if($service_type->id == 6)
                     <p class="text-color-light-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;">At VMG our Human Resource Management functions can be classified into the following three categories.</p>
-                    <ol>
-                        <li class="text-4">Operative Functions</li>
-                        <li class="text-4">Advisory Functions</li>
-                        <li class="text-4">Managerial Functions</li>
-                    </ol>
+{{--                    <ol>--}}
+{{--                        <li class="text-4">Local Staff Management</li>--}}
+{{--                        <li class="text-4">Advisory Functions</li>--}}
+{{--                        <li class="text-4">Managerial Functions</li>--}}
+{{--                    </ol>--}}
+
+                    <h4>1: Local Staff Management</h4>
+                    <p> Our company will provide HUMAN RESOURCE MANAGER who will be responsible to handle and manage all local employees with maximizing productivity and protecting the company from any issues that may arise within the workforce. Our service frees our clients from stress and labour union hassles and assures them of high capacity utilization and productivity at all times.</p>
+
+                    <h4>2: Foreigner Expert Management</h4>
+                    <p>Our company will provide HR Outsourcing Function with greater efficiency within human resources system; such as payroll benefit administration, and compliance management. As well will be responsible to manage professionals, skilled and technical personnel (welders) at all levels on a short to long-term basis. VMG will acquire your existing employees into our organization and provide them with full management support.</p>
+
+                    <h4>Scope of Work</h4>
+                <p>We make our offering specifically to your needs including the following services:</p>
+                    <ul>
+                        <li>HR Compliance Reviews</li>
+                        <li> Recruitment Process</li>
+                        <li>Employee Relation</li>
+                        <li> Training and Development</li>
+                        <li> Payroll and benefit administration</li>
+                        <li> Administration of the whole employment lifecycle e.g. employment contract</li>
+                        <li> Performance management</li>
+                        <li> Rewards and benefits</li>
+                        <li> Policy development</li>
+                    </ul>
                 @endif
             </div>
             <div class="col-lg-4">
@@ -116,6 +136,74 @@
 
             <div class="row">
                 <div class="col">
+                    <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url('img/default_image.png')}}" alt="layout styles" />
+                        </div>
+                        <div class="col-md-8 pl-md-5">
+                            <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">HR Compliance Reviews</strong> </h2>
+                            <p class="text-4">
+                                - Personnel Files <br>
+                                - Job Descriptions <br>
+                                - Job classifications (Exempt vs Non-Exempt Status) <br>
+                                - Mandatory training needs
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url('img/default_image.png')}}" alt="layout styles" />
+                        </div>
+                        <div class="col-md-8 pl-md-5">
+                            <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Employee Recruitment Process</strong> </h2>
+                            <p class="text-4">
+                                - Advertising <br>
+                                - Screening <br>
+                                - Interviewing and background checks <br>
+                                - Hiring <br>
+                                - Orientation
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url('img/default_image.png')}}" alt="layout styles" />
+                        </div>
+                        <div class="col-md-8 pl-md-5">
+                            <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Employee Relations</strong> </h2>
+                            <p class="text-4">
+                                - Identifying and mitigating personnel issues <br>
+                                - Conflict management training and on-going guidance <br>
+                                - Disciplinary process: consistency <br>
+                                - Personnel policies review <br>
+                                - Job title review and promotion process <br>
+                                - Employee satisfaction surveys <br>
+                                - Employee Assistance Program<br>
+                                - Termination and exit interviews<br>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url('img/default_image.png')}}" alt="layout styles" />
+                        </div>
+                        <div class="col-md-8 pl-md-5">
+                            <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Policy development</strong> </h2>
+                            <p class="text-4">
+                                - Policy & Procedure are well developed; <br>
+                                - Well-documented HR policies and procedures are essential for a successful business environment. <br>
+                                - Our company has experience in developing, implementing and evaluating HR policies and procedures. <br>
+                                - These services include keeping policy manuals accurate, periodically reviewing policies and procedures, and updating documentation as required. <br>
+
+                            </p>
+                        </div>
+                    </div>
                     @foreach($services as $service)
                     <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
                         <div class="col-md-4 mb-4 mb-md-0">
@@ -128,6 +216,7 @@
                     </div>
 
                     @endforeach
+
                 </div>
             </div>
         </div>

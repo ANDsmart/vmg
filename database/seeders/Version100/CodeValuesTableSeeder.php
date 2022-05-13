@@ -25,6 +25,8 @@ class CodeValuesTableSeeder extends Seeder
         $this->disableForeignKeys("code_values");
 
         CodeValue::query()->delete();
+
+        DB::table('code_values')->where('id',6)->delete();
         $cv = CodeValue::updateOrCreate(
             ['reference' => 'ULLGI'],
             [
@@ -100,17 +102,35 @@ class CodeValuesTableSeeder extends Seeder
             ]
         );
 
-        $cv = CodeValue::updateOrCreate(
+        $cv = CodeValue::firstOrCreate(
             ['reference' => 'SERTYPEHR'],
             [
                 'id' => 6,
                 'code_id' => 2,
                 'name' => 'HUMAN RESOURCE MANAGEMENT',
                 'lang' => NULL,
-                'description' => 'At VMG our Human Resource Management functions can be classified into the following three categories.
-1. Operative Functions, and
-2. Advisory Functions.
-3. Managerial Functions,
+                'description' => '
+        
+                
+                At VMG our Human Resource Management functions can be classified into the following three categories.
+
+        1: Local Staff Management:
+                Our company will provide HUMAN RESOURCE MANAGER who will be responsible to handle and manage all local employees with maximizing productivity and protecting the company from any issues that may arise within the workforce. Our service frees our clients from stress and labour union hassles and assures them of high capacity utilization and productivity at all times.
+                
+               2: Foreigner Expert Management:
+Our company will provide HR Outsourcing Function with greater efficiency within human resources system; such as payroll benefit administration, and compliance management. As well will be responsible to manage professionals, skilled and technical personnel (welders) at all levels on a short to long-term basis. VMG will acquire your existing employees into our organization and provide them with full management support.
+
+        Scope of Work
+We make our offering specifically to your needs including the following services:
+-> HR Compliance Reviews;
+-> Recruitment Process;
+-> Employee Relation;
+-> Training and Development;
+-> Payroll and benefit administration;
+-> Administration of the whole employment lifecycle e.g. employment contract;
+-> Performance management;
+-> Rewards and benefits;
+-> Policy development.
 ',
                 'reference' => 'SERTYPEHR',
                 'sort' => 1,
