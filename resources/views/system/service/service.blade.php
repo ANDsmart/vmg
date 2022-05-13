@@ -154,7 +154,7 @@
 
                     <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
                         <div class="col-md-4 mb-4 mb-md-0">
-                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url('img/rec.png')}}" alt="layout styles" />
+                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url('img/recr.png')}}" alt="layout styles" />
                         </div>
                         <div class="col-md-8 pl-md-5">
                             <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Employee Recruitment Process</strong> </h2>
