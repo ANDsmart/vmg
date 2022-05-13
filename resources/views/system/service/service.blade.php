@@ -138,7 +138,7 @@
                 <div class="col">
                     <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
                         <div class="col-md-4 mb-4 mb-md-0">
-                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url('img/default_image.png')}}" alt="layout styles" />
+                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url('img/compl.png')}}" alt="layout styles" />
                         </div>
                         <div class="col-md-8 pl-md-5">
                             <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">HR Compliance Reviews</strong> </h2>
@@ -154,7 +154,7 @@
 
                     <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
                         <div class="col-md-4 mb-4 mb-md-0">
-                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url('img/default_image.png')}}" alt="layout styles" />
+                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url('img/rec.png')}}" alt="layout styles" />
                         </div>
                         <div class="col-md-8 pl-md-5">
                             <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Employee Recruitment Process</strong> </h2>
@@ -171,7 +171,7 @@
 
                     <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
                         <div class="col-md-4 mb-4 mb-md-0">
-                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url('img/default_image.png')}}" alt="layout styles" />
+                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url('img/rel.png')}}" alt="layout styles" />
                         </div>
                         <div class="col-md-8 pl-md-5">
                             <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Employee Relations</strong> </h2>
@@ -191,7 +191,7 @@
 
                     <div class="row align-items-center pt-4 appear-animation" data-appear-animation="fadeInLeftShorter">
                         <div class="col-md-4 mb-4 mb-md-0">
-                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url('img/default_image.png')}}" alt="layout styles" />
+                            <img class="img-fluid scale-2 pr-5 pr-md-0 my-4" src="{{url('img/pol.png')}}" alt="layout styles" />
                         </div>
                         <div class="col-md-8 pl-md-5">
                             <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Policy development</strong> </h2>
