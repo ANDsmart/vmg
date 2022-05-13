@@ -66,7 +66,7 @@ class BaseRepository
     /*Query only active resources*/
     public function queryActive()
     {
-        return $this->query()->where('isactive', 1);
+        return $this->query()->where('isactive', 1)->orderBy('updated_at');
     }
 
     /*Find instance from where conditions*/
