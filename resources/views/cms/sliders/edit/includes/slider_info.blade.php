@@ -21,7 +21,7 @@
         {!! $errors->first('color', '<span class="badge badge-danger">:message</span>') !!}
 
 
-        @include('cms.includes.color_choose')
+{{--        @include('cms.includes.color_choose')--}}
     </div>
 
     <div class="col-md-3">
